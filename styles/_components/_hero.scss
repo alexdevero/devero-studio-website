@@ -1,0 +1,39 @@
+/* */
+/* Hero */
+.hero {
+  display: flex;
+  align-items: flex-start;
+  flex-flow: column;
+  justify-content: center;
+  padding: 32px;
+  min-height: 100vh;
+  background-color: var(--color-black);
+}
+
+.hero__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 48px;
+
+  @media (min-width: 48em) {
+    font-size: 76px;
+  }
+
+  @media (min-width: 64em) {
+    font-size: 96px;
+  }
+
+  span {
+    display: block;
+    line-height: 1;
+  }
+}
+
+.hero__subtitle {
+  margin-top: 16px;
+  margin-bottom: 0;
+  max-width: 40ch;
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--color-white);
+}
