@@ -1,0 +1,16 @@
+/* */
+/* Dividers */
+.divider {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 40px;
+  height: 4px;
+
+  &--red {
+    background-color: var(--color-brand);
+  }
+
+  &--white {
+    background-color: #fff;
+  }
+}
