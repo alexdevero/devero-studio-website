@@ -1,0 +1,63 @@
+/* */
+/* Typography */
+html {
+	font-size: 16px;
+}
+
+body {
+	font-size: 1rem;
+	font-family: var(--font-text);
+	line-height: 1.45;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+small {
+	margin: 0;
+	font-size: 1rem;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+  margin: 44px 0 16px;
+  font-family: var(--font-heading);
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.h1 {
+  margin-top: 0;
+  font-size: 177.42px;
+}
+
+.h2 {
+	font-size: 109.66px;
+}
+
+.h3 {
+	font-size: 67.77px;
+}
+
+.h4 {
+	font-size: 41.89px;
+}
+
+.h5 {
+	font-size: 25.89px;
+}
+
+.text--regular {
+	margin-bottom: 20px;
+	font-size: 16px;
+}
+
+.text_small {
+	font-size: 9.89px;
+}
