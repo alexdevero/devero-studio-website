@@ -7,10 +7,6 @@
     "start": "next start"
   },
   "dependencies": {
-    "@types/node-sass": "4.11.0",
-    "@types/zeit__next-typescript": "0.1.2",
-    "@zeit/next-sass": "1.0.1",
-    "@zeit/next-typescript": "1.1.1",
     "next": "8.1.0",
     "node-sass": "4.11.0",
     "react": "16.8.6",
@@ -18,5 +14,13 @@
   },
   "license": "ISC",
   "keywords": [],
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@types/jquery": "^3.3.29",
+    "@types/node-sass": "4.11.0",
+    "@types/react-recaptcha": "^2.3.3",
+    "@types/zeit__next-typescript": "0.1.2",
+    "@zeit/next-sass": "1.0.1",
+    "@zeit/next-typescript": "1.1.1"
+  }
 }
