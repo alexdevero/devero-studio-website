@@ -7,4 +7,14 @@
 
 	--font-heading: Merriweather, serif;
 	--font-text: Montserrat, sans-serif;
+
+	--radius-small: 4px;
+
+	--tr-full: all .25s ease-in-out;
+	--tr-part: .25s ease-in-out;
+}
+
+body {
+  background-color: #111;
+  color: #fff;
 }
