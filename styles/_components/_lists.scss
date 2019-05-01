@@ -1,0 +1,23 @@
+/**/
+/* Lists */
+ul {
+  margin: 0;
+}
+
+.list--unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.list--inline {
+  padding-left: 0;
+  list-style: none;
+}
+
+.list--inline-item {
+  display: inline-block;
+
+  &:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+}
