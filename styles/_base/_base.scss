@@ -5,7 +5,7 @@
 	--color-brand: #d30320;
 	--color-white: #fff;
 
-	--font-heading: Merriweather, serif;
+	--font-heading: Poppins, serif;
 	--font-text: Montserrat, sans-serif;
 
 	--radius-small: 4px;
@@ -15,6 +15,6 @@
 }
 
 body {
-  background-color: #111;
+  background-color: var(--color-black);
   color: #fff;
 }
