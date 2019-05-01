@@ -6,11 +6,20 @@
   width: 40px;
   height: 4px;
 
+  &--black {
+    background-color: var(--color-black);
+  }
+
+  &--center {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   &--red {
     background-color: var(--color-brand);
   }
 
   &--white {
-    background-color: #fff;
+    background-color: var(--color-white);
   }
 }
