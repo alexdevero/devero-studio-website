@@ -11,7 +11,9 @@ export const Hero = () => {
           </h1>
         </div>
 
-        <h2 className="hero__subtitle">We help startups, small businesses and individuals enter and thrive in the digital world.</h2>
+        <h2 className="hero__subtitle">Helping you thrive in the digital world.</h2>
+
+        <h3 className="hero__text">We design and build exceptional, high-quality websites and applications for startups, small businesses, solopreneurs and individuals.</h3>
 
         <div className="divider divider--red" />
 

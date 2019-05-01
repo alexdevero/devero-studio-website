@@ -33,13 +33,25 @@
   }
 }
 
+.hero__subtitle,
+.hero__text {
+  margin-bottom: 0;
+  color: var(--color-white);
+}
+
 .hero__subtitle {
   margin-top: 16px;
-  margin-bottom: 0;
-  max-width: 40ch;
+  font-size: 21px;
+
+  & + .hero__text {
+    margin-top: 16px;
+  }
+}
+
+.hero__text {
+  max-width: 44ch;
   font-size: 18px;
   font-weight: 300;
-  color: var(--color-white);
 }
 
 .video-wrapper,
@@ -54,7 +66,7 @@
 
 .video-overlay {
   z-index: 2;
-  background: linear-gradient(to right, rgba(0, 0, 0, .95) 20%, rgba(0, 0, 0, .4)), linear-gradient(to top, rgba(0, 0, 0, .95) 2%, rgba(0, 0, 0, 0));
+  background: linear-gradient(to right, rgba(0, 0, 0, .95) 20%, rgba(0, 0, 0, .4)), linear-gradient(to top, rgba(0, 0, 0, 1) 10px, rgba(0, 0, 0, 0) 230px);
 }
 
 .video-wrapper video {
