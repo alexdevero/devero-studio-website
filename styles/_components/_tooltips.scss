@@ -1,0 +1,35 @@
+/* */
+/* Tooltips */
+/* */
+.tooltip__container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.tooltip__image {
+  font-size: 60px;
+}
+
+.tooltip__text {
+  display: block;
+  position: absolute;
+  bottom: -38px;
+  left: 50%;
+  z-index: 2;
+  padding: 6px;
+  width: 100px;
+  font-size: 12px;
+  text-align: center;
+  color: var(--color-white);
+  background-color: var(--color-black);
+  border-radius: var(--radius-small);
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: all var(--tr-part);
+
+  .tooltip__container:hover & {
+    visibility: visible;
+    opacity: 1;
+  }
+}
