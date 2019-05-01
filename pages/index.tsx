@@ -4,10 +4,10 @@ import Head from 'next/head'
 
 // Import components
 import { Contact } from './../components/contact'
-import { Faq } from './../components/faq'
+// import { Faq } from './../components/faq'
 import { Footer } from './../components/footer'
 import { Hero } from './../components/hero'
-import { Partners } from './../components/partners'
+// import { Partners } from './../components/partners'
 import { Services } from './../components/services'
 import { Stack } from './../components/stack'
 import { We } from './../components/we'
@@ -42,11 +42,11 @@ export default () => (
 
     <Stack />
 
-    <Partners />
+    {/* <Partners /> */}
 
     <We />
 
-    <Faq />
+    {/* <Faq /> */}
 
     <Contact />
 
