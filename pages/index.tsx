@@ -1,5 +1,6 @@
 import * as React from 'react'
 import Head from 'next/head'
+import ReactGA from 'react-ga'
 // import Link from 'next/link'
 
 // Import components
@@ -32,14 +33,7 @@ export default () => (
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossOrigin="anonymous" />
 
       {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-40173486-6"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-40173486-6');
-      </script>
+      {ReactGA.initialize('UA-40173486-6')}
     </Head>
 
     {/* <Link href='/about'>
