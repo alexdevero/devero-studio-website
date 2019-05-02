@@ -7,7 +7,9 @@ export const Services = () => {
       <div className="container pt-5 pb-5">
         <div className="services__row services__row--one row">
           <div className="col-md-6 col-lg-5">
-            <h2 className="h3">Concept &amp; Design</h2>
+            <h2 className="h3 text--green">Concept &amp; Design</h2>
+
+            <div className="divider divider--gray divider--slim" />
 
             <p>Our team of exceptional designers will create design concept, and later prototype, for your websites or web app based on your requirements. Next, we will review it with you, and gradually, polish it to perfection.</p>
           </div>
@@ -79,7 +81,9 @@ export const Services = () => {
           </div>
 
           <div className="col-md-4 text--center">
-            <h2 className="h3">Code &amp; Development</h2>
+            <h2 className="h3 text--green">Code &amp; Development</h2>
+
+            <div className="divider divider--center divider--gray divider--slim" />
 
             <p>When you are pleased with design prototype, our team of rock star developers will get to work on it. They will take the design prototype and transform it into clean, optimized and ready-to-use website, or app.</p>
           </div>
@@ -151,7 +155,9 @@ export const Services = () => {
           </div>
 
           <div className="col-md-6">
-            <h2 className="h3">Shipping &amp; Maintenance</h2>
+            <h2 className="h3 text--green">Shipping &amp; Maintenance</h2>
+
+            <div className="divider divider--gray divider--slim" />
 
             <p>When your website is ready we will deploy it, put put it online. In case of an app, we will help you put it in stores. After this, we can take care of it for you if you want, maintaining, fixing and improving it.</p>
           </div>

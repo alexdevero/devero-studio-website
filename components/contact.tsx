@@ -62,7 +62,7 @@ export class Contact extends React.Component {
         $.ajax({
           data: this.state,
           type: 'POST',
-          // url: require('../contact.php'),
+          url: './../static/contact.php',
           success: function(data) {
             console.info(data)
           },
@@ -112,7 +112,7 @@ export class Contact extends React.Component {
     return(
       <section>
         <div className="container pt-5 pb-5">
-          <h1 className="h2 text--center">Let's connect</h1>
+          <h1 className="h3 text--center">Let's connect</h1>
 
           <div className="divider divider--black divider--center"></div>
 

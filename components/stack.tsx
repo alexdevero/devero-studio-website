@@ -2,9 +2,9 @@ import * as React from 'react'
 
 export const Stack = () => {
   return(
-    <section>
+    <section className="pt-4">
       <div className="container pt-5 pb-5">
-        <h1 className="h2 text--center">Our Technology stack</h1>
+        <h1 className="h3 text--center">Our Technology stack</h1>
 
         <div className="divider divider--black divider--center"></div>
 
