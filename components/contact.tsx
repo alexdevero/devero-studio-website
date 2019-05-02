@@ -1,6 +1,6 @@
 import * as React from 'react'
 import $ from 'jquery'
-import Recaptcha from 'react-recaptcha'
+import ReCAPTCHA from "react-google-recaptcha"
 
 export class Contact extends React.Component {
   state = {
@@ -143,8 +143,12 @@ export class Contact extends React.Component {
                   <textarea onChange={this.handleInputChange} id="formMessage" name="formMessage" required={true} ref={(inputMessage) => this.inputMessage = inputMessage} />
                 </fieldset>
 
-                <fieldset>
-                  <Recaptcha onloadCallback={this.onCaptchaLoad} sitekey="6Ldt6RgUAAAAAKtaxY2787y3S7uP5Wp9kzL0PMMg" render="explicit" verifyCallback={this.onCaptchaVerify} />
+                <fieldset className="mb-4">
+                  <ReCAPTCHA
+                    sitekey="6Ldt6RgUAAAAAKtaxY2787y3S7uP5Wp9kzL0PMMg"
+                    size="normal"
+                    onChange={this.onCaptchaVerify}
+                  />
                 </fieldset>
 
               {this.state.isErrorShown && (
