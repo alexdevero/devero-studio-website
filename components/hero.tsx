@@ -15,7 +15,7 @@ export const Hero = () => {
 
         <h3 className="hero__text">We design and build exceptional, high-quality websites and applications for startups, small businesses, solopreneurs and individuals.</h3>
 
-        <div className="divider divider--red" />
+        <div className="divider divider--red divider--thick" />
 
         <button href="#whatWeDo" className="btn btn--red" data-text="WHAT WE DO">What we do</button>
       </div>
@@ -23,7 +23,7 @@ export const Hero = () => {
       <div className="video-wrapper">
         <div className="video-overlay"></div>
 
-        <video autoPlay={false} loop={false} muted={true} poster="/static/images/working-space.jpg">
+        <video autoPlay={true} loop={true} muted={true} poster="/static/images/working-space.jpg">
           <source src="/static/videos/working-space.webm" />
           <source src="/static/videos/working-space.mp4" />
         </video>
