@@ -15,7 +15,7 @@ export const Stack = () => {
           <div ref={el => sectionStack = el}>
             <h1 className="h3 text--green text--center">Our Technology stack</h1>
 
-            <div className="divider divider--black divider--center"></div>
+            <div className="divider divider--center divider--gray divider--slim" />
 
             <div className="row">
               <div className="col-sm-6 col-md-3 mt-5">

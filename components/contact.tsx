@@ -120,9 +120,9 @@ export class Contact extends React.Component {
         <div className="container pt-5 pb-5">
           <Waypoint onEnter={this.handleWaypointEnter}>
             <div ref={el => this.sectionContact = el}>
-              <h1 className="h3 text--center">Let's connect</h1>
+              <h1 className="h3 text--green text--center">Let's connect</h1>
 
-              <div className="divider divider--black divider--center"></div>
+              <div className="divider divider--center divider--gray divider--slim" />
 
               <div className="row justify-content-center">
                 <div className="col-md-11 col-md-9 col-lg-7">

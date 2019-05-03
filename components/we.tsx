@@ -13,9 +13,9 @@ export const We = () => {
       <div className="container pt-5 pb-5 text--center">
         <Waypoint onEnter={handleWaypointEnter}>
           <div ref={el => sectionWhere = el}>
-            <h1 className="h3">Where We Are</h1>
+            <h1 className="h3 text--green">Where We Are</h1>
 
-            <div className="divider divider--black divider--center"></div>
+            <div className="divider divider--center divider--gray divider--slim" />
 
             <div className="row">
               <div className="col-sm-6 col-lg-3">
