@@ -21,33 +21,33 @@ export const Where = () => {
               <div className="col-sm-6 col-lg-3">
                 <img className="icon--big" src={require('./../static/images/icon-san-francisco.svg')} alt="San Francisco, USA" />
 
-                <h2 className="h4 text--green">San Francisco</h2>
+                <h2 className="h4">San Francisco</h2>
 
-                <h3 className="h6">USA</h3>
+                <h3 className="h6 text--gray-light">USA</h3>
               </div>
 
               <div className="col-sm-6 col-lg-3">
                 <img className="icon--big" src={require('./../static/images/icon-prague.svg')} alt="Prague, Czech Republic" />
 
-                <h2 className="h4 text--green">Prague</h2>
+                <h2 className="h4">Prague</h2>
 
-                <h3 className="h6">Czech Republic</h3>
+                <h3 className="h6 text--gray-light">Czech Republic</h3>
               </div>
 
               <div className="col-sm-6 col-lg-3">
                 <img className="icon--big" src={require('./../static/images/icon-london.svg')} alt="London, United Kingdom" />
 
-                <h2 className="h4 text--green">London</h2>
+                <h2 className="h4">London</h2>
 
-                <h3 className="h6">United Kingdom</h3>
+                <h3 className="h6 text--gray-light">United Kingdom</h3>
               </div>
 
               <div className="col-sm-6 col-lg-3">
                 <img className="icon--big" src={require('./../static/images/icon-shanghai.svg')} alt="Shanghai, China" />
 
-                <h2 className="h4 text--green">Shanghai</h2>
+                <h2 className="h4">Shanghai</h2>
 
-                <h3 className="h6">China</h3>
+                <h3 className="h6 text--gray-light">China</h3>
               </div>
             </div>
           </div>
