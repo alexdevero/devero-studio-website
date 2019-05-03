@@ -33,6 +33,13 @@ export const Services = () => {
               <div className="divider divider--gray divider--slim" />
 
               <p>Our team of exceptional designers will create design concept, and later prototype, for your websites or web app based on your requirements. Next, we will review it with you, and gradually, polish it to perfection.</p>
+
+              <ul className="list--unstyled mt-3">
+                <li>&bull; User Experience Design</li>
+                <li>&bull; Interaction Design</li>
+                <li>&bull; Visual Design</li>
+                <li>&bull; Design QA</li>
+              </ul>
             </div>
 
             <div className="col-md-6 services__screenshot-wrapper">
@@ -103,12 +110,21 @@ export const Services = () => {
               />
             </div>
 
-            <div className="col-md-4 text--center">
-              <h2 className="h3 text--green">Code &amp; Development</h2>
+            <div className="col-md-4">
+              <h2 className="h3 text--center text--green">Code &amp; Development</h2>
 
               <div className="divider divider--center divider--gray divider--slim" />
 
               <p>When you are pleased with design prototype, our team of rock star developers will get to work on it. They will take the design prototype and transform it into clean, optimized and ready-to-use website, or app.</p>
+
+              <ul className="list--unstyled mt-3">
+                <li>&bull; iOS &amp; Android (React Native)</li>
+                <li>&bull; Frontend (React)</li>
+                <li>&bull; Backend (Node.js)</li>
+                <li>&bull; Machine Learning</li>
+                <li>&bull; AR/VR</li>
+                <li>&bull; QA Testing</li>
+              </ul>
             </div>
 
             <div className="col-md-4 services__screenshot-wrapper">
@@ -185,6 +201,12 @@ export const Services = () => {
               <div className="divider divider--gray divider--slim" />
 
               <p>When your website is ready we will deploy it, put put it online. In case of an app, we will help you put it in stores. After this, we can take care of it for you if you want, maintaining, fixing and improving it.</p>
+
+              <ul className="list--unstyled mt-3">
+                <li>&bull; Reviews &amp; Reports</li>
+                <li>&bull; Further Recommendations</li>
+                <li>&bull; Updates &amp; fixes</li>
+              </ul>
             </div>
           </div>
         </Waypoint>
