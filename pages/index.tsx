@@ -11,7 +11,7 @@ import { Hero } from './../components/hero'
 // import { Partners } from './../components/partners'
 import { Services } from './../components/services'
 import { Stack } from './../components/stack'
-import { We } from './../components/we'
+import { Where } from '../components/where'
 
 // Import styles
 import './../styles/styles.scss'
@@ -48,7 +48,7 @@ export default () => (
 
     {/* <Partners /> */}
 
-    <We />
+    <Where />
 
     {/* <Faq /> */}
 

@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { Waypoint } from 'react-waypoint'
 
-export const We = () => {
+export const Where = () => {
   let sectionWhere: HTMLDivElement | null
 
   const handleWaypointEnter = () => {
