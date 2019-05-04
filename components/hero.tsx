@@ -1,4 +1,5 @@
 import * as React from 'react'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 export const Hero = () => {
   return(
@@ -17,7 +18,9 @@ export const Hero = () => {
 
         <div className="divider divider--red divider--thick" />
 
-        <button href="#whatWeDo" className="btn btn--red" data-text="WHAT WE DO">What we do</button>
+        <AnchorLink href="#whatWeDo" offset={() => 100}>
+          <button className="btn btn--red" data-text="WHAT WE DO">What we do</button>
+        </AnchorLink>
       </div>
 
       <div className="video-wrapper">
