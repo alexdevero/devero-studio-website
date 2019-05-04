@@ -18,9 +18,7 @@ export const Hero = () => {
 
         <div className="divider divider--red divider--thick" />
 
-        <AnchorLink href="#whatWeDo" offset={() => 100}>
-          <button className="btn btn--red" data-text="WHAT WE DO">What we do</button>
-        </AnchorLink>
+        <AnchorLink className="btn btn--red" href="#whatWeDo" offset={() => 100} data-text="WHAT WE DO" style={{ maxWidth: '240px', textDecoration: 'none' }}>What we do</AnchorLink>
       </div>
 
       <div className="video-wrapper">
