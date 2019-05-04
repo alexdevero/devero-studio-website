@@ -84,7 +84,7 @@ export const Services = () => {
 
         <Waypoint onEnter={() => handleWaypointEnter('development')} topOffset="-40%">
           <div className="services__row services__row--two row mt-5 animated" ref={el => sectionDevelopment = el}>
-            <div className="col-md-4 services__screenshot-wrapper">
+            <div className="col-md-6 services__screenshot-wrapper">
               <ImageZoom
                 image={{
                   src: require('./../static/images/screenshots-services/services-screenshot-07.jpg'),
@@ -105,13 +105,49 @@ export const Services = () => {
                 }}
                 zoomImage={{
                   src: require('./../static/images/screenshots-services/services-screenshot-04.png'),
+                  alt: ''
+                }}
+              />
+
+              <ImageZoom
+                image={{
+                  src: require('./../static/images/screenshots-services/services-screenshot-05.png'),
+                  alt: '',
+                  className: 'services__screenshot',
+                }}
+                zoomImage={{
+                  src: require('./../static/images/screenshots-services/services-screenshot-05.png'),
+                  alt: ''
+                }}
+              />
+
+              <ImageZoom
+                image={{
+                  src: require('./../static/images/screenshots-services/services-screenshot-08.jpg'),
+                  alt: '',
+                  className: 'services__screenshot',
+                }}
+                zoomImage={{
+                  src: require('./../static/images/screenshots-services/services-screenshot-08.jpg'),
+                  alt: ''
+                }}
+              />
+
+              <ImageZoom
+                image={{
+                  src: require('./../static/images/screenshots-services/services-screenshot-15.jpg'),
+                  alt: '',
+                  className: 'services__screenshot',
+                }}
+                zoomImage={{
+                  src: require('./../static/images/screenshots-services/services-screenshot-15.jpg'),
                   alt: ''
                 }}
               />
             </div>
 
-            <div className="col-md-4">
-              <h2 className="h3 text--center text--green">Code &amp; Development</h2>
+            <div className="col-md-6">
+              <h2 className="h3 text--green">Code &amp; Development</h2>
 
               <div className="divider divider--center divider--gray divider--slim" />
 
@@ -125,32 +161,6 @@ export const Services = () => {
                 <li>&bull; AR/VR</li>
                 <li>&bull; QA Testing</li>
               </ul>
-            </div>
-
-            <div className="col-md-4 services__screenshot-wrapper">
-              <ImageZoom
-                image={{
-                  src: require('./../static/images/screenshots-services/services-screenshot-05.png'),
-                  alt: '',
-                  className: 'services__screenshot',
-                }}
-                zoomImage={{
-                  src: require('./../static/images/screenshots-services/services-screenshot-05.png'),
-                  alt: ''
-                }}
-              />
-
-              <ImageZoom
-                image={{
-                  src: require('./../static/images/screenshots-services/services-screenshot-08.jpg'),
-                  alt: '',
-                  className: 'services__screenshot',
-                }}
-                zoomImage={{
-                  src: require('./../static/images/screenshots-services/services-screenshot-08.jpg'),
-                  alt: ''
-                }}
-              />
             </div>
           </div>
         </Waypoint>

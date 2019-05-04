@@ -109,76 +109,79 @@
         max-width: 300px;
       }
     }
+  }
 
+  .services__screenshot {
     &:first-of-type {
-      .services__screenshot {
-        &:first-of-type {
-          top: 60px;
-          left: 5px;
-          z-index: 1;
+      top: 40px;
+      left: 5px;
+      z-index: 2;
+      max-width: 230px;
 
-          @media (min-width: 420px) {
-            top: 120px;
-          }
+      @media (min-width: 768px) {
+        top: 60px;
+      }
+    }
 
-          @media (min-width: 992px) {
-            left: -15px;
-            right: -20px;
-          }
+    &:nth-of-type(2) {
+      top: 40px;
+      right: 5px;
+      z-index: 1;
+      max-width: 220px;
+      display: none;
 
-          @media (min-width: 1200px) {
-            top: 120px;
-            left: 5px;
-          }
-        }
+      @media (min-width: 1200px) {
+        display: block;
+        right: 10px;
+        bottom: 40px;
+      }
+    }
 
-        &:last-of-type {
-          bottom: 40px;
-          right: 5px;
-          z-index: 1;
+    &:nth-of-type(3) {
+      top: 200px;
+      right: 0;
+      left: 0;
+      z-index: 3;
+      margin: auto;
 
-          @media (min-width: 992px) {
-            left: 10px;
-            bottom: 40px;
-          }
+      @media (min-width: 420px) and (max-width: 1199.99px) {
+        right: 15px;
+        left: auto;
+      }
 
-          @media (min-width: 1200px) {
-            left: 65px;
-            bottom: 40px;
-          }
-        }
+      @media (min-width: 768px) {
+        top: 280px;
+        max-width: 230px;
+      }
+
+      @media (min-width: 768px) and (max-width: 992.99px) {
+        right: 10px;
+      }
+
+      @media (min-width: 992px) and (max-width: 1199.99px) {
+        right: 20px;
+      }
+    }
+
+    &:nth-of-type(4) {
+      bottom: 30px;
+      left: 5px;
+      max-width: 250px;
+
+      @media (max-width: 419.99px) {
+        display: none;
       }
     }
 
     &:last-of-type {
-      .services__screenshot {
-        &:first-of-type {
-          top: 60px;
-          right: 10px;
-          z-index: 1;
+      display: none;
+      right: 0;
+      bottom: 40px;
+      z-index: 1;
 
-          @media (min-width: 420px) {
-            top: 120px;
-          }
-
-          @media (min-width: 992px) {
-            right: -10px;
-          }
-
-          @media (min-width: 1200px) {
-            right: 15px;
-          }
-        }
-
-        &:last-of-type {
-          bottom: 40px;
-          z-index: 1;
-
-          @media (min-width: 1200px) {
-            right: 65px;
-            bottom: 40px;
-          }
-        }
+      @media (min-width: 1200px) {
+        display: block;
+        max-width: 240px;
       }
     }
   }
