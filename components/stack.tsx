@@ -5,14 +5,14 @@ export const Stack = () => {
   let sectionStack: HTMLDivElement | null
 
   const handleWaypointEnter = () => {
-    sectionStack!.classList.add('is-visible')
+    sectionStack!.classList.add('fade-in-up')
   }
 
   return(
     <section className="pt-4">
       <div className="container pt-5 pb-5">
-        <Waypoint onEnter={handleWaypointEnter}>
-          <div ref={el => sectionStack = el}>
+        <Waypoint onEnter={handleWaypointEnter} topOffset="-90%">
+          <div ref={el => sectionStack = el} className="animated">
             <h1 className="h3 text--green text--center">Our Technology stack</h1>
 
             <div className="divider divider--center divider--gray divider--slim" />

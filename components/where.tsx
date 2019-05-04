@@ -5,14 +5,14 @@ export const Where = () => {
   let sectionWhere: HTMLDivElement | null
 
   const handleWaypointEnter = () => {
-    sectionWhere!.classList.add('is-visible')
+    sectionWhere!.classList.add('fade-in-up')
   }
 
   return(
     <section>
       <div className="container pt-5 pb-5 text--center">
-        <Waypoint onEnter={handleWaypointEnter}>
-          <div ref={el => sectionWhere = el}>
+        <Waypoint onEnter={handleWaypointEnter} topOffset="-90%">
+          <div ref={el => sectionWhere = el} className="animated">
             <h1 className="h3 text--green">Where We Are</h1>
 
             <div className="divider divider--center divider--gray divider--slim" />

@@ -10,13 +10,13 @@ export const Services = () => {
   const handleWaypointEnter = (section: string) => {
     switch (section) {
       case 'design':
-        sectionConcept!.classList.add('is-visible')
+        sectionConcept!.classList.add('fade-in-up')
         break
       case 'development':
-        sectionDevelopment!.classList.add('is-visible')
+        sectionDevelopment!.classList.add('fade-in-up')
         break
       case 'maintenance':
-        sectionMaintenance!.classList.add('is-visible')
+        sectionMaintenance!.classList.add('fade-in-up')
         break
 
     }
@@ -25,8 +25,8 @@ export const Services = () => {
   return(
     <section id="whatWeDo">
       <div className="container pt-5 pb-5">
-        <Waypoint onEnter={() => handleWaypointEnter('design')}>
-          <div className="services__row services__row--one row" ref={el => sectionConcept = el}>
+        <Waypoint onEnter={() => handleWaypointEnter('design')} topOffset="-40%">
+          <div className="services__row services__row--one row animated" ref={el => sectionConcept = el}>
             <div className="col-md-6 col-lg-5">
               <h2 className="h3 text--green">Concept &amp; Design</h2>
 
@@ -82,8 +82,8 @@ export const Services = () => {
           </div>
         </Waypoint>
 
-        <Waypoint onEnter={() => handleWaypointEnter('development')}>
-          <div className="services__row services__row--two row mt-5" ref={el => sectionDevelopment = el}>
+        <Waypoint onEnter={() => handleWaypointEnter('development')} topOffset="-40%">
+          <div className="services__row services__row--two row mt-5 animated" ref={el => sectionDevelopment = el}>
             <div className="col-md-4 services__screenshot-wrapper">
               <ImageZoom
                 image={{
@@ -155,8 +155,8 @@ export const Services = () => {
           </div>
         </Waypoint>
 
-        <Waypoint onEnter={() => handleWaypointEnter('maintenance')}>
-          <div className="services__row services__row--three row mt-5" ref={el => sectionMaintenance = el}>
+        <Waypoint onEnter={() => handleWaypointEnter('maintenance')} topOffset="-40%">
+          <div className="services__row services__row--three row mt-5 animated" ref={el => sectionMaintenance = el}>
             <div className="col-md-6 services__screenshot-wrapper">
               <ImageZoom
                 image={{

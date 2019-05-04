@@ -111,15 +111,15 @@ export class Contact extends React.Component {
   }
 
   handleWaypointEnter = () => {
-    this.sectionContact!.classList.add('is-visible')
+    this.sectionContact!.classList.add('fade-in-up')
   }
 
   render() {
     return(
       <section>
         <div className="container pt-5 pb-5">
-          <Waypoint onEnter={this.handleWaypointEnter}>
-            <div ref={el => this.sectionContact = el}>
+          <Waypoint onEnter={this.handleWaypointEnter} topOffset="-40%">
+            <div ref={el => this.sectionContact = el} className="animated">
               <h1 className="h3 text--green text--center">Let's connect</h1>
 
               <div className="divider divider--center divider--gray divider--slim" />
