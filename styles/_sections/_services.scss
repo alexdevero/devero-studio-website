@@ -192,9 +192,12 @@
   .services__screenshot {
     &:first-of-type {
       top: 110px;
-      left: 15px;
       z-index: 1;
       max-width: 230px;
+
+      @media (max-width: 767.99px) {
+        left: 15px;
+      }
 
       @media (min-width: 420px) {
         top: 70px;
@@ -202,7 +205,12 @@
       }
 
       @media (min-width: 768px) {
+        right: 5px;
         bottom: -30px;
+      }
+
+      @media (min-width: 992px) {
+        right: 0;
       }
 
       @media (min-width: 1200px) {
@@ -234,7 +242,7 @@
       }
 
       @media (min-width: 992px) {
-        left: 75px;
+        left: 95px;
       }
 
       @media (min-width: 1200px) {
@@ -245,9 +253,12 @@
 
     &:last-of-type {
       bottom: 30px;
-      left: 20px;
       z-index: 1;
       max-width: 250px;
+
+      @media (max-width: 991.99px) {
+        left: 20px;
+      }
 
       @media (min-width: 420px) {
         max-width: 320px;
@@ -257,12 +268,12 @@
         bottom: -30px;
       }
 
-      @media (min-width: 992px) {
-        left: 130px;
+      @media (min-width: 992px) and (max-width: 1199.99px) {
+        left: 30px;
       }
 
       @media (min-width: 1200px) {
-        left: 230px;
+        right: 240px;
       }
     }
   }

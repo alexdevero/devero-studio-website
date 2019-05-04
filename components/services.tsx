@@ -157,6 +157,20 @@ export const Services = () => {
 
         <Waypoint onEnter={() => handleWaypointEnter('maintenance')} topOffset="-40%">
           <div className="services__row services__row--three row mt-5 animated" ref={el => sectionMaintenance = el}>
+            <div className="col-md-6">
+              <h2 className="h3 text--green">Shipping &amp; Maintenance</h2>
+
+              <div className="divider divider--gray divider--slim" />
+
+              <p>When your website is ready we will deploy it, put put it online. In case of an app, we will help you put it in stores. After this, we can take care of it for you if you want, maintaining, fixing and improving it.</p>
+
+              <ul className="list--unstyled mt-3">
+                <li>&bull; Reviews &amp; Reports</li>
+                <li>&bull; Further Recommendations</li>
+                <li>&bull; Updates &amp; fixes</li>
+              </ul>
+            </div>
+
             <div className="col-md-6 services__screenshot-wrapper">
               <ImageZoom
                 image={{
@@ -193,20 +207,6 @@ export const Services = () => {
                   alt: ''
                 }}
               />
-            </div>
-
-            <div className="col-md-6">
-              <h2 className="h3 text--green">Shipping &amp; Maintenance</h2>
-
-              <div className="divider divider--gray divider--slim" />
-
-              <p>When your website is ready we will deploy it, put put it online. In case of an app, we will help you put it in stores. After this, we can take care of it for you if you want, maintaining, fixing and improving it.</p>
-
-              <ul className="list--unstyled mt-3">
-                <li>&bull; Reviews &amp; Reports</li>
-                <li>&bull; Further Recommendations</li>
-                <li>&bull; Updates &amp; fixes</li>
-              </ul>
             </div>
           </div>
         </Waypoint>
