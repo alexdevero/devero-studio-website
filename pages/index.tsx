@@ -3,6 +3,9 @@ import Head from 'next/head'
 import ReactGA from 'react-ga'
 // import Link from 'next/link'
 
+// Import utils
+import { initGA, logPageView } from '../utils/analytics'
+
 // Import components
 import { Contact } from './../components/contact'
 // import { Faq } from './../components/faq'
@@ -17,43 +20,53 @@ import { Where } from '../components/where'
 import './../styles/styles.scss'
 
 
-export default () => (
-  <div>
-    <Head>
-      <title>Devevero Studio</title>
+export default class extends React.Component {
+  componentDidMount() {
+    if (!window!.GA_INITIALIZED) {
+      initGA()
+      window.GA_INITIALIZED = true
+    }
 
-      <meta charSet="utf-8" />
+    logPageView()
+  }
 
-      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+  render() {
+    return(
+      <div>
+        <Head>
+          <title>Devevero Studio</title>
 
-      <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900" rel="stylesheet" />
+          <meta charSet="utf-8" />
 
-      <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700&amp;subset=latin-ext" rel="stylesheet" />
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossOrigin="anonymous" />
+          <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900" rel="stylesheet" />
 
-      {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
-      {ReactGA.initialize('UA-40173486-6')}
-    </Head>
+          <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700&amp;subset=latin-ext" rel="stylesheet" />
 
-    {/* <Link href='/about'>
-      <a>About</a>
-    </Link> */}
+          <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossOrigin="anonymous" />
+        </Head>
 
-    <Hero />
+        {/* <Link href='/about'>
+          <a>About</a>
+        </Link> */}
 
-    <Services />
+        <Hero />
 
-    <Stack />
+        <Services />
 
-    {/* <Partners /> */}
+        <Stack />
 
-    <Where />
+        {/* <Partners /> */}
 
-    {/* <Faq /> */}
+        <Where />
 
-    <Contact />
+        {/* <Faq /> */}
 
-    <Footer />
-  </div>
-)
+        <Contact />
+
+        <Footer />
+      </div>
+    )
+  }
+}
