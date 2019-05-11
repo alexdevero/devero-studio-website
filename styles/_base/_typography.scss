@@ -63,8 +63,8 @@ small {
 }
 
 .heading {
-  &__big,
-  &__medium {
+  &--big,
+  &--medium {
     font-size: remy(48px);
 
     @media (min-width: 48em) {
@@ -72,7 +72,7 @@ small {
     }
   }
 
-  &__big {
+  &--big {
     @media (min-width: 64em) {
       font-size: remy(88px);
     }
@@ -82,7 +82,7 @@ small {
     }
   }
 
-  &__medium {
+  &--medium {
     @media (min-width: 64em) {
       font-size: remy(78px);
     }
@@ -92,7 +92,7 @@ small {
     }
   }
 
-  &__small {
+  &--small {
     font-size: remy(23px);
     letter-spacing: remy(1px);
 
