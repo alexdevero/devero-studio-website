@@ -6,7 +6,7 @@ export const Hero = () => {
     <div className="hero">
       <div className="container">
         <div className="glitch-wrapper">
-          <h1 className="hero__title">
+          <h1 className="hero__title heading__big">
             <span className="glitch" data-text="DEVERO">DEVERO</span>
             <span className="glitch" data-text="STUDIO">STUDIO</span>
           </h1>
@@ -16,9 +16,7 @@ export const Hero = () => {
 
         <h3 className="hero__text">We design and build exceptional, high-quality websites and applications for startups, small businesses, solopreneurs and individuals.</h3>
 
-        <div className="divider divider--red divider--thick" />
-
-        <AnchorLink className="btn btn--red" href="#whatWeDo" offset={() => 100} data-text="WHAT WE DO" style={{ maxWidth: '240px', textDecoration: 'none' }}>What we do</AnchorLink>
+        <AnchorLink className="btn btn--red mt-4" href="#whatWeDo" offset={() => 100} data-text="WHAT WE DO" style={{ maxWidth: '240px', textDecoration: 'none' }}>What we do</AnchorLink>
       </div>
 
       <div className="video-wrapper">

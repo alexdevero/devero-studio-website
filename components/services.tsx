@@ -28,7 +28,7 @@ export const Services = () => {
         <Waypoint onEnter={() => handleWaypointEnter('design')} topOffset="-40%">
           <div className="services__row services__row--one row animated" ref={el => sectionConcept = el}>
             <div className="col-md-6 col-lg-5">
-              <h2 className="h3 text--green">Concept &amp; Design</h2>
+              <h2 className="h3 heading--small text--green">Concept &amp; Design</h2>
 
               <div className="divider divider--gray divider--slim" />
 
@@ -147,7 +147,7 @@ export const Services = () => {
             </div>
 
             <div className="col-md-6">
-              <h2 className="h3 text--green">Code &amp; Development</h2>
+              <h2 className="h3 heading--small text--green">Code &amp; Development</h2>
 
               <div className="divider divider--center divider--gray divider--slim" />
 
@@ -168,7 +168,7 @@ export const Services = () => {
         <Waypoint onEnter={() => handleWaypointEnter('maintenance')} topOffset="-40%">
           <div className="services__row services__row--three row mt-5 animated" ref={el => sectionMaintenance = el}>
             <div className="col-md-6">
-              <h2 className="h3 text--green">Shipping &amp; Maintenance</h2>
+              <h2 className="h3 heading--small text--green">Shipping &amp; Maintenance</h2>
 
               <div className="divider divider--gray divider--slim" />
 

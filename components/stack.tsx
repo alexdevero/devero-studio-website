@@ -13,7 +13,7 @@ export const Stack = () => {
       <div className="container pt-5 pb-5">
         <Waypoint onEnter={handleWaypointEnter} topOffset="-90%">
           <div ref={el => sectionStack = el} className="animated">
-            <h1 className="h3 text--green text--center">Our Technology stack</h1>
+            <h1 className="h3 heading--small text--green text--center">Our Technology stack</h1>
 
             <div className="divider divider--center divider--gray divider--slim" />
 

@@ -4,7 +4,7 @@ export const Partners = () => {
   return(
     <section>
       <div className="container pt-5 pb-5">
-        <h1 className="h2 text--center">Who We Work With</h1>
+        <h1 className="h3 heading--small text--center">Who We Work With</h1>
 
         <div className="divider divider--black divider--center"></div>
 

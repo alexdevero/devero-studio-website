@@ -13,7 +13,7 @@ export const Where = () => {
       <div className="container pt-5 pb-5 text--center">
         <Waypoint onEnter={handleWaypointEnter} topOffset="-90%">
           <div ref={el => sectionWhere = el} className="animated">
-            <h1 className="h3 text--green">Where We Are</h1>
+            <h1 className="h3 heading--small text--green">Where We Are</h1>
 
             <div className="divider divider--center divider--gray divider--slim" />
 
