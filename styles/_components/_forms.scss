@@ -28,7 +28,7 @@ textarea {
   transition: border-color var(--tr-part);
 
   &:focus {
-    border-color: var(--color-brand);
+    border-color: var(--color-gray-light);
     outline: 0;
   }
 }
