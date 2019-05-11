@@ -62,6 +62,50 @@ small {
   font-size: remy(15px);
 }
 
+.heading {
+  &__big,
+  &__medium {
+    font-size: remy(48px);
+
+    @media (min-width: 48em) {
+      font-size: remy(76px);
+    }
+  }
+
+  &__big {
+    @media (min-width: 64em) {
+      font-size: remy(88px);
+    }
+
+    @media (min-width: 120em) {
+      font-size: remy(128px);
+    }
+  }
+
+  &__medium {
+    @media (min-width: 64em) {
+      font-size: remy(78px);
+    }
+
+    @media (min-width: 120em) {
+      font-size: remy(96px);
+    }
+  }
+
+  &__small {
+    font-size: remy(23px);
+    letter-spacing: remy(1px);
+
+    @media (min-width: 48em) {
+      font-size: remy(36px);
+    }
+
+    @media (min-width: 64em) {
+      font-size: remy(48px);
+    }
+  }
+}
+
 .text--center {
   text-align: center !important;
 }
