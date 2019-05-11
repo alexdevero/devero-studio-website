@@ -8,7 +8,7 @@ body {
 	font-size: 1rem;
 	font-family: var(--font-text);
 	line-height: 1.782;
-  letter-spacing: .5px;
+  letter-spacing: remy(.5px);
 }
 
 h1,
@@ -30,36 +30,36 @@ small {
 .h4,
 .h5,
 .h6 {
-  margin: 16px 0;
+  margin: remy(16px) 0;
   font-family: var(--font-heading);
   font-weight: 700;
   line-height: 1.15;
-  letter-spacing: .85px;
+  letter-spacing: remy(.85px);
 }
 
 .h1 {
   margin-top: 0;
-  font-size: 45px;
+  font-size: remy(45px);
 }
 
 .h2 {
-  font-size: 34px;
+  font-size: remy(34px);
 }
 
 .h3 {
-  font-size: 26px;
+  font-size: remy(26px);
 }
 
 .h4 {
-  font-size: 21px;
+  font-size: remy(21px);
 }
 
 .h5 {
-  font-size: 18px;
+  font-size: remy(18px);
 }
 
 .h6 {
-  font-size: 15px;
+  font-size: remy(15px);
 }
 
 .text--center {
@@ -75,14 +75,14 @@ small {
 }
 
 .text--regular {
-	margin-bottom: 20px;
-	font-size: 16px;
+	margin-bottom: remy(20px);
+	font-size: remy(16px);
 }
 
 .text--small {
-	font-size: 14px;
+	font-size: remy(14px);
 }
 
 .text--smaller {
-	font-size: 12px;
+	font-size: remy(12px);
 }
