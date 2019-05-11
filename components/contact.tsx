@@ -129,26 +129,26 @@ export class Contact extends React.Component {
                   <form action="">
                     <div className="row">
                       <div className="col-sm-6">
-                        <fieldset>
-                          <label htmlFor="formName">Full name</label>
-
+                        <fieldset className="input--absolute">
                           <input onChange={this.handleInputChange} id="formName" name="formName" type="text" required={true} ref={(inputName) => this.inputName = inputName} />
+
+                          <label htmlFor="formName">Full name *</label>
                         </fieldset>
                       </div>
 
                       <div className="col-sm-6 mt-3 mt-sm-0">
-                        <fieldset>
-                          <label htmlFor="formEmail">Email</label>
-
+                        <fieldset className="input--absolute">
                           <input onChange={this.handleInputChange} id="formEmail" name="formEmail" type="email" required={true} ref={(inputEmail) => this.inputEmail = inputEmail} />
+
+                          <label htmlFor="formEmail">Email *</label>
                         </fieldset>
                       </div>
                     </div>
 
-                    <fieldset className="mt-3 mb-3">
-                      <label htmlFor="formMessage">Message</label>
-
+                    <fieldset className="input--absolute mt-3 mb-3">
                       <textarea onChange={this.handleInputChange} id="formMessage" name="formMessage" required={true} ref={(inputMessage) => this.inputMessage = inputMessage} />
+
+                      <label htmlFor="formMessage">Message *</label>
                     </fieldset>
 
                     <fieldset className="mb-4">
