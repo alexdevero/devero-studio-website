@@ -13,9 +13,9 @@ export const Where = () => {
       <div className="container pt-5 pb-5 text--center">
         <Waypoint onEnter={handleWaypointEnter} topOffset="-90%">
           <div ref={el => sectionWhere = el} className="animated">
-            <h1 className="h3 heading--small text--green">Where We Are</h1>
+            <h1 className="h3 heading--small">Where We Are</h1>
 
-            <div className="divider divider--center divider--gray divider--slim" />
+            <div className="divider divider--center divider--red divider--slim" />
 
             <div className="row">
               <div className="col-sm-6 col-lg-3">
@@ -24,6 +24,8 @@ export const Where = () => {
                 <h2 className="h4">San Francisco</h2>
 
                 <h3 className="h6 text--gray-light">USA</h3>
+
+                <h4 className="h6 text--small text--gray-light text--lower">(coming soon)</h4>
               </div>
 
               <div className="col-sm-6 col-lg-3">
@@ -40,6 +42,8 @@ export const Where = () => {
                 <h2 className="h4">London</h2>
 
                 <h3 className="h6 text--gray-light">United Kingdom</h3>
+
+                <h4 className="h6 text--small text--gray-light text--lower">(coming soon)</h4>
               </div>
 
               <div className="col-sm-6 col-lg-3">
@@ -48,6 +52,8 @@ export const Where = () => {
                 <h2 className="h4">Shanghai</h2>
 
                 <h3 className="h6 text--gray-light">China</h3>
+
+                <h4 className="h6 text--small text--gray-light text--lower">(coming soon)</h4>
               </div>
             </div>
           </div>
