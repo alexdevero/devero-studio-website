@@ -13,11 +13,11 @@ export const Stack = () => {
       <div className="container pt-5 pb-5">
         <Waypoint onEnter={handleWaypointEnter} topOffset="-90%">
           <div ref={el => sectionStack = el} className="animated">
-            <h1 className="h3 heading--small text--green text--center">Our Technology stack</h1>
+            <h1 className="h3 heading--small text--center">Our Technology stack</h1>
 
-            <div className="divider divider--center divider--gray divider--slim" />
+            <div className="divider divider--center divider--red divider--slim" />
 
-            <div className="row">
+            <div className="row justify-content-center">
               <div className="col-sm-6 col-md-3 mt-5">
                 <div className="tooltip__container">
                   <span className="tooltip__image fab fa-html5" />
@@ -48,6 +48,15 @@ export const Stack = () => {
 
               <div className="col-sm-6 col-md-3 mt-5">
                 <div className="tooltip__container">
+                  <span className="tooltip__image icon--typescript">
+                    <img src={require('./../static/images/logo-typescript.svg')} alt="TypeScript logo"/>
+                  </span>
+                  <span className="tooltip__text">TypeScript</span>
+                </div>
+              </div>
+
+              <div className="col-sm-6 col-md-3 mt-5">
+                <div className="tooltip__container">
                   <span className="tooltip__image fab fa-react" />
                   <span className="tooltip__text">React.js</span>
                 </div>
@@ -57,6 +66,13 @@ export const Stack = () => {
                 <div className="tooltip__container">
                   <span className="tooltip__image fab fa-node" />
                   <span className="tooltip__text">Node.js</span>
+                </div>
+              </div>
+
+              <div className="col-sm-6 col-md-3 mt-5">
+                <div className="tooltip__container">
+                  <span className="tooltip__image fab fa-react" />
+                  <span className="tooltip__text">React Native</span>
                 </div>
               </div>
 
@@ -74,26 +90,26 @@ export const Stack = () => {
                 </div>
               </div>
 
-              <div className="col-sm-6 col-md-3 mt-5">
+              {/* <div className="col-sm-6 col-md-3 mt-5">
                 <div className="tooltip__container">
                   <span className="tooltip__image" />
                   <span className="tooltip__text">Brain.js</span>
                 </div>
-              </div>
+              </div> */}
 
-              <div className="col-sm-6 col-md-3 mt-5">
+              {/* <div className="col-sm-6 col-md-3 mt-5">
                 <div className="tooltip__container">
                   <span className="tooltip__image" />
                   <span className="tooltip__text">Tensorflow</span>
                 </div>
-              </div>
+              </div> */}
 
-              <div className="col-sm-6 col-md-3 mt-5">
+              {/* <div className="col-sm-6 col-md-3 mt-5">
                 <div className="tooltip__container">
                   <span className="tooltip__image" />
                   <span className="tooltip__text">Keras</span>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </Waypoint>
