@@ -31,10 +31,11 @@ small {
 .h5,
 .h6 {
   margin: remy(16px) 0;
-  font-family: var(--font-heading);
+  font-family: var(--font-roboto-cond);
   font-weight: 700;
   line-height: 1.15;
   letter-spacing: remy(.85px);
+  text-transform: uppercase;
 }
 
 .h1 {
