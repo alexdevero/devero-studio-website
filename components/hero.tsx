@@ -5,27 +5,18 @@ export const Hero = () => {
   return(
     <div className="hero">
       <div className="container">
-        <div className="glitch-wrapper">
+        {/* <div className="glitch-wrapper">
           <h1 className="hero__title heading__big">
             <span className="glitch" data-text="DEVERO">DEVERO</span>
             <span className="glitch" data-text="STUDIO">STUDIO</span>
           </h1>
-        </div>
+        </div> */}
 
-        <h2 className="hero__subtitle">Helping you thrive in the digital world.</h2>
+        <h2 className="hero__title">Delivering digital perfection</h2>
 
-        <h3 className="hero__text">We design and build exceptional, high-quality websites and applications for startups, small businesses, solopreneurs and individuals.</h3>
+        <h3 className="hero__text">We build top-class websites and mobile apps for those who want the best.</h3>
 
-        <AnchorLink className="btn btn--red mt-4" href="#whatWeDo" offset={() => 100} data-text="WHAT WE DO" style={{ maxWidth: '240px', textDecoration: 'none' }}>What we do</AnchorLink>
-      </div>
-
-      <div className="video-wrapper">
-        <div className="video-overlay"></div>
-
-        <video autoPlay={true} loop={true} muted={true} poster="/static/images/working-space.jpg">
-          <source src="/static/videos/working-space.webm" />
-          <source src="/static/videos/working-space.mp4" />
-        </video>
+        <AnchorLink className="btn btn--red" href="#whatWeDo" offset={() => 100} data-text="&darr; LEARN MORE" style={{ maxWidth: '240px', textDecoration: 'none' }}>&darr; LEARN MORE</AnchorLink>
       </div>
     </div>
   )
