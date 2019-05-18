@@ -14,7 +14,7 @@ export const Works = () => {
   }
 
   return(
-    <section>
+    <section id="learnMore" className="pb-5">
       <div className="container pt-5 pb-5">
         <div className="services__row services__row--one row">
           <Waypoint onEnter={() => handleWaypointEnter('recentWorks')} topOffset="-40%">

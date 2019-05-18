@@ -26,7 +26,7 @@ export const Hero = () => {
 
         <h3 className="hero__text">We build top-class websites and apps for those who want the best.</h3>
 
-        <AnchorLink className="hero__link" href="#whatWeDo" offset={() => 100}>&darr; Learn more</AnchorLink>
+        <AnchorLink className="hero__link" href="#learnMore" offset={() => 100}>&darr; Learn more</AnchorLink>
       </div>
     </div>
   )
