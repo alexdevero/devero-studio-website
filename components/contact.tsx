@@ -120,9 +120,9 @@ export class Contact extends React.Component {
         <div className="container pt-5 pb-5">
           <Waypoint onEnter={this.handleWaypointEnter} topOffset="-40%">
             <div ref={el => this.sectionContact = el} className="animated">
-              <h1 className="h3 heading--small text--green text--center">Let's connect</h1>
+              <h1 className="h3 heading--small text--center">Get in touch</h1>
 
-              <div className="divider divider--center divider--gray divider--slim" />
+              <div className="divider divider--center divider--red divider--slim" />
 
               <div className="row justify-content-center">
                 <div className="col-md-11 col-md-9 col-lg-7">
@@ -171,7 +171,7 @@ export class Contact extends React.Component {
                       </fieldset>
                     )}
 
-                    <button onClick={this.handleFormSubmit} className="btn btn--full-width btn--red" data-text="Send inquiry">Send inquiry</button>
+                    <button onClick={this.handleFormSubmit} className="btn btn--full-width btn--red" data-text="Send message">Send message</button>
                   </form>
                 </div>
               </div>
