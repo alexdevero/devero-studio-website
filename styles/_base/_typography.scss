@@ -107,6 +107,20 @@ small {
   }
 }
 
+.link--unstyled {
+  text-decoration: none;
+}
+
+.link--white-red {
+  color: var(--color-white);
+  transition: color var(--tr-part);
+
+  &:hover {
+    color: var(--color-brand);
+    cursor: pointer;
+  }
+}
+
 .text--center {
   text-align: center !important;
 }
@@ -130,4 +144,8 @@ small {
 
 .text--smaller {
 	font-size: remy(12px);
+}
+
+.text--lower {
+  text-transform: lowercase !important;
 }
