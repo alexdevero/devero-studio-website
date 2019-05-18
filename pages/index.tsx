@@ -1,6 +1,5 @@
 import * as React from 'react'
 import Head from 'next/head'
-import ReactGA from 'react-ga'
 // import Link from 'next/link'
 
 // Import utils
@@ -15,6 +14,7 @@ import { Hero } from './../components/hero'
 import { Services } from './../components/services'
 import { Stack } from './../components/stack'
 import { Where } from '../components/where'
+import { Works } from '../components/works'
 
 // Import styles
 import './../styles/styles.scss'
@@ -56,6 +56,8 @@ export default class extends React.Component {
         </Link> */}
 
         <Hero />
+
+        <Works />
 
         <Services />
 
