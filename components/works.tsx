@@ -5,6 +5,8 @@ import { Waypoint } from 'react-waypoint'
 export const Works = () => {
   let sectionRecentWorks: HTMLDivElement | null
 
+  const [activeTab, handleChangeActiveTab] = React.useState('one')
+
   const handleWaypointEnter = (section: string) => {
     switch (section) {
       case 'recentWorks':
@@ -24,14 +26,15 @@ export const Works = () => {
               <div className="divider divider--red divider--slim" />
 
               <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li onClick={() => handleChangeActiveTab('one')}></li>
+                <li onClick={() => handleChangeActiveTab('two')}></li>
+                <li onClick={() => handleChangeActiveTab('three')}></li>
+                <li onClick={() => handleChangeActiveTab('four')}></li>
+                <li onClick={() => handleChangeActiveTab('five')}></li>
+                <li onClick={() => handleChangeActiveTab('six')}></li>
               </ul>
             </div>
+
           </Waypoint>
 
           {/* <div className="col-md-6 services__screenshot-wrapper">
