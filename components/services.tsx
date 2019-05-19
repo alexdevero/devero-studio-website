@@ -66,11 +66,11 @@ export const Services = () => {
               <p>Pushing the limits and boundaries of digital development, whilst producing functional unforgettable experiences that work for our partners and their users.</p>
 
               <ul className="list--unstyled mt-3">
-                <li>&bull; iOS &amp; Android (React Native)</li>
                 <li>&bull; Frontend (React)</li>
                 <li>&bull; Backend (Node.js)</li>
-                <li>&bull; Machine Learning</li>
+                <li>&bull; iOS &amp; Android (React Native)</li>
                 <li>&bull; AR/VR/MR</li>
+                <li>&bull; Machine Learning</li>
                 {/* <li>&bull; QA Testing</li> */}
               </ul>
             </div>
