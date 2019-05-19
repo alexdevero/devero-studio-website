@@ -1,6 +1,10 @@
+import * as React from 'react'
 import Link from 'next/link'
 
 export default () => {
+  const [projectType, handleProjectTypeChange] = React.useState('all')
+  const [publishingYear, handlePublishingYearChange] = React.useState('2019')
+
   return(<div>
     Portfolio <Link href='/'>
       <a>back home</a>
