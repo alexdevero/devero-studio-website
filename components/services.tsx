@@ -86,7 +86,7 @@ export const Services = () => {
 
               <div className="divider divider--red divider--slim" />
 
-              <p>Helping you take your existing website or app to the next level without the need to start again from scratch, providing you with feedback, guidance and advice.</p>
+              <p>Helping you find ways to improve your existing website or app without the need to start again from scratch, providing you with feedback, guidance and advice.</p>
 
               <ul className="list--unstyled mt-3">
                 <li>&bull; Web design</li>
