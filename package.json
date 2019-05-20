@@ -2,10 +2,10 @@
   "name": "devero-studio",
   "version": "1.0.0",
   "scripts": {
-    "dev": "next",
-    "export": "next export",
     "build": "next build",
-    "start": "next start",
+    "export": "next export",
+    "run": "next start",
+    "start": "next",
     "ship": "npm run build && npm run export"
   },
   "dependencies": {
