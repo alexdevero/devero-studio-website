@@ -5,6 +5,7 @@ export const Services = () => {
   let sectionServices: HTMLDivElement | null
   let sectionDesign: HTMLDivElement | null
   let sectionEngineering: HTMLDivElement | null
+  let sectionConsulting: HTMLDivElement | null
   let sectionMaintenance: HTMLDivElement | null
 
   const handleWaypointEnter = (section: string) => {
@@ -17,6 +18,9 @@ export const Services = () => {
         break
       case 'engineering':
         sectionEngineering!.classList.add('fade-in-up')
+        break
+      case 'consulting':
+        sectionConsulting!.classList.add('fade-in-up')
         break
       case 'maintenance':
         sectionMaintenance!.classList.add('fade-in-up')
@@ -76,6 +80,22 @@ export const Services = () => {
             </div>
           </Waypoint>
 
+          <Waypoint onEnter={() => handleWaypointEnter('consulting')} topOffset="-40%">
+            <div className="col-md-6 services__col-text mt-5 animated" ref={el => sectionConsulting = el}>
+              <h2 className="h3 heading--small">Consulting</h2>
+
+              <div className="divider divider--red divider--slim" />
+
+              <p>Helping you take your existing website or app to the next level without the need to start again from scratch, providing you with feedback, guidance and advice.</p>
+
+              <ul className="list--unstyled mt-3">
+                <li>&bull; Web design</li>
+                <li>&bull; App design</li>
+                <li>&bull; Digital strategy</li>
+                <li>&bull; Code reviews</li>
+              </ul>
+            </div>
+          </Waypoint>
 
           <Waypoint onEnter={() => handleWaypointEnter('maintenance')} topOffset="-40%">
             <div className="col-md-6 services__col-text mt-5 animated" ref={el => sectionMaintenance = el}>
