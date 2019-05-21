@@ -1,6 +1,7 @@
 import * as React from 'react'
 import Link from 'next/link'
 import { Waypoint } from 'react-waypoint'
+import ImageZoom from 'react-medium-image-zoom'
 
 export const Works = () => {
   let sectionRecentWorks: HTMLDivElement | null
@@ -18,17 +19,77 @@ export const Works = () => {
   function generateCaseStudyThumbnail() {
     switch (activeTab) {
       case 'one':
-        return <img className="works__thumbnail thumbnail" src={require('./../static/images/showcase-thumbnails/thumbnail-tesla-web-design-concept.jpg')} alt="Tesla web design concept.jpg" />
+        return <ImageZoom
+            image={{
+              src: require('./../static/images/showcase-thumbnails/thumbnail-tesla-web-design-concept.jpg'),
+              alt: 'Tesla web design concept',
+              className: 'works__thumbnail thumbnail'
+            }}
+            zoomImage={{
+              src: require('./../static/images/showcase-thumbnails/thumbnail-tesla-web-design-concept.jpg'),
+              alt: 'Tesla web design concept'
+            }}
+          />
       case 'two':
-        return <img className="works__thumbnail thumbnail" src={require('./../static/images/showcase-thumbnails/thumbnail-harley-davidson.jpg')} alt="Harley-Davidson web design concept.jpg" />
+        return <ImageZoom
+        image={{
+          src: require('./../static/images/showcase-thumbnails/thumbnail-harley-davidson.jpg'),
+          alt: 'Harley-Davidson web design concept',
+          className: 'works__thumbnail thumbnail'
+        }}
+        zoomImage={{
+          src: require('./../static/images/showcase-thumbnails/thumbnail-harley-davidson.jpg'),
+          alt: 'Harley-Davidson web design concept'
+        }}
+      />
       case 'three':
-        return <img className="works__thumbnail thumbnail" src={require('./../static/images/showcase-thumbnails/thumbnail-ceska-whisky.jpg')} alt="Ceska Whisky web design concept.jpg" />
-      case 'four':
-        return <img className="works__thumbnail thumbnail" src={require('./../static/images/showcase-thumbnails/thumbnail-tesla-web-design-concept.jpg')} alt="Tesla web design concept.jpg" />
-      case 'five':
-        return <img className="works__thumbnail thumbnail" src={require('./../static/images/showcase-thumbnails/thumbnail-tesla-web-design-concept.jpg')} alt="Tesla web design concept.jpg" />
-      case 'six':
-        return <img className="works__thumbnail thumbnail" src={require('./../static/images/showcase-thumbnails/thumbnail-tesla-web-design-concept.jpg')} alt="Tesla web design concept.jpg" />
+        return <ImageZoom
+        image={{
+          src: require('./../static/images/showcase-thumbnails/thumbnail-ceska-whisky.jpg'),
+          alt: 'Ceska Whisky web design concept',
+          className: 'works__thumbnail thumbnail'
+        }}
+        zoomImage={{
+          src: require('./../static/images/showcase-thumbnails/thumbnail-ceska-whisky.jpg'),
+          alt: 'Ceska Whisky web design concept'
+        }}
+      />
+      // case 'four':
+      //   return <ImageZoom
+      //   image={{
+      //     src: require(''),
+      //     alt: '',
+      //     className: 'works__thumbnail thumbnail'
+      //   }}
+      //   zoomImage={{
+      //     src: require(''),
+      //     alt: ''
+      //   }}
+      // />
+      // case 'five':
+      //   return <ImageZoom
+      //   image={{
+      //     src: require(''),
+      //     alt: '',
+      //     className: 'works__thumbnail thumbnail'
+      //   }}
+      //   zoomImage={{
+      //     src: require(''),
+      //     alt: ''
+      //   }}
+      // />
+      // case 'six':
+      //   return <ImageZoom
+      //   image={{
+      //     src: require(''),
+      //     alt: '',
+      //     className: 'works__thumbnail thumbnail'
+      //   }}
+      //   zoomImage={{
+      //     src: require(''),
+      //     alt: ''
+      //   }}
+      // />
     }
   }
 
