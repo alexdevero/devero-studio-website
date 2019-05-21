@@ -49,7 +49,7 @@ export const Stack = () => {
               <div className="col-sm-6 col-md-3 mt-5">
                 <div className="tooltip__container">
                   <span className="tooltip__image icon--typescript">
-                    <img src={require('./../static/images/logo-typescript.svg')} alt="TypeScript logo"/>
+                    <img src={require('./../static/images/logos/logo-typescript.svg')} alt="TypeScript logo"/>
                   </span>
                   <span className="tooltip__text">TypeScript</span>
                 </div>
@@ -73,6 +73,31 @@ export const Stack = () => {
                 <div className="tooltip__container">
                   <span className="tooltip__image fab fa-react" />
                   <span className="tooltip__text">React Native</span>
+                </div>
+              </div>
+
+              <div className="col-sm-6 col-md-3 mt-5">
+                <div className="tooltip__container">
+                  <span className="tooltip__image icon--next-js">
+                    <img src={require('./../static/images/logos/logo-next-js.svg')} alt="Next.js logo"/>
+                  </span>
+                  <span className="tooltip__text">Next.js</span>
+                </div>
+              </div>
+
+              <div className="col-sm-6 col-md-3 mt-5">
+                <div className="tooltip__container">
+                  <span className="tooltip__image icon--gatsbyjs">
+                    <img src={require('./../static/images/logos/logo-gatsbyjs.svg')} alt="Gatsbyjs logo"/>
+                  </span>
+                  <span className="tooltip__text">Gatsbyjs</span>
+                </div>
+              </div>
+
+              <div className="col-sm-6 col-md-3 mt-5">
+                <div className="tooltip__container">
+                  <span className="tooltip__image fab fa-wordpress" />
+                  <span className="tooltip__text">WordPress</span>
                 </div>
               </div>
 
