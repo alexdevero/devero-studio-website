@@ -51,10 +51,13 @@ export const Services = () => {
               <p>Balancing creativity and imagination with functionality to deliver unforgettable digital experiences that enhances the vision you have for your project and your brand.</p>
 
               <ul className="list--unstyled mt-3">
+                <li>&bull; Web design</li>
+                <li>&bull; App design</li>
                 <li>&bull; Identity Design</li>
                 <li>&bull; Interaction Design</li>
                 <li>&bull; User Experience Design</li>
                 <li>&bull; Visual Design</li>
+                <li>&bull; Re-design</li>
               </ul>
             </div>
           </Waypoint>
@@ -72,6 +75,8 @@ export const Services = () => {
               <ul className="list--unstyled mt-3">
                 <li>&bull; Frontend (React)</li>
                 <li>&bull; Backend (Node.js)</li>
+                <li>&bull; Web development</li>
+                <li>&bull; App development</li>
                 <li>&bull; iOS &amp; Android (React Native)</li>
                 <li>&bull; AR/VR/MR</li>
                 <li>&bull; Machine Learning</li>
@@ -90,7 +95,10 @@ export const Services = () => {
 
               <ul className="list--unstyled mt-3">
                 <li>&bull; Web design</li>
+                <li>&bull; Web development</li>
                 <li>&bull; App design</li>
+                <li>&bull; App development</li>
+                <li>&bull; Re-design</li>
                 <li>&bull; Digital strategy</li>
                 <li>&bull; Code reviews</li>
               </ul>
