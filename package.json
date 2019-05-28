@@ -9,9 +9,9 @@
     "ship": "npm run build && npm run export"
   },
   "dependencies": {
-    "jquery": "^3.4.0",
+    "jquery": "^3.4.1",
     "next": "8.1.0",
-    "node-sass": "4.11.0",
+    "node-sass": "4.12.0",
     "react": "16.8.6",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "16.8.6",
@@ -29,7 +29,7 @@
     "@types/jquery": "^3.3.29",
     "@types/next": "8.0.5",
     "@types/node-sass": "4.11.0",
-    "@types/react": "16.8.6",
+    "@types/react": "16.8.18",
     "@types/react-dom": "16.8.4",
     "@types/react-google-recaptcha": "^1.0.0",
     "@types/react-medium-image-zoom": "^3.0.0",
@@ -37,9 +37,9 @@
     "@zeit/next-sass": "1.0.1",
     "@zeit/next-typescript": "1.1.1",
     "imagemin-mozjpeg": "^8.0.0",
-    "imagemin-optipng": "^6.0.0",
+    "imagemin-optipng": "^7.0.0",
     "imagemin-svgo": "^7.0.0",
-    "next-optimized-images": "^2.5.0",
+    "next-optimized-images": "^2.5.1",
     "webp-loader": "^0.4.0"
   }
 }
