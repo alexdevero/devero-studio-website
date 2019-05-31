@@ -111,6 +111,16 @@ small {
   text-decoration: none;
 }
 
+.link--black-red {
+  color: var(--color-black);
+  transition: color var(--tr-part);
+
+  &:hover {
+    color: var(--color-brand);
+    cursor: pointer;
+  }
+}
+
 .link--white-red {
   color: var(--color-white);
   transition: color var(--tr-part);
