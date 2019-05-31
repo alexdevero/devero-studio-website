@@ -11,6 +11,7 @@ import { Contact } from './../components/contact'
 import { Footer } from './../components/footer'
 import { Hero } from './../components/hero'
 // import { Partners } from './../components/partners'
+import { Pitch } from './../components/pitch'
 import { Services } from './../components/services'
 import { Stack } from './../components/stack'
 import { Where } from '../components/where'
@@ -56,6 +57,8 @@ export default class extends React.Component {
         </Link> */}
 
         <Hero />
+
+        <Pitch />
 
         <Works />
 
