@@ -21,51 +21,51 @@ export const Works = () => {
       case 'one':
         return <ImageZoom
             image={{
-              src: require('./../static/images/showcase-thumbnails/thumbnail-tesla-web-design-concept.jpg'),
+              src: require('./../static/images/showcase-thumbnails/thumbnail-tesla-landing-page.png'),
               alt: 'Tesla web design concept',
               className: 'works__thumbnail thumbnail'
             }}
             zoomImage={{
-              src: require('./../static/images/showcase-thumbnails/thumbnail-tesla-web-design-concept.jpg'),
+              src: require('./../static/images/showcase-thumbnails/thumbnail-tesla-landing-page@2x.png'),
               alt: 'Tesla web design concept'
             }}
           />
       case 'two':
         return <ImageZoom
         image={{
-          src: require('./../static/images/showcase-thumbnails/thumbnail-harley-davidson.jpg'),
+          src: require('./../static/images/showcase-thumbnails/thumbnail-harley-davidson-landing-page.png'),
           alt: 'Harley-Davidson web design concept',
           className: 'works__thumbnail thumbnail'
         }}
         zoomImage={{
-          src: require('./../static/images/showcase-thumbnails/thumbnail-harley-davidson.jpg'),
+          src: require('./../static/images/showcase-thumbnails/thumbnail-harley-davidson-landing-page@2x.png'),
           alt: 'Harley-Davidson web design concept'
         }}
       />
       case 'three':
         return <ImageZoom
         image={{
-          src: require('./../static/images/showcase-thumbnails/thumbnail-ceska-whisky.jpg'),
+          src: require('./../static/images/showcase-thumbnails/thumbnail-ceska-whisky-landing-page.png'),
           alt: 'Ceska Whisky web design concept',
           className: 'works__thumbnail thumbnail'
         }}
         zoomImage={{
-          src: require('./../static/images/showcase-thumbnails/thumbnail-ceska-whisky.jpg'),
+          src: require('./../static/images/showcase-thumbnails/thumbnail-ceska-whisky-landing-page@2x.png'),
           alt: 'Ceska Whisky web design concept'
         }}
       />
-      // case 'four':
-      //   return <ImageZoom
-      //   image={{
-      //     src: require(''),
-      //     alt: '',
-      //     className: 'works__thumbnail thumbnail'
-      //   }}
-      //   zoomImage={{
-      //     src: require(''),
-      //     alt: ''
-      //   }}
-      // />
+      case 'four':
+        return <ImageZoom
+        image={{
+          src: require('./../static/images/showcase-thumbnails/thumbnail-sumava-landing-page.png'),
+          alt: '',
+          className: 'works__thumbnail thumbnail'
+        }}
+        zoomImage={{
+          src: require('./../static/images/showcase-thumbnails/thumbnail-sumava-landing-page@2x.png'),
+          alt: ''
+        }}
+      />
       // case 'five':
       //   return <ImageZoom
       //   image={{
@@ -122,31 +122,35 @@ export const Works = () => {
 
               <ul className="list--unstyled">
                 <li className="mb-2">
-                  <span className="link--white-red" onClick={() => handleChangeActiveTab('one')}><small className="text--small">#01</small> <strong>Tesla</strong></span>
+                  <span className="link--black-red" onClick={() => handleChangeActiveTab('one')}><small className="text--small">No.00:</small> <strong>Tesla</strong></span>
                 </li>
 
                 <li className="mb-2">
-                  <span className="link--white-red" onClick={() => handleChangeActiveTab('two')}><small className="text--small">#02</small> <strong>Harley-Davidson</strong></span>
+                  <span className="link--black-red" onClick={() => handleChangeActiveTab('two')}><small className="text--small">No.01:</small> <strong>Harley-Davidson</strong></span>
                 </li>
 
                 <li className="mb-2">
-                  <span className="link--white-red" onClick={() => handleChangeActiveTab('three')}><small className="text--small">#03</small> <strong>Ceska Whisky</strong></span>
+                  <span className="link--black-red" onClick={() => handleChangeActiveTab('three')}><small className="text--small">No.02:</small> <strong>Ceska Whisky</strong></span>
+                </li>
+
+                <li className="mb-2">
+                  <span className="link--black-red" onClick={() => handleChangeActiveTab('four')}><small className="text--small">No.03:</small> <strong>Sumava</strong></span>
                 </li>
 
                 {/* <li className="mb-2">
-                  <span className="link--white-red" onClick={() => handleChangeActiveTab('four')}><small className="text--small">#04</small> <strong>Foo</strong></span>
+                  <span className="link--black-red" onClick={() => handleChangeActiveTab('four')}><small className="text--small">No.03:</small> <strong>Foo</strong></span>
                 </li> */}
 
                 {/* <li className="mb-2">
-                  <span className="link--white-red" onClick={() => handleChangeActiveTab('five')}><small className="text--small">#05</small> <strong>Foo</strong></span>
+                  <span className="link--black-red" onClick={() => handleChangeActiveTab('five')}><small className="text--small">No.04:</small> <strong>Foo</strong></span>
                 </li> */}
 
                 {/* <li className="mb-2">
-                  <span className="link--white-red" onClick={() => handleChangeActiveTab('six')}><small className="text--small">#06</small> <strong>Foo</strong></span>
+                  <span className="link--black-red" onClick={() => handleChangeActiveTab('six')}><small className="text--small">No.05:</small> <strong>Foo</strong></span>
                 </li> */}
 
                 <li className="d-none">
-                  <Link href="portfolio"><a className="link--unstyled link--white-red"><strong>Show full portfolio &rarr;</strong></a></Link>
+                  <Link href="portfolio"><a className="link--unstyled link--black-red"><strong>Show full portfolio &rarr;</strong></a></Link>
                 </li>
               </ul>
             </div>
