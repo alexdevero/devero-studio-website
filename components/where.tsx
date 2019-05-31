@@ -9,7 +9,7 @@ export const Where = () => {
   }
 
   return(
-    <section>
+    <section className="section-where">
       <div className="container pt-5 pb-5 text--center">
         <Waypoint onEnter={handleWaypointEnter} topOffset="-90%">
           <div ref={el => sectionWhere = el} className="animated">
