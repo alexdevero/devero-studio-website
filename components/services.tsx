@@ -6,7 +6,7 @@ export const Services = () => {
   let sectionDesign: HTMLDivElement | null
   let sectionEngineering: HTMLDivElement | null
   let sectionConsulting: HTMLDivElement | null
-  let sectionMaintenance: HTMLDivElement | null
+  let sectionOptimization: HTMLDivElement | null
 
   const handleWaypointEnter = (section: string) => {
     switch (section) {
@@ -22,8 +22,8 @@ export const Services = () => {
       case 'consulting':
         sectionConsulting!.classList.add('fade-in-up')
         break
-      case 'maintenance':
-        sectionMaintenance!.classList.add('fade-in-up')
+      case 'optimization':
+        sectionOptimization!.classList.add('fade-in-up')
         break
     }
   }
@@ -105,9 +105,9 @@ export const Services = () => {
             </div>
           </Waypoint>
 
-          <Waypoint onEnter={() => handleWaypointEnter('maintenance')} topOffset="-40%">
-            <div className="col-md-6 services__col-text mt-5 animated" ref={el => sectionMaintenance = el}>
-              <h2 className="h3 heading--small">Maintenance</h2>
+          <Waypoint onEnter={() => handleWaypointEnter('optimization')} topOffset="-40%">
+            <div className="col-md-6 services__col-text mt-5 animated" ref={el => sectionOptimization = el}>
+              <h2 className="h3 heading--small">Optimization</h2>
 
               <div className="divider divider--red divider--slim" />
 
