@@ -13,7 +13,7 @@ export const Pitch = () => {
         <div className="col-sm-6 col-md-3">
           <h3 className="pitch__number h4">1</h3>
 
-          <h2 className="pitch__text h6 text--gray-light">Person</h2>
+          <h2 className="pitch__text h6 text--gray-light">Award</h2>
         </div>
 
         <div className="col-sm-6 col-md-3">
