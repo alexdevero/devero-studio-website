@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 export const Pitch = () => {
-  return <div className="section-pitch pt-2 pb-2">
+  return <div id="learnMore" className="section-pitch pt-2 pb-2">
     <div className="container">
       <div className="row text--center pt-5 pb-5">
         <div className="col-sm-6 col-md-3">
