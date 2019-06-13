@@ -111,7 +111,7 @@ export const Works = () => {
   }
 
   return(
-    <section id="learnMore" className="pb-5">
+    <section className="pb-5">
       <div className="container pt-5 pb-5">
         <Waypoint onEnter={() => handleWaypointEnter('recentWorks')} topOffset="-40%">
           <div className="services__row services__row--one row animated" ref={el => sectionRecentWorks = el}>
