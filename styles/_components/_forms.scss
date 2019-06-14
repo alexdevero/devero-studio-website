@@ -64,3 +64,10 @@ textarea {
     border-color: var(--color-brand);
   }
 }
+
+/* Hidden input for spam and bots - Replacement for Captcha */
+.input--username {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
