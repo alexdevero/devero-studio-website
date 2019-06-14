@@ -34,6 +34,8 @@
     "@types/react-google-recaptcha": "^1.0.0",
     "@types/react-medium-image-zoom": "^3.0.0",
     "@types/zeit__next-typescript": "0.1.2",
+    "@typescript-eslint/eslint-plugin": "^1.10.2",
+    "@typescript-eslint/parser": "^1.10.2",
     "@zeit/next-sass": "1.0.1",
     "@zeit/next-typescript": "1.1.1",
     "eslint": "^5.16.0",
