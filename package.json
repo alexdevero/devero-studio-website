@@ -24,6 +24,7 @@
   "keywords": [],
   "description": "",
   "devDependencies": {
+    "@types/eslint": "^4.16.6",
     "@types/imagemin-optipng": "^5.2.0",
     "@types/imagemin-svgo": "^7.0.0",
     "@types/jquery": "^3.3.29",
