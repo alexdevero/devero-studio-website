@@ -125,31 +125,31 @@ export const Works = () => {
 
                 <ul className="list--unstyled">
                   <li className="mb-2">
-                    <span className="link--black-red" onClick={() => handleChangeActiveTab('one')}><small className="text--small">No.00:</small> <strong>Tesla</strong></span>
+                    <span className={`link--black-red${activeTab === 'one' ? ' link--black-red--selected' : ''}`} onClick={() => handleChangeActiveTab('one')}><small className="text--small">No.00:</small> <strong>Tesla</strong></span>
                   </li>
 
                   <li className="mb-2">
-                    <span className="link--black-red" onClick={() => handleChangeActiveTab('two')}><small className="text--small">No.01:</small> <strong>Harley-Davidson</strong></span>
+                    <span className={`link--black-red${activeTab === 'two' ? ' link--black-red--selected' : ''}`} onClick={() => handleChangeActiveTab('two')}><small className="text--small">No.01:</small> <strong>Harley-Davidson</strong></span>
                   </li>
 
                   <li className="mb-2">
-                    <span className="link--black-red" onClick={() => handleChangeActiveTab('three')}><small className="text--small">No.02:</small> <strong>Ceska Whisky</strong></span>
+                    <span className={`link--black-red${activeTab === 'three' ? ' link--black-red--selected' : ''}`} onClick={() => handleChangeActiveTab('three')}><small className="text--small">No.02:</small> <strong>Ceska Whisky</strong></span>
                   </li>
 
                   <li className="mb-2">
-                    <span className="link--black-red" onClick={() => handleChangeActiveTab('four')}><small className="text--small">No.03:</small> <strong>Sumava</strong></span>
+                    <span className={`link--black-red${activeTab === 'four' ? ' link--black-red--selected' : ''}`} onClick={() => handleChangeActiveTab('four')}><small className="text--small">No.03:</small> <strong>Sumava</strong></span>
                   </li>
 
                   {/* <li className="mb-2">
-                    <span className="link--black-red" onClick={() => handleChangeActiveTab('four')}><small className="text--small">No.03:</small> <strong>Foo</strong></span>
+                    <span className={`link--black-red${activeTab === 'four' ? ' link--black-red--selected' : ''}`} onClick={() => handleChangeActiveTab('four')}><small className="text--small">No.03:</small> <strong>Foo</strong></span>
                   </li> */}
 
                   {/* <li className="mb-2">
-                    <span className="link--black-red" onClick={() => handleChangeActiveTab('five')}><small className="text--small">No.04:</small> <strong>Foo</strong></span>
+                    <span className={`link--black-red${activeTab === 'five' ? ' link--black-red--selected' : ''}`} onClick={() => handleChangeActiveTab('five')}><small className="text--small">No.04:</small> <strong>Foo</strong></span>
                   </li> */}
 
                   {/* <li className="mb-2">
-                    <span className="link--black-red" onClick={() => handleChangeActiveTab('six')}><small className="text--small">No.05:</small> <strong>Foo</strong></span>
+                    <span className={`link--black-red${activeTab === 'six' ? ' link--black-red--selected' : ''}`} onClick={() => handleChangeActiveTab('six')}><small className="text--small">No.05:</small> <strong>Foo</strong></span>
                   </li> */}
 
                   <li className="d-none">

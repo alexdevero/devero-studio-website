@@ -121,6 +121,11 @@ small {
   }
 }
 
+.link--black-red--selected {
+  color: var(--color-brand);
+  cursor: pointer;
+}
+
 .link--white-red {
   color: var(--color-white);
   transition: color var(--tr-part);
