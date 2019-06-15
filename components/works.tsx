@@ -187,7 +187,9 @@ export const Works = () => {
 
                   <ul className="list--unstyled">
                     <li>Supernova</li>
+                    <li>Fresh & Tasty</li>
                     <li>Čerstvá Sváča</li>
+                    <li>Česká Whisky</li>
                     <li>Trinity</li>
                     <li>Material</li>
                     <li>Maelstrom</li>
