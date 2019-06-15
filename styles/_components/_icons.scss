@@ -8,7 +8,8 @@
 
 .icon--typescript,
 .icon--gatsbyjs,
-.icon--next-js {
+.icon--next-js,
+.icon--mongodb {
   line-height: 1;
 
   img {
@@ -18,11 +19,21 @@
   }
 }
 
-.icon--typescript,
-.icon--gatsbyjs {
-  line-height: 1;
-
+.icon--typescript {
   img {
     filter: grayscale(100%) invert(100) brightness(1000%);
+  }
+}
+
+.icon--gatsbyjs {
+  img {
+    filter: grayscale(100%) invert(100) brightness(0%);
+  }
+}
+
+.icon--mongodb {
+  img {
+    width: 100px;
+    filter: grayscale(100%) invert(100%) brightness(0);
   }
 }
