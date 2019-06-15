@@ -6,7 +6,7 @@ export const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-6">
-            <a className="link--unstyled" href="mailto:studio@devero.com">studio@devero.com</a>
+            <a className="link--unstyled" href="mailto:studio@devero.io">studio@devero.io</a>
 
             <ul className="list--inline list--unstyled mt-3">
               <li className="list--inline-item">
