@@ -88,9 +88,18 @@ export const Stack = () => {
               <div className="col-sm-6 col-md-3 mt-5">
                 <div className="tooltip__container">
                   <span className="tooltip__image icon--gatsbyjs">
-                    <img src={require('./../static/images/logos/logo-gatsbyjs.svg')} alt="Gatsbyjs logo"/>
+                    <img src={require('./../static/images/logos/logo-gatsbyjs-new.svg')} alt="Gatsbyjs logo"/>
                   </span>
                   <span className="tooltip__text">Gatsbyjs</span>
+                </div>
+              </div>
+
+              <div className="col-sm-6 col-md-3 mt-5">
+                <div className="tooltip__container">
+                  <span className="tooltip__image icon--mongodb">
+                    <img src={require('./../static/images/logos/logo-mongodb.svg')} alt="MongoDB logo"/>
+                  </span>
+                  <span className="tooltip__text">MongoDB</span>
                 </div>
               </div>
 
