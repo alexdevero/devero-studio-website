@@ -212,11 +212,11 @@ export const Works = () => {
                     <li>Účetnictví Online</li>
                   </ul>
 
-                  <h2 className="h5">Consulting</h2>
+                  {/* <h2 className="h5">Consulting</h2>
 
                   <ul className="list--unstyled">
                     <li>DámeJídlo</li>
-                  </ul>
+                  </ul> */}
                 </div>
               </div>}
 
