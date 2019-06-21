@@ -176,8 +176,6 @@ export const Works = () => {
                     <li>Tesla Motors</li>
                     <li>Harley Davidson</li>
                     <li>Česká Whisky</li>
-                    <li>Slavnosti Růžového Vína</li>
-                    <li>Slavnosti Růžového Vína</li>
                     <li>Posli</li>
                   </ul>
                 </div>
