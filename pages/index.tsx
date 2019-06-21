@@ -63,11 +63,11 @@ export default class extends React.Component {
 
         <Intro />
 
-        <Works />
-
         <Services />
 
-        <Stack />
+        <Works />
+
+        {/* <Stack /> */}
 
         {/* <Partners /> */}
 
