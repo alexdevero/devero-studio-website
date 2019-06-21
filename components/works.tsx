@@ -119,7 +119,7 @@ export const Works = () => {
           <div>
             <div className="services__row services__row--one row animated" ref={el => sectionRecentWorks = el}>
               <div className="col-md-6 services__col-text" data-number="1">
-                <h2 className="h4">Recent works</h2>
+                <h2 className="h4">Recent projects</h2>
 
                 <div className="divider divider--red divider--slim" />
 
