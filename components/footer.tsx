@@ -1,4 +1,5 @@
 import * as React from 'react'
+import Link from 'next/link'
 
 export const Footer = () => {
   return(
@@ -65,10 +66,20 @@ export const Footer = () => {
             </ul>
           </div>
 
-          <div className="col-md-6">
-            <p className="footer__copy text--right">&copy;{new Date().getFullYear()} Devero Studio.</p>
+          <div className="col-md-6 text--right">
+            <p className="footer__copy">Copyright &copy;{new Date().getFullYear()} Devero Studio.</p>
 
-            <p className="footer__copy text--right mt-2">All rights reserved</p>
+            <p className="footer__copy mt-1">All rights reserved</p>
+
+            <ul className="list--unstyled mt-1 footer__copy">
+              <li>
+                <Link href="/terms"><a>Terms and Conditions</a></Link>
+              </li>
+
+              <li>
+                <Link href="/privacy-policy"><a>Privacy Policy</a></Link>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
