@@ -76,7 +76,11 @@ export class Contact extends React.Component {
           }
         })
 
-        console.log(this.state)
+        // Register in Google Analytics
+        ReactGA.event({
+          category: 'User',
+          action: 'Contact via form'
+        })
 
         this.setState({
           formEmail: '',
@@ -156,7 +160,7 @@ export class Contact extends React.Component {
                       </div>
                     </div>
 
-                    <fieldset className="input--absolute mt-3 mb-3">
+                    <fieldset className="input--absolute mt-4 mb-2">
                       <textarea onChange={this.handleInputChange} id="formMessage" name="formMessage" required={true} ref={(inputMessage) => this.inputMessage = inputMessage} />
 
                       <label htmlFor="formMessage">Message *</label>
@@ -166,6 +170,10 @@ export class Contact extends React.Component {
                       <input onChange={this.handleInputChange} id="formUsername" name="formUsername" type="text" ref={(inputUsername) => this.inputUsername = inputUsername} />
 
                       <label htmlFor="formUsername">Username *</label>
+                    </fieldset>
+
+                    <fieldset className="mb-3">
+                      <p className="text--small mt-0"><i>* All fields are required</i></p>
                     </fieldset>
 
                     {/* <fieldset className="mb-4">
