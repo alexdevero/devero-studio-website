@@ -18,7 +18,8 @@
     "react-ga": "^2.5.7",
     "react-google-recaptcha": "^1.0.5",
     "react-medium-image-zoom": "^3.1.0",
-    "react-waypoint": "^9.0.2"
+    "react-waypoint": "^9.0.2",
+    "reaviz": "^2.4.5"
   },
   "license": "ISC",
   "keywords": [],
