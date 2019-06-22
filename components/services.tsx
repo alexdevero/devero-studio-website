@@ -34,7 +34,7 @@ export const Services = () => {
         <Waypoint onEnter={() => handleWaypointEnter('services')} topOffset="-40%">
           <div className="services__row row">
             <div className="col-md-6 col-lg-5 services__col-text animated" data-number="2" ref={el => sectionServices = el}>
-              <h3 className="h4">Services</h3>
+              <h3 className="h4">Our Services</h3>
             </div>
           </div>
         </Waypoint>
@@ -48,7 +48,9 @@ export const Services = () => {
 
               {/* <p>Our team of exceptional designers will create design concept, and later prototype, for your websites or web app based on your requirements. Next, we will review it with you, and gradually, polish it to perfection.</p> */}
 
-              <p>Balancing creativity and imagination with functionality to deliver unforgettable digital experiences that enhances the vision you have for your project and your brand.</p>
+              {/* <p>Balancing creativity and imagination with functionality to deliver unforgettable digital experiences that enhances the vision you have for your project and your brand.</p> */}
+
+              <p>Our award-winning design team creates custom designs that convert, all while elevating the user’s experience. We push the boundaries of design and then eliminate them altogether.</p>
 
               <ul className="list--unstyled mt-3">
                 <li>&bull; Web design</li>
@@ -70,7 +72,9 @@ export const Services = () => {
 
               {/* <p>When you are pleased with design prototype, our team of rock star developers will get to work on it. They will take the design prototype and transform it into clean, optimized and ready-to-use website, or app.</p> */}
 
-              <p>Pushing the limits and boundaries of digital development, whilst producing functional unforgettable experiences that work for our partners and their users.</p>
+              {/* <p>Pushing the limits and boundaries of digital development, whilst producing functional unforgettable experiences that work for our partners and their users.</p> */}
+
+              <p>Armed with the latest technology, our front-end and back-end development teams bring your designs to life, paving the way for your entire business strategy. We develop for the now and build for the future.</p>
 
               <ul className="list--unstyled mt-3">
                 <li>&bull; Frontend (React)</li>
@@ -113,7 +117,9 @@ export const Services = () => {
 
               {/* <p>When your website is ready we will deploy it, put put it online. In case of an app, we will help you put it in stores. After this, we can take care of it for you if you want, maintaining, fixing and improving it.</p> */}
 
-              <p>Continually updating, improving and maintaining your website or app to ensure you stay on the cutting-edge in today's constantly changing and evolving world.</p>
+              {/* <p>Continually updating, improving and maintaining your website or app to ensure you stay on the cutting-edge in today's constantly changing and evolving world.</p> */}
+
+              <p>Today, your website must be three things: fast, functional and always on. Our support and maintenance capabilities monitor your website's performance while keeping it up to date.</p>
 
               <ul className="list--unstyled mt-3">
                 <li>&bull; Reviews &amp; Reports</li>
