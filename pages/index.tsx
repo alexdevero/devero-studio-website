@@ -63,9 +63,9 @@ export default class extends React.Component {
 
         <Intro />
 
-        <Services />
-
         <Works />
+
+        <Services />
 
         {/* <Stack /> */}
 
