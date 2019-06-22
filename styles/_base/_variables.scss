@@ -15,5 +15,13 @@
 	--radius-small: 4px;
 
 	--tr-full: all .25s ease-in-out;
-	--tr-part: .25s ease-in-out;
+  --tr-part: .25s ease-in-out;
+
+  /* Styles for Reaviz MapComponent */
+  --color-background: #fff;
+  --color-on-background: #fff;
+  --color-layer-transparent: rgba(0, 0, 0, .9);
+  --color-surface: #010101;
+  --color-primary: var(--color-brand);
+  --color-on-primary: #fff;
 }
