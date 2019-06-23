@@ -5,12 +5,7 @@ export const Hero = () => {
   return(
     <div className="hero">
       <div className="container">
-        {/* <div className="glitch-wrapper">
-          <h1 className="hero__title heading__big">
-            <span className="glitch" data-text="DEVERO">DEVERO</span>
-            <span className="glitch" data-text="STUDIO">STUDIO</span>
-          </h1>
-        </div> */}
+        <h1 className="hero__heading">DEVERO STUDIO</h1>
 
         <div className="glitch-wrapper d-md-none">
           <h1 className="hero__title">
@@ -24,7 +19,7 @@ export const Hero = () => {
           <h1 className="hero__title glitch" data-text="Delivering digital perfection">Delivering digital perfection</h1>
         </div>
 
-        <h3 className="hero__text">We build top-class websites and apps for those who want the best.</h3>
+        <h3 className="hero__text">We design and build top-class websites and apps for those who want the best.</h3>
 
         <AnchorLink className="hero__link" href="#learnMore">&darr; Learn more</AnchorLink>
       </div>
