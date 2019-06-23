@@ -11,10 +11,18 @@
 }
 
 .hero__heading {
-  font-size: 108px;
+  font-size: 60px;
   font-weight: 700;
   line-height: 1;
   color: #fff;
+
+  @media (min-width: 25em) {
+    font-size: 78px;
+  }
+
+  @media (min-width: 31.875em) {
+    font-size: 108px;
+  }
 }
 
 .glitch-wrapper {
