@@ -15,9 +15,9 @@
     "react": "16.8.6",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "16.8.6",
-    "react-ga": "^2.5.7",
+    "react-ga": "^2.6.0",
     "react-google-recaptcha": "^1.0.5",
-    "react-medium-image-zoom": "^3.1.0",
+    "react-medium-image-zoom": "^3.1.1",
     "react-waypoint": "^9.0.2",
     "reaviz": "^2.4.5"
   },
