@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const Footer = () => {
   return(
-    <footer className="pt-5 pb-5">
+    <footer className="footer pt-5 pb-5">
       <div className="container">
         <div className="row">
           <div className="col-md-6">
