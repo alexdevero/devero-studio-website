@@ -15,8 +15,9 @@ import { Intro } from './../components/intro'
 // import { Partners } from './../components/partners'
 import { Pitch } from './../components/pitch'
 import { Services } from './../components/services'
-import { Stack } from './../components/stack'
-import { Where } from '../components/where'
+// import { Stack } from './../components/stack'
+import { Testimonials } from './../components/testimonials'
+// import { Where } from '../components/where'
 import { Works } from '../components/works'
 
 // Import styles
@@ -72,7 +73,9 @@ export default class extends React.Component {
 
         {/* <Partners /> */}
 
-        <Where />
+        <Testimonials />
+
+        {/* <Where /> */}
 
         {/* <Faq /> */}
 
