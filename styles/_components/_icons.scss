@@ -6,6 +6,12 @@
   object-fit: scale-down;
 }
 
+.icon--medium {
+  width: 150px;
+  height: 150px;
+  object-fit: scale-down;
+}
+
 .icon--typescript,
 .icon--gatsbyjs,
 .icon--next-js,
@@ -25,7 +31,9 @@
   }
 }
 
-.icon--gatsbyjs {
+.icon--gatsbyjs,
+.logo--smasing-magazine,
+.logo--web-designer {
   img {
     filter: grayscale(100%) invert(100) brightness(0%);
   }
