@@ -32,15 +32,24 @@ export const Services = () => {
 
           <p>Our award-winning design team creates custom designs that convert, all while elevating the user’s experience. We push the boundaries of design and then eliminate them altogether.</p>
 
-          <ul className="list--unstyled mt-3">
-            <li>&bull; Web design</li>
-            <li>&bull; App design</li>
-            <li>&bull; Identity Design</li>
-            <li>&bull; Interaction Design</li>
-            <li>&bull; User Experience Design</li>
-            <li>&bull; Visual Design</li>
-            <li>&bull; Re-design</li>
-          </ul>
+          <div className="row">
+            <div className="col-md-6">
+              <ul className="list--unstyled mt-3">
+                <li>&bull; Web design</li>
+                <li>&bull; App design</li>
+                <li>&bull; Identity Design</li>
+                <li>&bull; Interaction Design</li>
+                <li>&bull; User Experience Design</li>
+              </ul>
+            </div>
+
+            <div className="col-md-6">
+              <ul className="list--unstyled mt-3">
+                <li>&bull; Visual Design</li>
+                <li>&bull; Re-design</li>
+              </ul>
+            </div>
+          </div>
         </>
       case 'engineering':
         return <>
@@ -54,16 +63,25 @@ export const Services = () => {
 
           <p>Armed with the latest technology, our front-end and back-end development teams bring your designs to life, paving the way for your entire business strategy. We develop for the now and build for the future.</p>
 
-          <ul className="list--unstyled mt-3">
-            <li>&bull; Frontend (React)</li>
-            <li>&bull; Backend (Node.js)</li>
-            <li>&bull; Web development</li>
-            <li>&bull; App development</li>
-            <li>&bull; iOS &amp; Android (React Native)</li>
-            <li>&bull; AR/VR/MR</li>
-            <li>&bull; Machine Learning</li>
-            {/* <li>&bull; QA Testing</li> */}
-          </ul>
+          <div className="row">
+            <div className="col-md-6">
+              <ul className="list--unstyled mt-3">
+                <li>&bull; Frontend (React)</li>
+                <li>&bull; Backend (Node.js)</li>
+                <li>&bull; Web development</li>
+                <li>&bull; App development</li>
+                <li>&bull; iOS &amp; Android (React Native)</li>
+              </ul>
+            </div>
+
+            <div className="col-md-6">
+              <ul className="list--unstyled mt-3">
+                <li>&bull; AR/VR/MR</li>
+                <li>&bull; Machine Learning</li>
+                {/* <li>&bull; QA Testing</li> */}
+              </ul>
+            </div>
+          </div>
         </>
       case 'consulting':
         return <>
@@ -73,15 +91,24 @@ export const Services = () => {
 
           <p>Helping you find ways to improve your existing website or app without the need to start again from scratch, providing you with feedback, guidance and advice.</p>
 
-          <ul className="list--unstyled mt-3">
-            <li>&bull; Web design</li>
-            <li>&bull; Web development</li>
-            <li>&bull; App design</li>
-            <li>&bull; App development</li>
-            <li>&bull; Re-design</li>
-            <li>&bull; Digital strategy</li>
-            <li>&bull; Code reviews</li>
-          </ul>
+          <div className="row">
+            <div className="col-md-6">
+              <ul className="list--unstyled mt-3">
+                <li>&bull; Web design</li>
+                <li>&bull; Web development</li>
+                <li>&bull; App design</li>
+                <li>&bull; App development</li>
+                <li>&bull; Re-design</li>
+              </ul>
+            </div>
+
+            <div className="col-md-6">
+              <ul className="list--unstyled mt-3">
+                <li>&bull; Digital strategy</li>
+                <li>&bull; Code reviews</li>
+              </ul>
+            </div>
+          </div>
         </>
       case 'optimization':
         return <>
@@ -120,19 +147,19 @@ export const Services = () => {
             <div className="col-sm-6 col-md-4 services__col-text">
               <ul className="list--unstyled">
                 <li className="mb-2">
-                  <span className={`h4 link--black-red${activeServiceTab === 'design' ? ' link--black-red--selected' : ''}`} onClick={() => handleActiveServiceTabChange('design')}><strong>Design</strong></span>
+                  <span className={`h3 link--black-red${activeServiceTab === 'design' ? ' link--black-red--selected' : ''}`} onClick={() => handleActiveServiceTabChange('design')}><strong>Design</strong></span>
                 </li>
 
                 <li className="mb-2">
-                  <span className={`h4 link--black-red${activeServiceTab === 'engineering' ? ' link--black-red--selected' : ''}`} onClick={() => handleActiveServiceTabChange('engineering')}><strong>Engineering</strong></span>
+                  <span className={`h3 link--black-red${activeServiceTab === 'engineering' ? ' link--black-red--selected' : ''}`} onClick={() => handleActiveServiceTabChange('engineering')}><strong>Engineering</strong></span>
                 </li>
 
                 <li className="mb-2">
-                  <span className={`h4 link--black-red${activeServiceTab === 'consulting' ? ' link--black-red--selected' : ''}`} onClick={() => handleActiveServiceTabChange('consulting')}><strong>Consulting</strong></span>
+                  <span className={`h3 link--black-red${activeServiceTab === 'consulting' ? ' link--black-red--selected' : ''}`} onClick={() => handleActiveServiceTabChange('consulting')}><strong>Consulting</strong></span>
                 </li>
 
                 <li className="mb-2">
-                  <span className={`h4 link--black-red${activeServiceTab === 'optimization' ? ' link--black-red--selected' : ''}`} onClick={() => handleActiveServiceTabChange('optimization')}><strong>Optimization</strong></span>
+                  <span className={`h3 link--black-red${activeServiceTab === 'optimization' ? ' link--black-red--selected' : ''}`} onClick={() => handleActiveServiceTabChange('optimization')}><strong>Optimization</strong></span>
                 </li>
               </ul>
             </div>
