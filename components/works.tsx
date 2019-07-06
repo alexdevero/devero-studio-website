@@ -151,22 +151,26 @@ export const Works = () => {
                 <ul className="list--unstyled">
                   <li className="mb-2">
                     <span className={`link--black-red${activeTab === 'supernova' ? ' link--black-red--selected' : ''}`} onClick={() => handleChangeActiveTab('supernova')}><small className="text--small">No.01:</small> <strong>Supernova</strong></span>
+                    <a href="https://www.supernova.io" className="link--black-red" target="_blank" rel="noopener noreferrer"><span className="fas fa-external-link-alt" style={{ marginLeft: 6, fontSize: 12 }} /></a>
                   </li>
 
                   <li className="mb-2">
                     <span className={`link--black-red${activeTab === 'tasty' ? ' link--black-red--selected' : ''}`} onClick={() => handleChangeActiveTab('tasty')}><small className="text--small">No.02:</small> <strong>Fresh & Tasty</strong></span>
+                    <a href="https://www.freshandtasty.cz" className="link--black-red" target="_blank" rel="noopener noreferrer"><span className="fas fa-external-link-alt" style={{ marginLeft: 6, fontSize: 12 }} /></a>
                   </li>
 
                   <li className="mb-2">
                     <span className={`link--black-red${activeTab === 'slavnosti' ? ' link--black-red--selected' : ''}`} onClick={() => handleChangeActiveTab('slavnosti')}><small className="text--small">No.03:</small> <strong>Slavnosti růžového vína</strong></span>
-                  </li>
-
-                  <li className="mb-2">
-                    <span className={`link--black-red${activeTab === 'harley' ? ' link--black-red--selected' : ''}`} onClick={() => handleChangeActiveTab('harley')}><small className="text--small">No.04:</small> <strong>Harley-Davidson</strong></span>
+                    <a href="https://www.slavnostiruzovehovina.cz" className="link--black-red" target="_blank" rel="noopener noreferrer"><span className="fas fa-external-link-alt" style={{ marginLeft: 6, fontSize: 12 }} /></a>
                   </li>
 
                   <li className="mb-2">
                     <span className={`link--black-red${activeTab === 'whisky' ? ' link--black-red--selected' : ''}`} onClick={() => handleChangeActiveTab('whisky')}><small className="text--small">No.05:</small> <strong>Ceska Whisky</strong></span>
+                    <a href="https://www.ceskawhisky.cz" className="link--black-red" target="_blank" rel="noopener noreferrer"><span className="fas fa-external-link-alt" style={{ marginLeft: 6, fontSize: 12 }} /></a>
+                  </li>
+
+                  <li className="mb-2">
+                    <span className={`link--black-red${activeTab === 'harley' ? ' link--black-red--selected' : ''}`} onClick={() => handleChangeActiveTab('harley')}><small className="text--small">No.04:</small> <strong>Harley-Davidson</strong></span>
                   </li>
 
                   <li className="mb-2">
@@ -209,10 +213,11 @@ export const Works = () => {
                   <h2 className="h5 mt-4">Web development</h2>
 
                   <ul className="list--unstyled">
-                    <li>Supernova</li>
-                    <li>Fresh & Tasty</li>
+                    <li>Supernova <a href="https://www.supernova.io" className="link--black-red" target="_blank" rel="noopener noreferrer"><span className="fas fa-external-link-alt" style={{ fontSize: 12 }} /></a></li>
+                    <li>Fresh & Tasty <a href="https://www.freshandtasty.cz" className="link--black-red" target="_blank" rel="noopener noreferrer"><span className="fas fa-external-link-alt" style={{ fontSize: 12 }} /></a></li>
                     <li>Čerstvá Sváča</li>
-                    <li>Česká Whisky</li>
+                    <li>Slavnosti Růžového Vína <a href="https://www.slavnostiruzovehovina.cz" className="link--black-red" target="_blank" rel="noopener noreferrer"><span className="fas fa-external-link-alt" style={{ fontSize: 12 }} /></a></li>
+                    <li>Česká Whisky <a href="https://www.ceskawhisky.cz" className="link--black-red" target="_blank" rel="noopener noreferrer"><span className="fas fa-external-link-alt" style={{ fontSize: 12 }} /></a></li>
                     <li>Trinity</li>
                     <li>Material</li>
                     <li>Maelstrom</li>
@@ -230,9 +235,9 @@ export const Works = () => {
                   <h2 className="h5">App development</h2>
 
                   <ul className="list--unstyled">
-                    <li>Supernova Cloud</li>
+                    <li>Supernova Cloud <a href="https://www.app.supernova.io" className="link--black-red" target="_blank" rel="noopener noreferrer"><span className="fas fa-external-link-alt" style={{ fontSize: 12 }} /></a></li>
                     <li>StartMonday</li>
-                    <li>Účetnictví Online</li>
+                    <li>Účetnictví Online <a href="https://www.uol.cz" className="link--black-red" target="_blank" rel="noopener noreferrer"><span className="fas fa-external-link-alt" style={{ fontSize: 12 }} /></a></li>
                   </ul>
 
                   {/* <h2 className="h5">Consulting</h2>
