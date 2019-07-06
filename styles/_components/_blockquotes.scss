@@ -1,11 +1,22 @@
-/* Blockquotes */
+/* Block quotes */
 .blockquote {
   &__text {
     margin-bottom: 12px;
   }
 
   &__footer {
-    font-size: 15px;
+    display: flex;
+    font-size: 14px;
     color: var(--color-gray-light);
+  }
+
+  &__avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+  }
+
+  &__autor {
+    padding-left: 8px;
   }
 }
