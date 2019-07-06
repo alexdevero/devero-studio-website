@@ -25,11 +25,11 @@ export const Works = () => {
           image={{
             alt: 'Supernova',
             className: 'works__thumbnail thumbnail',
-            src: require('./../static/images/showcase-thumbnails/thumbnail-tesla-landing-page.png')
+            src: require('./../static/images/showcase-thumbnails/thumbnail-multi-supernova.jpg')
           }}
           zoomImage={{
-            alt: 'Tesla web design concept',
-            src: require('./../static/images/showcase-thumbnails/thumbnail-tesla-landing-page@2x.png')
+            alt: 'Supernova',
+            src: require('./../static/images/showcase-thumbnails/thumbnail-multi-supernova.jpg')
           }}
         />
       case 'tasty':
@@ -37,23 +37,23 @@ export const Works = () => {
           image={{
             alt: 'Fresh & Tasty',
             className: 'works__thumbnail thumbnail',
-            src: require('./../static/images/showcase-thumbnails/thumbnail-tesla-landing-page.png')
+            src: require('./../static/images/showcase-thumbnails/thumbnail-multi-fresh-and-tasty.jpg')
           }}
           zoomImage={{
             alt: 'Fresh & Tasty',
-            src: require('./../static/images/showcase-thumbnails/thumbnail-tesla-landing-page@2x.png')
+            src: require('./../static/images/showcase-thumbnails/thumbnail-multi-fresh-and-tasty.jpg')
           }}
         />
       case 'slavnosti':
         return <ImageZoom
           image={{
-            alt: 'Supernova',
+            alt: 'Slavnosti Růžového Vína',
             className: 'works__thumbnail thumbnail',
-            src: require('./../static/images/showcase-thumbnails/thumbnail-tesla-landing-page.png')
+            src: require('./../static/images/showcase-thumbnails/thumbnail-multi-slavnosti.jpg')
           }}
           zoomImage={{
-            alt: 'Tesla web design concept',
-            src: require('./../static/images/showcase-thumbnails/thumbnail-tesla-landing-page@2x.png')
+            alt: 'Slavnosti Růžového Vína',
+            src: require('./../static/images/showcase-thumbnails/thumbnail-multi-slavnosti.jpg')
           }}
         />
       case 'tesla':
@@ -61,11 +61,11 @@ export const Works = () => {
           image={{
             alt: 'Tesla web design concept',
             className: 'works__thumbnail thumbnail',
-            src: require('./../static/images/showcase-thumbnails/thumbnail-tesla-landing-page.png')
+            src: require('./../static/images/showcase-thumbnails/thumbnail-multi-tesla.jpg')
           }}
           zoomImage={{
             alt: 'Tesla web design concept',
-            src: require('./../static/images/showcase-thumbnails/thumbnail-tesla-landing-page@2x.png')
+            src: require('./../static/images/showcase-thumbnails/thumbnail-multi-tesla.jpg')
           }}
         />
       case 'harley':
@@ -73,11 +73,11 @@ export const Works = () => {
           image={{
             alt: 'Harley-Davidson web design concept',
             className: 'works__thumbnail thumbnail',
-            src: require('./../static/images/showcase-thumbnails/thumbnail-harley-davidson-landing-page.png')
+            src: require('./../static/images/showcase-thumbnails/thumbnail-multi-harley-davidson.jpg')
           }}
           zoomImage={{
             alt: 'Harley-Davidson web design concept',
-            src: require('./../static/images/showcase-thumbnails/thumbnail-harley-davidson-landing-page@2x.png')
+            src: require('./../static/images/showcase-thumbnails/thumbnail-multi-harley-davidson.jpg')
           }}
         />
       case 'whisky':
@@ -85,11 +85,11 @@ export const Works = () => {
           image={{
             alt: 'Ceska Whisky web design concept',
             className: 'works__thumbnail thumbnail',
-            src: require('./../static/images/showcase-thumbnails/thumbnail-ceska-whisky-landing-page.png')
+            src: require('./../static/images/showcase-thumbnails/thumbnail-multi-ceska-whisky.jpg')
           }}
           zoomImage={{
             alt: 'Ceska Whisky web design concept',
-            src: require('./../static/images/showcase-thumbnails/thumbnail-ceska-whisky-landing-page@2x.png')
+            src: require('./../static/images/showcase-thumbnails/thumbnail-multi-ceska-whisky.jpg')
           }}
         />
       case 'sumava':
@@ -97,11 +97,11 @@ export const Works = () => {
           image={{
             alt: 'Sumava',
             className: 'works__thumbnail thumbnail',
-            src: require('./../static/images/showcase-thumbnails/thumbnail-sumava-landing-page.png')
+            src: require('./../static/images/showcase-thumbnails/thumbnail-multi-sumava.jpg')
           }}
           zoomImage={{
             alt: '',
-            src: require('./../static/images/showcase-thumbnails/thumbnail-sumava-landing-page@2x.png')
+            src: require('./../static/images/showcase-thumbnails/thumbnail-multi-sumava.jpg')
           }}
         />
       // case 'five':
