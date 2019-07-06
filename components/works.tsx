@@ -1,12 +1,12 @@
 import * as React from 'react'
-import Link from 'next/link'
+// import Link from 'next/link'
 import { Waypoint } from 'react-waypoint'
 import ImageZoom from 'react-medium-image-zoom'
 
 export const Works = () => {
   let sectionRecentWorks: HTMLDivElement | null
 
-  const [activeTab, handleChangeActiveTab] = React.useState('one')
+  const [activeTab, handleChangeActiveTab] = React.useState('supernova')
 
   const [isProjectsListVisible, handleOpenProjectsList] = React.useState(false)
 
@@ -20,141 +20,166 @@ export const Works = () => {
 
   function generateCaseStudyThumbnail() {
     switch (activeTab) {
-      case 'one':
+      case 'supernova':
         return <ImageZoom
-            image={{
-              src: require('./../static/images/showcase-thumbnails/thumbnail-tesla-landing-page.png'),
-              alt: 'Tesla web design concept',
-              className: 'works__thumbnail thumbnail'
-            }}
-            zoomImage={{
-              src: require('./../static/images/showcase-thumbnails/thumbnail-tesla-landing-page@2x.png'),
-              alt: 'Tesla web design concept'
-            }}
-          />
-      case 'two':
+          image={{
+            alt: 'Supernova',
+            className: 'works__thumbnail thumbnail',
+            src: require('./../static/images/showcase-thumbnails/thumbnail-tesla-landing-page.png')
+          }}
+          zoomImage={{
+            alt: 'Tesla web design concept',
+            src: require('./../static/images/showcase-thumbnails/thumbnail-tesla-landing-page@2x.png')
+          }}
+        />
+      case 'tasty':
         return <ImageZoom
-        image={{
-          src: require('./../static/images/showcase-thumbnails/thumbnail-harley-davidson-landing-page.png'),
-          alt: 'Harley-Davidson web design concept',
-          className: 'works__thumbnail thumbnail'
-        }}
-        zoomImage={{
-          src: require('./../static/images/showcase-thumbnails/thumbnail-harley-davidson-landing-page@2x.png'),
-          alt: 'Harley-Davidson web design concept'
-        }}
-      />
-      case 'three':
+          image={{
+            alt: 'Fresh & Tasty',
+            className: 'works__thumbnail thumbnail',
+            src: require('./../static/images/showcase-thumbnails/thumbnail-tesla-landing-page.png')
+          }}
+          zoomImage={{
+            alt: 'Fresh & Tasty',
+            src: require('./../static/images/showcase-thumbnails/thumbnail-tesla-landing-page@2x.png')
+          }}
+        />
+      case 'slavnosti':
         return <ImageZoom
-        image={{
-          src: require('./../static/images/showcase-thumbnails/thumbnail-ceska-whisky-landing-page.png'),
-          alt: 'Ceska Whisky web design concept',
-          className: 'works__thumbnail thumbnail'
-        }}
-        zoomImage={{
-          src: require('./../static/images/showcase-thumbnails/thumbnail-ceska-whisky-landing-page@2x.png'),
-          alt: 'Ceska Whisky web design concept'
-        }}
-      />
-      case 'four':
+          image={{
+            alt: 'Supernova',
+            className: 'works__thumbnail thumbnail',
+            src: require('./../static/images/showcase-thumbnails/thumbnail-tesla-landing-page.png')
+          }}
+          zoomImage={{
+            alt: 'Tesla web design concept',
+            src: require('./../static/images/showcase-thumbnails/thumbnail-tesla-landing-page@2x.png')
+          }}
+        />
+      case 'tesla':
         return <ImageZoom
-        image={{
-          src: require('./../static/images/showcase-thumbnails/thumbnail-sumava-landing-page.png'),
-          alt: '',
-          className: 'works__thumbnail thumbnail'
-        }}
-        zoomImage={{
-          src: require('./../static/images/showcase-thumbnails/thumbnail-sumava-landing-page@2x.png'),
-          alt: ''
-        }}
-      />
+          image={{
+            alt: 'Tesla web design concept',
+            className: 'works__thumbnail thumbnail',
+            src: require('./../static/images/showcase-thumbnails/thumbnail-tesla-landing-page.png')
+          }}
+          zoomImage={{
+            alt: 'Tesla web design concept',
+            src: require('./../static/images/showcase-thumbnails/thumbnail-tesla-landing-page@2x.png')
+          }}
+        />
+      case 'harley':
+        return <ImageZoom
+          image={{
+            alt: 'Harley-Davidson web design concept',
+            className: 'works__thumbnail thumbnail',
+            src: require('./../static/images/showcase-thumbnails/thumbnail-harley-davidson-landing-page.png')
+          }}
+          zoomImage={{
+            alt: 'Harley-Davidson web design concept',
+            src: require('./../static/images/showcase-thumbnails/thumbnail-harley-davidson-landing-page@2x.png')
+          }}
+        />
+      case 'whisky':
+        return <ImageZoom
+          image={{
+            alt: 'Ceska Whisky web design concept',
+            className: 'works__thumbnail thumbnail',
+            src: require('./../static/images/showcase-thumbnails/thumbnail-ceska-whisky-landing-page.png')
+          }}
+          zoomImage={{
+            alt: 'Ceska Whisky web design concept',
+            src: require('./../static/images/showcase-thumbnails/thumbnail-ceska-whisky-landing-page@2x.png')
+          }}
+        />
+      case 'sumava':
+        return <ImageZoom
+          image={{
+            alt: 'Sumava',
+            className: 'works__thumbnail thumbnail',
+            src: require('./../static/images/showcase-thumbnails/thumbnail-sumava-landing-page.png')
+          }}
+          zoomImage={{
+            alt: '',
+            src: require('./../static/images/showcase-thumbnails/thumbnail-sumava-landing-page@2x.png')
+          }}
+        />
       // case 'five':
       //   return <ImageZoom
-      //   image={{
-      //     src: require(''),
-      //     alt: '',
-      //     className: 'works__thumbnail thumbnail'
-      //   }}
-      //   zoomImage={{
-      //     src: require(''),
-      //     alt: ''
-      //   }}
-      // />
-      // case 'six':
-      //   return <ImageZoom
-      //   image={{
-      //     src: require(''),
-      //     alt: '',
-      //     className: 'works__thumbnail thumbnail'
-      //   }}
-      //   zoomImage={{
-      //     src: require(''),
-      //     alt: ''
-      //   }}
-      // />
+      //     image={{
+      //       src: require(''),
+      //       alt: '',
+      //       className: 'works__thumbnail thumbnail'
+      //     }}
+      //     zoomImage={{
+      //       src: require(''),
+      //       alt: ''
+      //     }}
+      //   />
     }
   }
 
-  function generateCaseStudyBtnLink() {
-    switch (activeTab) {
-      case 'one':
-        return '/case-study-one'
-      case 'two':
-        return '/case-study-two'
-      case 'three':
-        return '/case-study-three'
-      case 'four':
-        return '/case-study-four'
-      case 'five':
-        return '/case-study-five'
-      case 'six':
-        return '/case-study-six'
-    }
-  }
+  // function generateCaseStudyBtnLink() {
+  //   switch (activeTab) {
+  //     case 'one':
+  //       return '/case-study-one'
+  //     case 'two':
+  //       return '/case-study-two'
+  //     case 'three':
+  //       return '/case-study-three'
+  //     case 'four':
+  //       return '/case-study-four'
+  //     case 'five':
+  //       return '/case-study-five'
+  //     case 'six':
+  //       return '/case-study-six'
+  //   }
+  // }
 
-  return(
+  return (
     <section className="pb-5">
       <div className="container pt-5 pb-5">
         <Waypoint onEnter={() => handleWaypointEnter('recentWorks')} topOffset="-40%">
-          <div>
-            <div className="services__row services__row--one row animated" ref={el => sectionRecentWorks = el}>
-              <div className="col-md-6 services__col-text" data-number="1">
-                <h2 className="h3 heading--small">Recent projects</h2>
+          <div className="animated" ref={el => sectionRecentWorks = el}>
+            <h2 className="h3 heading--small">Recent projects</h2>
 
-                <div className="divider divider--red divider--slim" />
+            <div className="divider divider--red divider--slim" />
+
+            <div className="services__row services__row--one row">
+              <div className="col-md-6 services__col-text" data-number="1">
 
                 <ul className="list--unstyled">
                   <li className="mb-2">
-                    <span className={`link--black-red${activeTab === 'one' ? ' link--black-red--selected' : ''}`} onClick={() => handleChangeActiveTab('one')}><small className="text--small">No.00:</small> <strong>Tesla</strong></span>
+                    <span className={`link--black-red${activeTab === 'supernova' ? ' link--black-red--selected' : ''}`} onClick={() => handleChangeActiveTab('supernova')}><small className="text--small">No.01:</small> <strong>Supernova</strong></span>
                   </li>
 
                   <li className="mb-2">
-                    <span className={`link--black-red${activeTab === 'two' ? ' link--black-red--selected' : ''}`} onClick={() => handleChangeActiveTab('two')}><small className="text--small">No.01:</small> <strong>Harley-Davidson</strong></span>
+                    <span className={`link--black-red${activeTab === 'tasty' ? ' link--black-red--selected' : ''}`} onClick={() => handleChangeActiveTab('tasty')}><small className="text--small">No.02:</small> <strong>Fresh & Tasty</strong></span>
                   </li>
 
                   <li className="mb-2">
-                    <span className={`link--black-red${activeTab === 'three' ? ' link--black-red--selected' : ''}`} onClick={() => handleChangeActiveTab('three')}><small className="text--small">No.02:</small> <strong>Ceska Whisky</strong></span>
+                    <span className={`link--black-red${activeTab === 'slavnosti' ? ' link--black-red--selected' : ''}`} onClick={() => handleChangeActiveTab('slavnosti')}><small className="text--small">No.03:</small> <strong>Slavnosti růžového vína</strong></span>
                   </li>
 
                   <li className="mb-2">
-                    <span className={`link--black-red${activeTab === 'four' ? ' link--black-red--selected' : ''}`} onClick={() => handleChangeActiveTab('four')}><small className="text--small">No.03:</small> <strong>Sumava</strong></span>
+                    <span className={`link--black-red${activeTab === 'harley' ? ' link--black-red--selected' : ''}`} onClick={() => handleChangeActiveTab('harley')}><small className="text--small">No.04:</small> <strong>Harley-Davidson</strong></span>
+                  </li>
+
+                  <li className="mb-2">
+                    <span className={`link--black-red${activeTab === 'whisky' ? ' link--black-red--selected' : ''}`} onClick={() => handleChangeActiveTab('whisky')}><small className="text--small">No.05:</small> <strong>Ceska Whisky</strong></span>
+                  </li>
+
+                  <li className="mb-2">
+                    <span className={`link--black-red${activeTab === 'sumava' ? ' link--black-red--selected' : ''}`} onClick={() => handleChangeActiveTab('sumava')}><small className="text--small">No.06:</small> <strong>Sumava</strong></span>
                   </li>
 
                   {/* <li className="mb-2">
                     <span className={`link--black-red${activeTab === 'four' ? ' link--black-red--selected' : ''}`} onClick={() => handleChangeActiveTab('four')}><small className="text--small">No.03:</small> <strong>Foo</strong></span>
                   </li> */}
 
-                  {/* <li className="mb-2">
-                    <span className={`link--black-red${activeTab === 'five' ? ' link--black-red--selected' : ''}`} onClick={() => handleChangeActiveTab('five')}><small className="text--small">No.04:</small> <strong>Foo</strong></span>
-                  </li> */}
-
-                  {/* <li className="mb-2">
-                    <span className={`link--black-red${activeTab === 'six' ? ' link--black-red--selected' : ''}`} onClick={() => handleChangeActiveTab('six')}><small className="text--small">No.05:</small> <strong>Foo</strong></span>
-                  </li> */}
-
-                  <li className="d-none">
+                  {/* <li>
                     <Link href="portfolio"><a className="link--unstyled link--black-red"><strong>Show full portfolio &rarr;</strong></a></Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
 
