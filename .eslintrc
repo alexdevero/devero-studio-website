@@ -9,7 +9,12 @@
     "sourceType": "module",
     "useJSXTextNode": true
   },
-  "plugins": ["@typescript-eslint"],
+  "plugins": [
+    "@typescript-eslint",
+    "import",
+    "node",
+    "promise"
+  ],
   "env": {
     "es6": true,
     "node": true
@@ -40,7 +45,7 @@
     "func-call-spacing": ["error", "never"],
     "generator-star-spacing": ["error", { "before": true, "after": true }],
     "handle-callback-err": ["error", "^(err|error)$" ],
-    "indent": ["warn", 2],
+    "indent": ["warn", 2, {"SwitchCase": 1}],
     "key-spacing": ["error", { "beforeColon": false, "afterColon": true }],
     "keyword-spacing": ["error", { "before": true, "after": true }],
     "linebreak-style": ["error", "windows"],
@@ -190,9 +195,9 @@
     "@typescript-eslint/ban-types": "error",
     "@typescript-eslint/camelcase": "error",
     "@typescript-eslint/class-name-casing": "error",
-    "@typescript-eslint/explicit-function-return-type": "error",
+    // "@typescript-eslint/explicit-function-return-type": "error",
     "@typescript-eslint/explicit-member-accessibility": "error",
-    "@typescript-eslint/indent": "error",
+    "@typescript-eslint/indent": ["warn", 2, {"SwitchCase": 1}],
     "@typescript-eslint/interface-name-prefix": "error",
     "@typescript-eslint/member-delimiter-style": "error",
     "@typescript-eslint/no-angle-bracket-type-assertion": "error",
