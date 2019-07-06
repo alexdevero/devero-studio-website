@@ -12,7 +12,7 @@ export const Testimonials = () => {
     <Waypoint onEnter={handleWaypointEnter} topOffset="-40%">
       <section className="animated" ref={el => sectionTestimonials = el}>
         <div className="container pt-5 pb-5">
-          <h1 className="h3 heading--small text--center">Our clients said</h1>
+          <h1 className="h3 heading--small text--center">What people say</h1>
 
           <div className="divider divider--red divider--center"></div>
 
