@@ -8,7 +8,8 @@ export default () => {
   const [isDropdownTypeVisible, handleDropdownType] = React.useState(false)
   const [isDropdownYearVisible, handleDropdownYear] = React.useState(false)
 
-  return(<div>
+  return (
+    <div>
       <Head>
         <title>Portfolio | Devero Studio</title>
       </Head>
@@ -44,7 +45,7 @@ export default () => {
           <div className="col-md-6 col-lg-4">
             <Link href="/portfolio/">
               <a className="portfolio__link">
-                <img className="portfolio__thumbnail thumbnail" src={require('./../static/images/showcase-thumbnails/thumbnail-tesla-web-design-concept.jpg')} alt="Tesla web design concept.jpg" />
+                <img className="portfolio__thumbnail thumbnail" src={require('./../static/images/showcase-thumbnails/thumbnail-multi-tesla.jpg')} alt="Tesla web design concept.jpg" />
               </a>
             </Link>
           </div>
@@ -52,7 +53,7 @@ export default () => {
           <div className="col-md-6 col-lg-4">
             <Link href="/portfolio/">
               <a className="portfolio__link">
-                <img className="portfolio__thumbnail thumbnail" src={require('./../static/images/showcase-thumbnails/thumbnail-harley-davidson.jpg')} alt="Harley-Davidson web design concept.jpg" />
+                <img className="portfolio__thumbnail thumbnail" src={require('./../static/images/showcase-thumbnails/thumbnail-multi-harley-davidson.jpg')} alt="Harley-Davidson web design concept.jpg" />
               </a>
             </Link>
           </div>
@@ -60,7 +61,7 @@ export default () => {
           <div className="col-md-6 col-lg-4">
             <Link href="/portfolio/">
               <a className="portfolio__link">
-                <img className="portfolio__thumbnail thumbnail" src={require('./../static/images/showcase-thumbnails/thumbnail-ceska-whisky.jpg')} alt="Ceska Whisky web design concept.jpg" />
+                <img className="portfolio__thumbnail thumbnail" src={require('./../static/images/showcase-thumbnails/thumbnail-multi-ceska-whisky.jpg')} alt="Ceska Whisky web design concept.jpg" />
               </a>
             </Link>
           </div>
