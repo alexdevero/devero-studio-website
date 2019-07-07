@@ -19,7 +19,7 @@ export const Services = () => {
   }
 
   const generateServiceContent = () => {
-    switch(activeServiceTab) {
+    switch (activeServiceTab) {
       case 'design':
         return <>
           {/* <h2 className="h3 heading--small">Design</h2> */}
@@ -131,7 +131,7 @@ export const Services = () => {
     }
   }
 
-  return(
+  return (
     <section id="whatWeDo">
       <Waypoint onEnter={() => handleWaypointEnter('services')} topOffset="-40%">
         <div className="container pt-5 pb-5 animated" ref={el => sectionServices = el}>
