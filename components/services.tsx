@@ -66,21 +66,21 @@ export const Services = () => {
           <div className="row">
             <div className="col-md-6">
               <ul className="list--unstyled mt-3">
-                <li>&bull; Frontend (React)</li>
-                <li>&bull; Backend (Node.js)</li>
+                <li>&bull; Frontend</li>
+                <li>&bull; Backend</li>
                 <li>&bull; Web development</li>
                 <li>&bull; App development</li>
                 <li>&bull; iOS &amp; Android (React Native)</li>
               </ul>
             </div>
 
-            <div className="col-md-6">
+            {/* <div className="col-md-6">
               <ul className="list--unstyled mt-3">
                 <li>&bull; AR/VR/MR</li>
                 <li>&bull; Machine Learning</li>
-                {/* <li>&bull; QA Testing</li> */}
+                <li>&bull; QA Testing</li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </>
       case 'consulting':
@@ -151,7 +151,7 @@ export const Services = () => {
                 </li>
 
                 <li className="mb-2">
-                  <span className={`h3 link--black-red${activeServiceTab === 'engineering' ? ' link--black-red--selected' : ''}`} onClick={() => handleActiveServiceTabChange('engineering')}><strong>Engineering</strong></span>
+                  <span className={`h3 link--black-red${activeServiceTab === 'engineering' ? ' link--black-red--selected' : ''}`} onClick={() => handleActiveServiceTabChange('engineering')}><strong>Development</strong></span>
                 </li>
 
                 <li className="mb-2">
