@@ -35,20 +35,21 @@ export const Services = () => {
           <div className="row">
             <div className="col-md-6">
               <ul className="list--unstyled mt-3">
+                <li>&bull; UI/UX design</li>
                 <li>&bull; Web design</li>
                 <li>&bull; App design</li>
-                <li>&bull; Identity Design</li>
-                <li>&bull; Interaction Design</li>
-                <li>&bull; User Experience Design</li>
+                <li>&bull; Re-design</li>
+                {/* <li>&bull; Identity Design</li> */}
+                {/* <li>&bull; Interaction Design</li> */}
+                {/* <li>&bull; User Experience Design</li> */}
               </ul>
             </div>
 
-            <div className="col-md-6">
+            {/* <div className="col-md-6">
               <ul className="list--unstyled mt-3">
                 <li>&bull; Visual Design</li>
-                <li>&bull; Re-design</li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </>
       case 'engineering':
