@@ -1,5 +1,8 @@
 import * as React from 'react'
 import App, { Container } from 'next/app'
+import NextSeo from 'next-seo'
+
+import SEOConfig from './../next-seo.config'
 
 class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {
@@ -17,6 +20,8 @@ class MyApp extends App {
 
     return (
       <Container>
+        <NextSeo config={SEOConfig} />
+
         <Component {...pageProps} />
       </Container>
     )
