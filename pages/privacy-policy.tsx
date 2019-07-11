@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import Link from 'next/link'
 import NextSeo from 'next-seo'
 
@@ -8,6 +7,12 @@ import { Footer } from './../components/footer'
 import './../styles/styles.scss'
 
 export default () => (<div>
+  <NextSeo
+    config={{
+      title: 'Privacy Policy | Devero Studio'
+    }}
+  />
+
   <div className="container">
 
     <div className="row justify-content-center pt-5 pb-7">
