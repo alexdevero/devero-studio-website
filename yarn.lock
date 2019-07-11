@@ -5177,6 +5177,11 @@ neo-async@^2.5.0:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.0.tgz#b9d15e4d71c6762908654b5183ed38b753340835"
   integrity sha512-MFh0d/Wa7vkKO3Y3LlacqAEeHK0mckVqzDieUKTT+KGxi+zIpeVsFxymkIiRpbpDziHc290Xr9A1O4Om7otoRA==
 
+next-compose-plugins@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/next-compose-plugins/-/next-compose-plugins-2.2.0.tgz#95cd8eb40ab0652070d76572fb648354191628b0"
+  integrity sha512-ChUlpT9tWfJ7YxqGw/WQ2T1gf8EeX93n1XqeQw0lkvGa7seszahvF4eOZUJoq7Hetsbzg4UHVnPoCXfXTyQR3g==
+
 next-optimized-images@^2.5.3:
   version "2.5.3"
   resolved "https://registry.yarnpkg.com/next-optimized-images/-/next-optimized-images-2.5.3.tgz#40b8f0f98917742e3262d5b4ffac68ee09cfee30"
@@ -5189,6 +5194,11 @@ next-optimized-images@^2.5.3:
     img-loader "^3.0.1"
     raw-loader "^2.0.0"
     url-loader "^1.1.2"
+
+next-seo@^1.12.0:
+  version "1.12.0"
+  resolved "https://registry.yarnpkg.com/next-seo/-/next-seo-1.12.0.tgz#6e33db2abdf1ca7b97c8c275bc468ea19863bcfd"
+  integrity sha512-8w4aMsynRnOf/0q3pzTgFKLfR/jJLlsWQa0AZP0Gsqkwla2w2XVAyuP4wSs5y1vvYSRM6/D5zTWiQpFYJilKsA==
 
 next-server@8.1.0:
   version "8.1.0"
