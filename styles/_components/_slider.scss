@@ -1,0 +1,33 @@
+/* Slider */
+.slider__slide {
+  display: none;
+}
+
+.slider__slide--active {
+  display: block;
+}
+
+.slider__dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  li + li {
+    margin-left: 8px;
+  }
+}
+
+.slider__dot {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #eee;
+  cursor: pointer;
+  transition: background-color var(--tr-part);
+
+  &:hover,
+  &--active {
+    background-color: #333;
+  }
+}
