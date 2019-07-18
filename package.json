@@ -20,6 +20,7 @@
     "react-ga": "^2.6.0",
     "react-google-recaptcha": "^1.0.5",
     "react-medium-image-zoom": "^3.1.1",
+    "react-svg": "^10.0.11",
     "react-waypoint": "^9.0.2",
     "reaviz": "^2.4.5"
   },
