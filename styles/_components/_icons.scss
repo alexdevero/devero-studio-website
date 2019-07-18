@@ -31,9 +31,7 @@
   }
 }
 
-.icon--gatsbyjs,
-.logo--smasing-magazine,
-.logo--web-designer {
+.icon--gatsbyjs {
   img {
     filter: grayscale(100%) invert(100) brightness(0%);
   }
@@ -44,4 +42,8 @@
     width: 100px;
     filter: grayscale(100%) invert(100%) brightness(0);
   }
+}
+
+.icon--faded {
+  filter: contrast(20%) brightness(100%);
 }
