@@ -21,7 +21,7 @@ export const Awards = () => {
             <ReactSVG
               beforeInjection={svg => {
                 svg.classList.add('logo-csswinner')
-                svg.setAttribute('style', 'width: 110px')
+                svg.setAttribute('style', 'width: 110px; fill: #aaa;')
               }}
               src='./../static/images/logos-awards/logo-csswinner.svg'
             />
@@ -31,7 +31,7 @@ export const Awards = () => {
             <ReactSVG
               beforeInjection={svg => {
                 svg.classList.add('logo-cssawards')
-                svg.setAttribute('style', 'width: 110px')
+                svg.setAttribute('style', 'width: 110px; fill: #aaa;')
               }}
               src='./../static/images/logos-awards/logo-cssawards.svg'
             />
@@ -41,7 +41,7 @@ export const Awards = () => {
             <ReactSVG
               beforeInjection={svg => {
                 svg.classList.add('logo-awwwards')
-                svg.setAttribute('style', 'width: 110px')
+                svg.setAttribute('style', 'width: 110px; fill: #aaa;')
               }}
               src='./../static/images/logos-awards/logo-awwwards.svg'
             />
@@ -51,7 +51,7 @@ export const Awards = () => {
             <ReactSVG
               beforeInjection={svg => {
                 svg.classList.add('logo-webby-awards')
-                svg.setAttribute('style', 'width: 80px')
+                svg.setAttribute('style', 'width: 80px; fill: #aaa;')
               }}
               src='./../static/images/logos-awards/logo-webby-awards.svg'
             />
@@ -63,7 +63,7 @@ export const Awards = () => {
             <ReactSVG
               beforeInjection={svg => {
                 svg.classList.add('logo-csswinner')
-                svg.setAttribute('style', 'width: 80px')
+                svg.setAttribute('style', 'width: 80px; fill: #aaa;')
               }}
               src='./../static/images/logos-awards/logo-net.svg'
             />
@@ -73,7 +73,7 @@ export const Awards = () => {
             <ReactSVG
               beforeInjection={svg => {
                 svg.classList.add('logo-smashing-magazine')
-                svg.setAttribute('style', 'width: 170px; filter: brightness(0);')
+                svg.setAttribute('style', 'position: relative; top: 17px; width: 170px;')
               }}
               src='./../static/images/logos-awards/logo-smashing-magazine.svg'
             />
@@ -83,7 +83,7 @@ export const Awards = () => {
             <ReactSVG
               beforeInjection={svg => {
                 svg.classList.add('logo-web-designer')
-                svg.setAttribute('style', 'width: 80px')
+                svg.setAttribute('style', 'width: 80px; fill: #aaa;')
               }}
               src='./../static/images/logos-awards/logo-web-designer.svg'
             />
