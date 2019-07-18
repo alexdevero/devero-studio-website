@@ -262,7 +262,9 @@ export const Works = () => {
                 </div>
               </div>}
 
-              <button className="works__projects-btn btn btn--black" onClick={() => handleOpenProjectsList(!isProjectsListVisible)} data-text={`${isProjectsListVisible ? 'Hide' : 'View'} all projects`}>{isProjectsListVisible ? 'Hide' : 'View'} all projects</button>
+              <div className="text--center">
+                <a className="link--black-red" onClick={() => handleOpenProjectsList(!isProjectsListVisible)}><span className={`fas fa-arrow-${isProjectsListVisible ? 'up' : 'down'}`} style={{ marginRight: 4 }} /> {isProjectsListVisible ? 'Hide' : 'View'} all projects</a>
+              </div>
             </div>
           </div>
         </Waypoint>
