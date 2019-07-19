@@ -18,6 +18,7 @@ export const Works = () => {
     }
   }
 
+  // eslint-disable-next-line react/no-multi-comp
   function generateCaseStudyThumbnail() {
     switch (activeTab) {
       case 'supernova':
@@ -25,13 +26,11 @@ export const Works = () => {
           image={{
             alt: 'Supernova',
             className: 'works__thumbnail thumbnail',
-            // src: require('./../static/images/showcase-thumbnails/thumbnail-supernova@1x.jpg')
             src: require('./../static/images/showcase-thumbnails/macbook-white-supernova@1x.png')
           }}
           zoomImage={{
             alt: 'Supernova',
             src: require('./../static/images/showcase-thumbnails/macbook-white-supernova@2x.png')
-            // src: require('./../static/images/showcase-thumbnails/thumbnail-supernova@2x.jpg')
           }}
         />
       case 'tasty':
@@ -40,12 +39,10 @@ export const Works = () => {
             alt: 'Fresh & Tasty',
             className: 'works__thumbnail thumbnail',
             src: require('./../static/images/showcase-thumbnails/macbook-white-fresh-and-tasty@1x.png')
-            // src: require('./../static/images/showcase-thumbnails/thumbnail-fresh-tasty@1x.jpg')
           }}
           zoomImage={{
             alt: 'Fresh & Tasty',
             src: require('./../static/images/showcase-thumbnails/macbook-white-fresh-and-tasty@2x.png')
-            // src: require('./../static/images/showcase-thumbnails/thumbnail-fresh-tasty@2x.jpg')
           }}
         />
       case 'slavnosti':
@@ -54,12 +51,10 @@ export const Works = () => {
             alt: 'Slavnosti Růžového Vína',
             className: 'works__thumbnail thumbnail',
             src: require('./../static/images/showcase-thumbnails/macbook-white-slavnosti-ruzoveho-vina@1x.png')
-            // src: require('./../static/images/showcase-thumbnails/thumbnail-slavnosti-ruzoveho-vina@1x.jpg')
           }}
           zoomImage={{
             alt: 'Slavnosti Růžového Vína',
             src: require('./../static/images/showcase-thumbnails/macbook-white-slavnosti-ruzoveho-vina@2x.png')
-            // src: require('./../static/images/showcase-thumbnails/thumbnail-slavnosti-ruzoveho-vina@2x.jpg')
           }}
         />
       case 'tesla':
@@ -68,12 +63,10 @@ export const Works = () => {
             alt: 'Tesla web design concept',
             className: 'works__thumbnail thumbnail',
             src: require('./../static/images/showcase-thumbnails/macbook-white-tesla@1x.png')
-            // src: require('./../static/images/showcase-thumbnails/thumbnail-tesla@1x.jpg')
           }}
           zoomImage={{
             alt: 'Tesla web design concept',
             src: require('./../static/images/showcase-thumbnails/macbook-white-tesla@2x.png')
-            // src: require('./../static/images/showcase-thumbnails/thumbnail-tesla@2x.jpg')
           }}
         />
       case 'harley':
@@ -82,12 +75,10 @@ export const Works = () => {
             alt: 'Harley-Davidson web design concept',
             className: 'works__thumbnail thumbnail',
             src: require('./../static/images/showcase-thumbnails/macbook-white-harley-davidson@1x.png')
-            // src: require('./../static/images/showcase-thumbnails/thumbnail-harley-davidson@1x.jpg')
           }}
           zoomImage={{
             alt: 'Harley-Davidson web design concept',
             src: require('./../static/images/showcase-thumbnails/macbook-white-harley-davidson@2x.png')
-            // src: require('./../static/images/showcase-thumbnails/thumbnail-harley-davidson@2x.jpg')
           }}
         />
       case 'whisky':
@@ -96,12 +87,10 @@ export const Works = () => {
             alt: 'Ceska Whisky web design concept',
             className: 'works__thumbnail thumbnail',
             src: require('./../static/images/showcase-thumbnails/macbook-white-ceska-whisky@1x.png')
-            // src: require('./../static/images/showcase-thumbnails/thumbnail-ceska-whisky@1x.jpg')
           }}
           zoomImage={{
             alt: 'Ceska Whisky web design concept',
             src: require('./../static/images/showcase-thumbnails/macbook-white-ceska-whisky@2x.png')
-            // src: require('./../static/images/showcase-thumbnails/thumbnail-ceska-whisky@2x.jpg')
           }}
         />
       case 'sumava':
@@ -110,26 +99,12 @@ export const Works = () => {
             alt: 'Sumava',
             className: 'works__thumbnail thumbnail',
             src: require('./../static/images/showcase-thumbnails/macbook-white-sumava@1x.png')
-            // src: require('./../static/images/showcase-thumbnails/thumbnail-sumava@1x.jpg')
           }}
           zoomImage={{
             alt: '',
             src: require('./../static/images/showcase-thumbnails/macbook-white-sumava@2x.png')
-            // src: require('./../static/images/showcase-thumbnails/thumbnail-sumava@2x.jpg')
           }}
         />
-      // case 'five':
-      //   return <ImageZoom
-      //     image={{
-      //       src: require(''),
-      //       alt: '',
-      //       className: 'works__thumbnail thumbnail'
-      //     }}
-      //     zoomImage={{
-      //       src: require(''),
-      //       alt: ''
-      //     }}
-      //   />
     }
   }
 
@@ -164,36 +139,62 @@ export const Works = () => {
 
                 <ul className="list--unstyled">
                   <li className="mb-2">
-                    <span className={`link--black-red${activeTab === 'supernova' ? ' link--black-red--selected' : ''}`} onClick={() => handleChangeActiveTab('supernova')}><small className="text--small">No.01:</small> <strong>Supernova</strong></span>
+                    <span className={`link--black-red${activeTab === 'supernova' ? ' link--black-red--selected' : ''}`} onClick={() => handleChangeActiveTab('supernova')}>
+                      <small className="text--small">No.01:</small>
+                      {' '}
+                      <strong>Supernova</strong>
+                    </span>
+
                     <a href="https://www.supernova.io" className="link--black-red" target="_blank" rel="noopener noreferrer"><span className="fas fa-external-link-alt" style={{ marginLeft: 6, fontSize: 12 }} /></a>
                   </li>
 
                   <li className="mb-2">
-                    <span className={`link--black-red${activeTab === 'tasty' ? ' link--black-red--selected' : ''}`} onClick={() => handleChangeActiveTab('tasty')}><small className="text--small">No.02:</small> <strong>Fresh & Tasty</strong></span>
+                    <span className={`link--black-red${activeTab === 'tasty' ? ' link--black-red--selected' : ''}`} onClick={() => handleChangeActiveTab('tasty')}>
+                      <small className="text--small">No.02:</small>
+                      {' '}
+                      <strong>Fresh & Tasty</strong>
+                    </span>
+
                     <a href="https://www.freshandtasty.cz" className="link--black-red" target="_blank" rel="noopener noreferrer"><span className="fas fa-external-link-alt" style={{ marginLeft: 6, fontSize: 12 }} /></a>
                   </li>
 
                   <li className="mb-2">
-                    <span className={`link--black-red${activeTab === 'slavnosti' ? ' link--black-red--selected' : ''}`} onClick={() => handleChangeActiveTab('slavnosti')}><small className="text--small">No.03:</small> <strong>Slavnosti růžového vína</strong></span>
+                    <span className={`link--black-red${activeTab === 'slavnosti' ? ' link--black-red--selected' : ''}`} onClick={() => handleChangeActiveTab('slavnosti')}>
+                      <small className="text--small">No.03:</small>
+                      {' '}
+                      <strong>Slavnosti růžového vína</strong>
+                    </span>
+
                     <a href="https://www.slavnostiruzovehovina.cz" className="link--black-red" target="_blank" rel="noopener noreferrer"><span className="fas fa-external-link-alt" style={{ marginLeft: 6, fontSize: 12 }} /></a>
                   </li>
 
                   <li className="mb-2">
-                    <span className={`link--black-red${activeTab === 'whisky' ? ' link--black-red--selected' : ''}`} onClick={() => handleChangeActiveTab('whisky')}><small className="text--small">No.05:</small> <strong>Ceska Whisky</strong></span>
+                    <span className={`link--black-red${activeTab === 'whisky' ? ' link--black-red--selected' : ''}`} onClick={() => handleChangeActiveTab('whisky')}>
+                      <small className="text--small">No.05:</small>
+                      {' '}
+                      <strong>Ceska Whisky</strong>
+                    </span>
+
                     <a href="https://www.ceskawhisky.cz" className="link--black-red" target="_blank" rel="noopener noreferrer"><span className="fas fa-external-link-alt" style={{ marginLeft: 6, fontSize: 12 }} /></a>
                   </li>
 
                   <li className="mb-2">
-                    <span className={`link--black-red${activeTab === 'harley' ? ' link--black-red--selected' : ''}`} onClick={() => handleChangeActiveTab('harley')}><small className="text--small">No.04:</small> <strong>Harley-Davidson</strong></span>
+                    <span className={`link--black-red${activeTab === 'harley' ? ' link--black-red--selected' : ''}`} onClick={() => handleChangeActiveTab('harley')}>
+                      <small className="text--small">No.04:</small>
+                      {' '}
+                      <strong>Harley-Davidson</strong>
+                    </span>
+
                   </li>
 
                   <li className="mb-2">
-                    <span className={`link--black-red${activeTab === 'sumava' ? ' link--black-red--selected' : ''}`} onClick={() => handleChangeActiveTab('sumava')}><small className="text--small">No.06:</small> <strong>Sumava</strong></span>
-                  </li>
+                    <span className={`link--black-red${activeTab === 'sumava' ? ' link--black-red--selected' : ''}`} onClick={() => handleChangeActiveTab('sumava')}>
+                      <small className="text--small">No.06:</small>
+                      {' '}
+                      <strong>Sumava</strong>
+                    </span>
 
-                  {/* <li className="mb-2">
-                    <span className={`link--black-red${activeTab === 'four' ? ' link--black-red--selected' : ''}`} onClick={() => handleChangeActiveTab('four')}><small className="text--small">No.03:</small> <strong>Foo</strong></span>
-                  </li> */}
+                  </li>
 
                   {/* <li>
                     <Link href="portfolio"><a className="link--unstyled link--black-red"><strong>Show full portfolio &rarr;</strong></a></Link>
@@ -202,10 +203,10 @@ export const Works = () => {
               </div>
 
               <div className="col-md-6 col-lg-8">
-                <div className="works__wrapper">
+                <div className="works__wrapper text--center">
                   {generateCaseStudyThumbnail()}
 
-                  {/* <Link href={generateCaseStudyBtnLink()}><a className="works__btn btn btn--red link--unstyled" data-text="See case study &rarr;">See case study &rarr;</a></Link> */}
+                  {/* <Link href={generateCaseStudyBtnLink()}><a className="link--black-red link--underline">See case study</a></Link> */}
                 </div>
               </div>
             </div>
