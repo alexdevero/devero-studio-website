@@ -1,9 +1,9 @@
-/* */
 /* Dividers */
 .divider {
   margin-top: 25px;
   margin-bottom: 25px;
   width: 40px;
+  height: 1px;
 
   &--black {
     background-color: var(--color-black);
