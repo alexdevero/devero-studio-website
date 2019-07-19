@@ -6,6 +6,7 @@ import { initGA, logPageView } from '../utils/analytics'
 
 // Import components
 import { Awards } from './../components/awards'
+import { Blog } from './../components/blog'
 import { Contact } from './../components/contact'
 // import { Faq } from './../components/faq'
 import { Footer } from './../components/footer'
@@ -62,6 +63,8 @@ export default class extends React.Component {
         {/* <Faq /> */}
 
         <Awards />
+
+        <Blog />
 
         <Contact />
 
