@@ -45,7 +45,7 @@ export default () => {
           <div className="col-md-6 col-lg-4">
             <Link href="/portfolio/">
               <a className="portfolio__link">
-                <img className="portfolio__thumbnail thumbnail" src={require('./../static/images/showcase-thumbnails/thumbnail-multi-tesla.jpg')} alt="Tesla web design concept.jpg" />
+                <img className="portfolio__thumbnail thumbnail" src={require('./../static/images/showcase-thumbnails/thumbnail-supernova@2x.jpg')} alt="Supernova" />
               </a>
             </Link>
           </div>
@@ -53,7 +53,7 @@ export default () => {
           <div className="col-md-6 col-lg-4">
             <Link href="/portfolio/">
               <a className="portfolio__link">
-                <img className="portfolio__thumbnail thumbnail" src={require('./../static/images/showcase-thumbnails/thumbnail-multi-harley-davidson.jpg')} alt="Harley-Davidson web design concept.jpg" />
+                <img className="portfolio__thumbnail thumbnail" src={require('./../static/images/showcase-thumbnails/thumbnail-tesla@2x.jpg')} alt="Tesla" />
               </a>
             </Link>
           </div>
@@ -61,22 +61,42 @@ export default () => {
           <div className="col-md-6 col-lg-4">
             <Link href="/portfolio/">
               <a className="portfolio__link">
-                <img className="portfolio__thumbnail thumbnail" src={require('./../static/images/showcase-thumbnails/thumbnail-multi-ceska-whisky.jpg')} alt="Ceska Whisky web design concept.jpg" />
+                <img className="portfolio__thumbnail thumbnail" src={require('./../static/images/showcase-thumbnails/thumbnail-harley-davidson@2x.jpg')} alt="Harley-Davidson" />
               </a>
             </Link>
           </div>
 
-          {/* <div className="row col-md-6 col-lg-4"></div> */}
+          <div className="col-md-6 col-lg-4">
+            <Link href="/portfolio/">
+              <a className="portfolio__link">
+                <img className="portfolio__thumbnail thumbnail" src={require('./../static/images/showcase-thumbnails/thumbnail-ceska-whisky@2x.jpg')} alt="Ceska Whisky" />
+              </a>
+            </Link>
+          </div>
 
-          {/* <div className="row col-md-6 col-lg-4"></div> */}
+          <div className="col-md-6 col-lg-4">
+            <Link href="/portfolio/">
+              <a className="portfolio__link">
+                <img className="portfolio__thumbnail thumbnail" src={require('./../static/images/showcase-thumbnails/thumbnail-slavnosti-ruzoveho-vina@2x.jpg')} alt="Slavnosti Růžového Vína" />
+              </a>
+            </Link>
+          </div>
 
-          {/* <div className="row col-md-6 col-lg-4"></div> */}
+          <div className="col-md-6 col-lg-4">
+            <Link href="/portfolio/">
+              <a className="portfolio__link">
+                <img className="portfolio__thumbnail thumbnail" src={require('./../static/images/showcase-thumbnails/thumbnail-fresh-tasty@2x.jpg')} alt="Fresh & Tasty" />
+              </a>
+            </Link>
+          </div>
 
-          {/* <div className="row col-md-6 col-lg-4"></div> */}
-
-          {/* <div className="row col-md-6 col-lg-4"></div> */}
-
-          {/* <div className="row col-md-6 col-lg-4"></div> */}
+          <div className="col-md-6 col-lg-4">
+            <Link href="/portfolio/">
+              <a className="portfolio__link">
+                <img className="portfolio__thumbnail thumbnail" src={require('./../static/images/showcase-thumbnails/thumbnail-sumava@2x.jpg')} alt="Sumava" />
+              </a>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
