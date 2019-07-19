@@ -3,6 +3,8 @@ import $ from 'jquery'
 // import ReCAPTCHA from "react-google-recaptcha"
 import { Waypoint } from 'react-waypoint'
 
+import { logEvent } from './../utils/analytics'
+
 export class Contact extends React.Component {
   state = {
     formEmail: '',
@@ -77,10 +79,7 @@ export class Contact extends React.Component {
         })
 
         // Register in Google Analytics
-        ReactGA.event({
-          category: 'User',
-          action: 'Contact via form'
-        })
+        logEvent('User', 'Contact via form')
 
         this.setState({
           formEmail: '',
@@ -88,10 +87,10 @@ export class Contact extends React.Component {
           formName: '',
           formUsername: '',
           // isCaptchaValid: false,
-          isErrorShown: false,
           isErrorBotShown: false,
-          isFormSubmitted: true,
-          isFormValid: false
+          isErrorShown: false,
+          isFormSubmitted: true
+          // isFormValid: false
         })
       }, 1000)
     } else if (this.state.formUsername.length !== 0) {
@@ -132,7 +131,7 @@ export class Contact extends React.Component {
       <section>
         <div className="container pt-5 pb-5">
           <Waypoint onEnter={this.handleWaypointEnter} topOffset="-40%">
-            <div ref={el => this.sectionContact = el} className="animated">
+            <div ref={el => this.sectionContact = el} className="animated pb-5">
               <h1 className="h3 heading--small text--center">Let's get started on your project</h1>
 
               <div className="divider divider--center divider--red divider--slim" />
