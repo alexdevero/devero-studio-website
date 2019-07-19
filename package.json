@@ -9,6 +9,7 @@
     "ship": "npm run build && npm run export"
   },
   "dependencies": {
+    "axios": "^0.19.0",
     "jquery": "^3.4.1",
     "next": "8.1.0",
     "next-compose-plugins": "^2.2.0",
@@ -22,7 +23,8 @@
     "react-medium-image-zoom": "^3.1.1",
     "react-svg": "^10.0.11",
     "react-waypoint": "^9.0.2",
-    "reaviz": "^2.4.5"
+    "reaviz": "^2.4.5",
+    "xml-js": "^1.6.11"
   },
   "license": "ISC",
   "keywords": [],
