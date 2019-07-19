@@ -67,10 +67,6 @@ export const Footer = () => {
           </div>
 
           <div className="col-md-6 text--right">
-            <p className="footer__copy">Copyright &copy;{new Date().getFullYear()} Devero Studio.</p>
-
-            <p className="footer__copy mt-1">All rights reserved</p>
-
             <ul className="list--unstyled mt-1 footer__copy">
               <li>
                 <Link href="/terms"><a>Terms and Conditions</a></Link>
@@ -82,6 +78,8 @@ export const Footer = () => {
             </ul>
           </div>
         </div>
+
+        <p className="footer__copy mt-3 text--center">Copyright &copy;{new Date().getFullYear()} Devero Studio. All rights reserved.</p>
       </div>
     </footer>
   )
