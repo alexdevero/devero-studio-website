@@ -11,7 +11,7 @@ export const Awards = () => {
 
   return(
     <Waypoint onEnter={handleWaypointEnter} topOffset="-40%">
-      <div className="container animated" ref={el => sectionAwards = el}>
+      <div className="container animated pt-5 pb-5" ref={el => sectionAwards = el}>
         <h1 className="h4 heading--small text--center">Featured in</h1>
 
         <div className="divider divider--red divider--center" />
