@@ -44,7 +44,7 @@ export default class extends React.Component {
 
         <Hero />
 
-        <Pitch />
+        {/* <Pitch /> */}
 
         <Intro />
 
