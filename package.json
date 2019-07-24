@@ -21,7 +21,7 @@
     "react-ga": "^2.6.0",
     "react-google-recaptcha": "^1.1.0",
     "react-medium-image-zoom": "^3.1.1",
-    "react-svg": "^10.0.11",
+    "react-svg": "^10.0.12",
     "react-waypoint": "^9.0.2",
     "reaviz": "^2.4.5",
     "xml-js": "^1.6.11"
@@ -51,7 +51,7 @@
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-node": "^9.1.0",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-react": "^7.14.2",
+    "eslint-plugin-react": "^7.14.3",
     "imagemin-mozjpeg": "^8.0.0",
     "imagemin-optipng": "^7.0.0",
     "imagemin-svgo": "^7.0.0",
