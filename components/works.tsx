@@ -1,3 +1,4 @@
+/* eslint-disable react/no-multi-comp */
 import * as React from 'react'
 // import Link from 'next/link'
 import { Waypoint } from 'react-waypoint'
@@ -18,7 +19,25 @@ export const Works = () => {
     }
   }
 
-  // eslint-disable-next-line react/no-multi-comp
+  function generateCaseStudyColor() {
+    switch (activeTab) {
+      case 'supernova':
+        return { backgroundColor: '#181b1f' }
+      case 'tasty':
+        return { backgroundColor: '#ffb300' }
+      case 'slavnosti':
+        return { backgroundColor: '#c544a0' }
+      case 'tesla':
+        return { backgroundColor: '#323844' }
+      case 'harley':
+        return { backgroundColor: '#000' }
+      case 'whisky':
+        return { backgroundColor: '#fca22d' }
+      case 'sumava':
+        return { backgroundColor: '#3a401a' }
+    }
+  }
+
   function generateCaseStudyThumbnail() {
     switch (activeTab) {
       case 'supernova':
@@ -108,6 +127,67 @@ export const Works = () => {
     }
   }
 
+  function generateCaseStudyInfo() {
+    switch (activeTab) {
+      case 'supernova':
+        return (
+          <div className="works__info">
+            <h2 className="works__project-name">Supernova</h2>
+
+            <h3 className="works__project-type">Web development</h3>
+          </div>
+        )
+      case 'tasty':
+        return (
+          <div className="works__info">
+            <h2 className="works__project-name">Fresh &amp; Tasty</h2>
+
+            <h3 className="works__project-type">Web development</h3>
+          </div>
+        )
+      case 'slavnosti':
+        return (
+          <div className="works__info">
+            <h2 className="works__project-name">Slavnosti Růžového Vína</h2>
+
+            <h3 className="works__project-type">Web development</h3>
+          </div>
+        )
+      case 'tesla':
+        return (
+          <div className="works__info">
+            <h2 className="works__project-name">Tesla</h2>
+
+            <h3 className="works__project-type">Web design</h3>
+          </div>
+        )
+      case 'harley':
+        return (
+          <div className="works__info">
+            <h2 className="works__project-name">Harley-Davidson</h2>
+
+            <h3 className="works__project-type">Web design</h3>
+          </div>
+        )
+      case 'whisky':
+        return (
+          <div className="works__info">
+            <h2 className="works__project-name">Česká Whisky</h2>
+
+            <h3 className="works__project-type">Web development</h3>
+          </div>
+        )
+      case 'sumava':
+        return (
+          <div className="works__info">
+            <h2 className="works__project-name">National Park Šumava</h2>
+
+            <h3 className="works__project-type">Web design</h3>
+          </div>
+        )
+    }
+  }
+
   // function generateCaseStudyBtnLink() {
   //   switch (activeTab) {
   //     case 'one':
@@ -170,7 +250,7 @@ export const Works = () => {
 
                   <li className="mb-2">
                     <span className={`link--black-red${activeTab === 'whisky' ? ' link--black-red--selected' : ''}`} onClick={() => handleChangeActiveTab('whisky')}>
-                      <small className="text--small">No.05:</small>
+                      <small className="text--small">No.04:</small>
                       {' '}
                       <strong>Ceska Whisky</strong>
                     </span>
@@ -179,8 +259,16 @@ export const Works = () => {
                   </li>
 
                   <li className="mb-2">
+                    <span className={`link--black-red${activeTab === 'tesla' ? ' link--black-red--selected' : ''}`} onClick={() => handleChangeActiveTab('tesla')}>
+                      <small className="text--small">No.05:</small>
+                      {' '}
+                      <strong>Tesla</strong>
+                    </span>
+                  </li>
+
+                  <li className="mb-2">
                     <span className={`link--black-red${activeTab === 'harley' ? ' link--black-red--selected' : ''}`} onClick={() => handleChangeActiveTab('harley')}>
-                      <small className="text--small">No.04:</small>
+                      <small className="text--small">No.06:</small>
                       {' '}
                       <strong>Harley-Davidson</strong>
                     </span>
@@ -189,9 +277,9 @@ export const Works = () => {
 
                   <li className="mb-2">
                     <span className={`link--black-red${activeTab === 'sumava' ? ' link--black-red--selected' : ''}`} onClick={() => handleChangeActiveTab('sumava')}>
-                      <small className="text--small">No.06:</small>
+                      <small className="text--small">No.07:</small>
                       {' '}
-                      <strong>Sumava</strong>
+                      <strong>National Park Šumava</strong>
                     </span>
 
                   </li>
@@ -203,7 +291,9 @@ export const Works = () => {
               </div>
 
               <div className="col-md-6 col-lg-8">
-                <div className="works__wrapper text--center">
+                <div className="works__wrapper" style={generateCaseStudyColor()}>
+                  {generateCaseStudyInfo()}
+
                   {generateCaseStudyThumbnail()}
 
                   {/* <Link href={generateCaseStudyBtnLink()}><a className="link--black-red link--underline">See case study</a></Link> */}
@@ -211,7 +301,7 @@ export const Works = () => {
               </div>
             </div>
 
-            <div className="works__projects mt-7">
+            <div className="works__projects">
               {isProjectsListVisible && <div className="row mb-5">
                 <div className="col-sm-2 col-md-4">
                   <h2 className="h5">Web design</h2>
