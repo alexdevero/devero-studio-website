@@ -202,6 +202,25 @@ export const Works = () => {
     }
   }
 
+  function generateCaseStudyCta() {
+    switch (activeTab) {
+      case 'supernova':
+        return ['| ', <a key={`${activeTab}_1`} href="https://www.supernova.io" target="_blank" rel="noopener noreferrer" className="link--black-red link--underline"><strong>Visit website</strong></a>]
+      case 'tasty':
+        return ['| ', <a key={`${activeTab}_1`} href="https://www.freshandtasty.cz" target="_blank" rel="noopener noreferrer" className="link--black-red link--underline"><strong>Visit website</strong></a>]
+      case 'slavnosti':
+        return ['| ', <a key={`${activeTab}_1`} href="https://www.slavnostiruzovehovina.cz" target="_blank" rel="noopener noreferrer" className="link--black-red link--underline"><strong>Visit website</strong></a>]
+      case 'tesla':
+        return null
+      case 'harley':
+        return null
+      case 'whisky':
+        return ['| ', <a key={`${activeTab}_1`} href="https://www.ceskawhisky.cz" target="_blank" rel="noopener noreferrer" className="link--black-red link--underline"><strong>Visit website</strong></a>]
+      case 'sumava':
+        return null
+    }
+  }
+
   // function generateCaseStudyBtnLink() {
   //   switch (activeTab) {
   //     case 'one':
@@ -239,7 +258,7 @@ export const Works = () => {
                       <strong>Supernova</strong>
                     </span>
 
-                    <a href="https://www.supernova.io" className="link--black-red" target="_blank" rel="noopener noreferrer"><span className="fas fa-external-link-alt" style={{ marginLeft: 6, fontSize: 12 }} /></a>
+                    {/* <a href="https://www.supernova.io" className="link--black-red" target="_blank" rel="noopener noreferrer"><span className="fas fa-external-link-alt" style={{ marginLeft: 6, fontSize: 12 }} /></a> */}
                   </li>
 
                   <li className="mb-2">
@@ -249,7 +268,7 @@ export const Works = () => {
                       <strong>Fresh & Tasty</strong>
                     </span>
 
-                    <a href="https://www.freshandtasty.cz" className="link--black-red" target="_blank" rel="noopener noreferrer"><span className="fas fa-external-link-alt" style={{ marginLeft: 6, fontSize: 12 }} /></a>
+                    {/* <a href="https://www.freshandtasty.cz" className="link--black-red" target="_blank" rel="noopener noreferrer"><span className="fas fa-external-link-alt" style={{ marginLeft: 6, fontSize: 12 }} /></a> */}
                   </li>
 
                   <li className="mb-2">
@@ -259,7 +278,7 @@ export const Works = () => {
                       <strong>Slavnosti růžového vína</strong>
                     </span>
 
-                    <a href="https://www.slavnostiruzovehovina.cz" className="link--black-red" target="_blank" rel="noopener noreferrer"><span className="fas fa-external-link-alt" style={{ marginLeft: 6, fontSize: 12 }} /></a>
+                    {/* <a href="https://www.slavnostiruzovehovina.cz" className="link--black-red" target="_blank" rel="noopener noreferrer"><span className="fas fa-external-link-alt" style={{ marginLeft: 6, fontSize: 12 }} /></a> */}
                   </li>
 
                   <li className="mb-2">
@@ -269,7 +288,7 @@ export const Works = () => {
                       <strong>Ceska Whisky</strong>
                     </span>
 
-                    <a href="https://www.ceskawhisky.cz" className="link--black-red" target="_blank" rel="noopener noreferrer"><span className="fas fa-external-link-alt" style={{ marginLeft: 6, fontSize: 12 }} /></a>
+                    {/* <a href="https://www.ceskawhisky.cz" className="link--black-red" target="_blank" rel="noopener noreferrer"><span className="fas fa-external-link-alt" style={{ marginLeft: 6, fontSize: 12 }} /></a> */}
                   </li>
 
                   <li className="mb-2">
@@ -312,6 +331,8 @@ export const Works = () => {
 
                   {/* <Link href={generateCaseStudyBtnLink()}><a className="link--black-red link--underline">See case study</a></Link> */}
                 </div>
+
+                <p className="works__project-cta"><span>Case study</span> (<span>coming soon</span>) {generateCaseStudyCta()}</p>
               </div>
             </div>
 

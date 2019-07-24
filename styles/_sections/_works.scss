@@ -6,6 +6,10 @@
   background-color: #181b1f;
   border-radius: 6px;
 
+  @media (max-width: 767.99px) {
+    margin-top: 21px;
+  }
+
   @media (min-width: 580px) {
     height: 400px;
   }
@@ -101,6 +105,20 @@
   @media (min-width: 992px) {
     bottom: -72px;
     right: -90px;
+  }
+}
+
+.works__project-cta {
+  margin-top: 88px;
+  text-align: center;
+
+  span:first-of-type {
+    font-weight: 700;
+    text-decoration: line-through;
+  }
+
+  span:last-of-type {
+    font-size: 14px;
   }
 }
 
