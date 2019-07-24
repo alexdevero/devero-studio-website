@@ -88,7 +88,6 @@ export const Blog = () => {
 
         <div className="row">
           {blogData.map((blogPost, index) => {
-            console.log(blogPost.description)
             return (
               <div className={`col-sm-6 col-md-4${index > 1 ? ' mt-5' : ''}${index < 3 ? ' mt-md-0' : ''}${index > 2 ? ' mt-md-5' : ''}`} key={blogPost.id}>
                 <div>
