@@ -201,7 +201,7 @@ export class Contact extends React.Component {
                       </fieldset>
                     )}
 
-                    <button onClick={this.handleFormSubmit} className="btn btn--full-width btn--black" data-text="Send">Send</button>
+                    <button onClick={this.handleFormSubmit} className="btn btn--full-width btn--black contact-button-cta" data-text="Send">Send</button>
                   </form>
                 </div>
               </div>
