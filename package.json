@@ -4,7 +4,8 @@
   "scripts": {
     "build": "next build",
     "export": "next export",
-    "start": "next start",
+    "start": "next",
+    "start:next": "next start",
     "dev": "next",
     "ship": "npm run build && npm run export"
   },
