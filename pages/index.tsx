@@ -9,13 +9,13 @@ import { initGA, logPageView } from '../utils/analytics'
 import { Awards } from './../components/awards'
 import { Blog } from './../components/blog'
 import { Contact } from './../components/contact'
-// import { Faq } from './../components/faq'
+import { Faq } from './../components/faq'
 import { Footer } from './../components/footer'
 import { Hero } from './../components/hero'
 import { Intro } from './../components/intro'
 // import { MapComponent } from '../components/map'
 // import { Partners } from './../components/partners'
-import { Pitch } from './../components/pitch'
+// import { Pitch } from './../components/pitch'
 import { Services } from './../components/services'
 // import { Stack } from './../components/stack'
 import { Testimonials } from './../components/testimonials'
@@ -24,7 +24,6 @@ import { Works } from '../components/works'
 
 // Import styles
 import './../styles/styles.scss'
-
 
 export default class extends React.Component {
   componentDidMount() {
@@ -39,7 +38,7 @@ export default class extends React.Component {
   }
 
   render() {
-    return(
+    return (
       <div>
         {/* <Link href='/about'>
           <a>About</a>
@@ -59,11 +58,11 @@ export default class extends React.Component {
 
         {/* <Partners /> */}
 
+        <Faq />
+
         <Testimonials />
 
         {/* <Where /> */}
-
-        {/* <Faq /> */}
 
         <Awards />
 
