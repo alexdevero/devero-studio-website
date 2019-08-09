@@ -12,13 +12,24 @@
 
 .hero .container {
   z-index: 2;
+
+  /* For Lottie */
+  display: flex;
+  flex: 1;
+  flex-flow: column nowrap;
+  text-align: center;
 }
 
 .hero__heading {
-  font-size: 60px;
+  margin-bottom: 15px;
+  font-size: 50px;
   font-weight: 700;
   line-height: 1;
   color: #fff;
+
+  @media (min-width: 360px) {
+    font-size: 60px;
+  }
 
   @media (min-width: 25em) {
     font-size: 78px;
@@ -88,11 +99,57 @@
 
 .hero__link {
   display: inline-block;
+  align-self: center;
+  position: relative;
+  z-index: 2;
   text-decoration: none;
   color: var(--color-gray-light);
 
   &:hover {
     color: var(--color-brand);
+  }
+
+  span {
+    margin-right: 4px;
+    font-size: 14px;
+  }
+}
+
+/* Lottie animation */
+.hero [aria-label=animation] {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 220px !important;
+  height: 220px !important;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+
+  @media (min-width: 360px) {
+    width: 300px !important;
+    height: 300px !important;
+  }
+
+  @media (min-width: 510px) {
+    margin-top: 70px !important;
+    width: 350px !important;
+    height: 350px !important;
+  }
+
+  @media (min-width: 555px) {
+    width: 350px !important;
+    height: 350px !important;
+  }
+
+  @media (min-width: 768px) {
+    width: 400px !important;
+    height: 400px !important;
+  }
+
+  @media (min-width: 992px) {
+    margin-top: 10px !important;
+    width: 550px !important;
+    height: 550px !important;
   }
 }
 

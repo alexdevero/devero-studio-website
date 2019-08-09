@@ -1,6 +1,9 @@
 import * as React from 'react'
 // import { useTrail, animated } from 'react-spring'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import Lottie from 'lottie-react-web'
+
+import animation from './../static/lottie-animation.json'
 
 // const fast = { tension: 1200, friction: 40 }
 // const slow = { mass: 10, tension: 200, friction: 50 }
@@ -14,22 +17,26 @@ export const Hero = () => {
       <div className="container">
         <h1 className="hero__heading">DEVERO STUDIO</h1>
 
-        <div className="glitch-wrapper d-md-none">
+        {/* <div className="glitch-wrapper d-md-none">
           <h1 className="hero__title">
             <span className="glitch" data-text="Delivering">Delivering</span>
             <span className="glitch" data-text="digital">digital</span>
             <span className="glitch" data-text="perfection">perfection</span>
           </h1>
-        </div>
+        </div> */}
 
-        <div className="glitch-wrapper d-none d-md-block">
+        {/* <div className="glitch-wrapper d-none d-md-block">
           <h1 className="hero__title glitch" data-text="Delivering digital perfection">Delivering digital perfection</h1>
-        </div>
+        </div> */}
 
         <h3 className="hero__text">We design and build top-class websites and apps for those who want the best.</h3>
-
-        <AnchorLink className="hero__link" href="#intro">&darr; Learn more</AnchorLink>
       </div>
+
+      <Lottie
+        options={{
+          animationData: animation
+        }}
+      />
 
       {/* <svg style={{ position: 'absolute', width: 0, height: 0 }}>
         <filter id="goo">
@@ -43,6 +50,8 @@ export const Hero = () => {
           <animated.div key={index} style={{ transform: props.xy.interpolate(trans) }} />
         ))}
       </div> */}
+
+      <AnchorLink className="hero__link" href="#intro"><span className="fas fa-long-arrow-alt-down" /> Learn more</AnchorLink>
     </div>
   )
 }
