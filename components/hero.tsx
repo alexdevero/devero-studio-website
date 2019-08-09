@@ -1,13 +1,13 @@
 import * as React from 'react'
-import { useTrail, animated } from 'react-spring'
+// import { useTrail, animated } from 'react-spring'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
-const fast = { tension: 1200, friction: 40 }
-const slow = { mass: 10, tension: 200, friction: 50 }
-const trans = (x, y) => `translate3d(${x}px,${y}px,0) translate3d(-50%,-50%,0)`
+// const fast = { tension: 1200, friction: 40 }
+// const slow = { mass: 10, tension: 200, friction: 50 }
+// const trans = (x, y) => `translate3d(${x}px,${y}px,0) translate3d(-50%,-50%,0)`
 
 export const Hero = () => {
-  const [trail, set] = useTrail(3, () => ({ xy: [0, 0], config: i => (i === 0 ? fast : slow) }))
+  // const [trail, set] = useTrail(3, () => ({ xy: [0, 0], config: i => (i === 0 ? fast : slow) }))
 
   return (
     <div className="hero">
@@ -31,7 +31,7 @@ export const Hero = () => {
         <AnchorLink className="hero__link" href="#learnMore">&darr; Learn more</AnchorLink>
       </div>
 
-      <svg style={{ position: 'absolute', width: 0, height: 0 }}>
+      {/* <svg style={{ position: 'absolute', width: 0, height: 0 }}>
         <filter id="goo">
           <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="30" />
           <feColorMatrix in="blur" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 30 -7" />
@@ -42,7 +42,7 @@ export const Hero = () => {
         {trail.map((props, index) => (
           <animated.div key={index} style={{ transform: props.xy.interpolate(trans) }} />
         ))}
-      </div>
+      </div> */}
     </div>
   )
 }
