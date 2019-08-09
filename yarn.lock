@@ -858,10 +858,10 @@
   resolved "https://registry.yarnpkg.com/@types/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#1ee30d79544ca84d68d4b3cdb0af4f205663dd2d"
   integrity sha512-OCutwjDZ4aFS6PB1UZ988C4YgwlBHJd6wCeQqaLdmadZ/7e+w79+hbMUFC1QXDNCmdyoRfAFdm0RypzwR+Qpag==
 
-"@types/eslint@^4.16.6":
-  version "4.16.6"
-  resolved "https://registry.yarnpkg.com/@types/eslint/-/eslint-4.16.6.tgz#96d4ecddbea618ab0b55eaf0dffedf387129b06c"
-  integrity sha512-GL7tGJig55FeclpOytU7nCCqtR143jBoC7AUdH0DO9xBSIFiNNUFCY/S3KNWsHeQJuU3hjw/OC1+kRTFNXqUZQ==
+"@types/eslint@^4.16.7":
+  version "4.16.7"
+  resolved "https://registry.yarnpkg.com/@types/eslint/-/eslint-4.16.7.tgz#723a2e53c6884204323ee44e80ea036857e34ef8"
+  integrity sha512-Xr50GH0b4cc/65IVQOJtbH8Ilob8HSmr9HW/OmxpNrqJwEp+FX8TL5V5lv6GJEXIlLd4eiWFt439hlImZ9PgdA==
   dependencies:
     "@types/estree" "*"
     "@types/json-schema" "*"
@@ -898,10 +898,10 @@
   resolved "https://registry.yarnpkg.com/@types/invariant/-/invariant-2.2.29.tgz#aa845204cd0a289f65d47e0de63a6a815e30cc66"
   integrity sha512-lRVw09gOvgviOfeUrKc/pmTiRZ7g7oDOU6OAutyuSHpm1/o2RaBQvRhgK8QEdu+FFuw/wnWb29A/iuxv9i8OpQ==
 
-"@types/jquery@^3.3.30":
-  version "3.3.30"
-  resolved "https://registry.yarnpkg.com/@types/jquery/-/jquery-3.3.30.tgz#af4ad612d86d954d74664b2b0ec337a251fddb5b"
-  integrity sha512-chB+QbLulamShZAFcTJtl8opZwHFBpDOP6nRLrPGkhC6N1aKWrDXg2Nc71tEg6ny6E8SQpRwbWSi9GdstH5VJA==
+"@types/jquery@^3.3.31":
+  version "3.3.31"
+  resolved "https://registry.yarnpkg.com/@types/jquery/-/jquery-3.3.31.tgz#27c706e4bf488474e1cb54a71d8303f37c93451b"
+  integrity sha512-Lz4BAJihoFw5nRzKvg4nawXPzutkv7wmfQ5121avptaSIXlDNJCUuxZxX/G+9EVidZGuO0UBlk+YjKbwRKJigg==
   dependencies:
     "@types/sizzle" "*"
 
@@ -987,10 +987,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-google-recaptcha@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@types/react-google-recaptcha/-/react-google-recaptcha-1.0.0.tgz#f0831066d082b7dcb3613c2ce361ff96fbc1b567"
-  integrity sha512-NhHWdRzRt766Zw+e5qvEAP0dVPHX9RDcv9BCrQ3GWXbN5qUjUe7ZSSpwa1lftVzjt4vD9755uBsSJ668rJpOHQ==
+"@types/react-google-recaptcha@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@types/react-google-recaptcha/-/react-google-recaptcha-1.1.0.tgz#427c8397591eb18843982e28ad8c232a0a2c5944"
+  integrity sha512-ffa7wAdB5zuoys7wlpyXRMqgk0EsB8Vot9oAHQ78J8dPC+MQYn1kgNuUQNMQGhuOx8kViKUeT2VwUpybUUPRpQ==
   dependencies:
     "@types/react" "*"
 
@@ -1017,10 +1017,10 @@
     "@types/prop-types" "*"
     csstype "^2.2.0"
 
-"@types/react@16.8.23":
-  version "16.8.23"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.8.23.tgz#ec6be3ceed6353a20948169b6cb4c97b65b97ad2"
-  integrity sha512-abkEOIeljniUN9qB5onp++g0EY38h7atnDHxwKUFz1r3VH1+yG1OKi2sNPTyObL40goBmfKFpdii2lEzwLX1cA==
+"@types/react@16.9.0":
+  version "16.9.0"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.0.tgz#27434f16d889a335eb4626d1f1e67eda54039e5b"
+  integrity sha512-eOct1hyZI9YZf/eqNlYu7jxA9qyTw1EGXruAJhHhBDBpc00W0C1vwlnh+hkOf7UFZkNK+UxnFBpwAZe3d7XJhQ==
   dependencies:
     "@types/prop-types" "*"
     csstype "^2.2.0"
