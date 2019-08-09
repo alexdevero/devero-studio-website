@@ -28,7 +28,7 @@ export const Hero = () => {
 
         <h3 className="hero__text">We design and build top-class websites and apps for those who want the best.</h3>
 
-        <AnchorLink className="hero__link" href="#learnMore">&darr; Learn more</AnchorLink>
+        <AnchorLink className="hero__link" href="#intro">&darr; Learn more</AnchorLink>
       </div>
 
       {/* <svg style={{ position: 'absolute', width: 0, height: 0 }}>
