@@ -16,11 +16,12 @@ import { Intro } from './../components/intro'
 // import { MapComponent } from '../components/map'
 // import { Partners } from './../components/partners'
 // import { Pitch } from './../components/pitch'
+import { Projects } from '../components/projects'
 import { Services } from './../components/services'
 // import { Stack } from './../components/stack'
 import { Testimonials } from './../components/testimonials'
 // import { Where } from '../components/where'
-import { Works } from '../components/works'
+// import { Works } from '../components/works'
 
 // Import styles
 import './../styles/styles.scss'
@@ -50,7 +51,9 @@ export default class extends React.Component {
 
         <Intro />
 
-        <Works />
+        {/* <Works /> */}
+
+        <Projects />
 
         <Services />
 
