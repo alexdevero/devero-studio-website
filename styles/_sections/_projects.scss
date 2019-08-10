@@ -1,0 +1,159 @@
+/* Projects */
+.projects-col {
+  min-height: 460px;
+
+  @media (max-width: 580px) and (min-width: 450px) {
+    min-height: calc(100vw - 100px);
+  }
+
+  @media (max-width: 449.98px) {
+    min-height: 390px;
+  }
+
+  @media (min-width: 768px) {
+    min-height: 360px;
+  }
+}
+
+.works__wrapper {
+  position: relative;
+  width: 100%;
+  height: calc(100vw - 195px);
+  background-color: #181b1f;
+  border-radius: 6px;
+
+  @media (max-width: 767.98px) {
+    margin-top: 21px;
+  }
+
+  @media (max-width: 449.98px) {
+    height: calc(100vw - 150px);
+  }
+
+  @media (max-width: 370px) {
+    height: calc(100vw - 110px);
+  }
+
+  @media (min-width: 580px) {
+    height: 340px;
+  }
+
+  @media (min-width: 768px) {
+    width: 300px;
+    height: 240px;
+  }
+
+  @media (min-width: 992px) {
+    width: 350px;
+    height: 250px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 420px;
+    height: 250px;
+  }
+}
+
+.works__btn {
+  margin: auto;
+  max-width: 250px;
+}
+
+.works__projects-btn {
+  margin: auto;
+}
+
+.works__info {
+  position: absolute;
+  top: 21px;
+  left: 21px;
+  color: #fff;
+  transition: top .25s ease-out, left .25s ease-out;
+}
+
+.works__project-name,
+.works__project-type {
+  line-height: 1;
+  user-select: none;
+}
+
+.works__project-name {
+  margin-bottom: 16px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.works__project-type {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.works__thumbnail {
+  position: absolute;
+  right: 0;
+  bottom: -82px;
+  transition: all .25s ease-out;
+
+  @media (max-width: 767.99px) {
+    left: 0;
+    margin: auto;
+  }
+
+  @media (min-width: 768px) {
+    right: -50px;
+    bottom: -52px;
+  }
+
+  @media (min-width: 992px) {
+    right: -100px;
+    bottom: -82px;
+  }
+}
+
+.works__wrapper:hover .works__info {
+  top: 23px;
+  left: 23px;
+
+  @media (max-width: 767.99px), (min-width: 992px) {
+    top: 29px;
+    left: 29px;
+  }
+}
+
+.works__wrapper:hover .works__thumbnail {
+  transform: scale(1.05);
+
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 992px) {
+    bottom: -72px;
+    right: -90px;
+  }
+}
+
+.works__project-cta {
+  margin-top: 88px;
+  text-align: center;
+
+  span:first-of-type {
+    font-weight: 700;
+    text-decoration: line-through;
+  }
+
+  span:last-of-type {
+    font-size: 14px;
+  }
+}
+
+.works__projects {
+  margin-top: 118px;
+
+  @media (min-width: 768px) {
+    margin-top: 74px;
+  }
+
+  @media (min-width: 992px) {
+    margin-top: 112px;
+  }
+}

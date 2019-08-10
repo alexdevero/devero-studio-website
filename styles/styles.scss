@@ -24,9 +24,10 @@
 @import './_components/tooltips';
 
 // Import sections
+@import './_sections/projects';
 @import './_sections/services';
 @import './_sections/where';
-@import './_sections/works';
+// @import './_sections/works';
 
 // Helpers
 @import './helpers/helpers-spacing';
