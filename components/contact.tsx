@@ -1,19 +1,22 @@
 import * as React from 'react'
 import $ from 'jquery'
+import Lottie from 'lottie-react-web'
 // import ReCAPTCHA from "react-google-recaptcha"
 import { Waypoint } from 'react-waypoint'
 
 import { logEvent } from './../utils/analytics'
 
+import formAnimation from './../static/lottie-animation-message-sent.json'
+
 export class Contact extends React.Component {
   state = {
     formEmail: '',
-    formName: '',
     formMessage: '',
+    formName: '',
     formUsername: '',
     // isCaptchaValid: false,
-    isErrorShown: false,
     isErrorBotShown: false,
+    isErrorShown: false,
     isFormSubmitted: false,
     isFormValid: false
   }
@@ -24,7 +27,7 @@ export class Contact extends React.Component {
   inputUsername: HTMLInputElement | undefined
   sectionContact: HTMLDivElement | undefined
 
-  handleInputChange = (event: any) => {
+  handleInputChange = (event: React.ChangeEvent) => {
     if (event.target.value.length > 0 && event.target.name !== 'formEmail') {
       this.setState({
         [event.target.name]: event.target.value
@@ -56,7 +59,7 @@ export class Contact extends React.Component {
   //   })
   // }
 
-  handleFormSubmit = (event: any) => {
+  handleFormSubmit = (event: React.FormEventHandler) => {
     event.preventDefault()
 
     if (this.state.formEmail.length > 0 && this.state.formName.length > 0 && this.state.formMessage.length > 0 && this.state.formUsername.length === 0 /* && this.state.isCaptchaValid */) {
@@ -89,8 +92,8 @@ export class Contact extends React.Component {
           // isCaptchaValid: false,
           isErrorBotShown: false,
           isErrorShown: false,
-          isFormSubmitted: true
-          // isFormValid: false
+          isFormSubmitted: true,
+          isFormValid: false
         })
       }, 1000)
     } else if (this.state.formUsername.length !== 0) {
@@ -127,82 +130,96 @@ export class Contact extends React.Component {
   }
 
   render() {
-    return(
+    return (
       <section>
         <div className="container pt-5 pb-5">
           <Waypoint onEnter={this.handleWaypointEnter} topOffset="-40%">
             <div ref={el => this.sectionContact = el} className="animated pb-5">
-              <h1 className="h3 heading--small text--center">Let's get started on your project</h1>
+              <h1 className="h3 heading--small text--center">Let&apos;s get started on your project</h1>
 
               <div className="divider divider--center divider--red divider--slim" />
 
-              <p className="text--center mb-5">Drop us a line and we'll contact you to build a plan together.</p>
+              <p className="text--center mb-5">Drop us a line and we&apos;ll contact you to build a plan together.</p>
 
               <div className="row justify-content-center">
                 <div className="col-md-11 col-md-9 col-lg-7">
-                  <form action="">
-                    <div className="row">
-                      <div className="col-sm-6">
-                        <fieldset className="input--absolute">
-                          <input onChange={this.handleInputChange} id="formName" name="formName" type="text" required={true} ref={(inputName) => this.inputName = inputName} />
+                  {!this.state.isFormSubmitted && (
+                    <form action="">
+                      <div className="row">
+                        <div className="col-sm-6">
+                          <fieldset className="input--absolute">
+                            <input onChange={this.handleInputChange} id="formName" name="formName" type="text" required ref={(inputName) => this.inputName = inputName} />
 
-                          <label htmlFor="formName">Full name *</label>
-                        </fieldset>
+                            <label htmlFor="formName">Full name *</label>
+                          </fieldset>
+                        </div>
+
+                        <div className="col-sm-6 mt-3 mt-sm-0">
+                          <fieldset className="input--absolute">
+                            <input onChange={this.handleInputChange} id="formEmail" name="formEmail" type="email" required ref={(inputEmail) => this.inputEmail = inputEmail} />
+
+                            <label htmlFor="formEmail">Email *</label>
+                          </fieldset>
+                        </div>
                       </div>
 
-                      <div className="col-sm-6 mt-3 mt-sm-0">
-                        <fieldset className="input--absolute">
-                          <input onChange={this.handleInputChange} id="formEmail" name="formEmail" type="email" required={true} ref={(inputEmail) => this.inputEmail = inputEmail} />
+                      <fieldset className="input--absolute mt-4 mb-2">
+                        <textarea onChange={this.handleInputChange} id="formMessage" name="formMessage" required ref={(inputMessage) => this.inputMessage = inputMessage} />
 
-                          <label htmlFor="formEmail">Email *</label>
+                        <label htmlFor="formMessage">Message *</label>
+                      </fieldset>
+
+                      <fieldset className="input--absolute input--username">
+                        <input onChange={this.handleInputChange} id="formUsername" name="formUsername" type="text" ref={(inputUsername) => this.inputUsername = inputUsername} />
+
+                        <label htmlFor="formUsername">Username *</label>
+                      </fieldset>
+
+                      <fieldset className="mb-3">
+                        <p className="text--small mt-0"><i>* All fields are required</i></p>
+                      </fieldset>
+
+                      {/* <fieldset className="mb-4">
+                        <ReCAPTCHA
+                          sitekey="6Ldt6RgUAAAAAKtaxY2787y3S7uP5Wp9kzL0PMMg"
+                          size="normal"
+                          onChange={this.onCaptchaVerify}
+                        />
+                      </fieldset> */}
+
+                      {this.state.isErrorShown && (
+                        <fieldset className="mb-3">
+                          <p className="text--small"><strong>Please, make sure to fill all fields.</strong></p>
                         </fieldset>
-                      </div>
-                    </div>
+                      )}
 
-                    <fieldset className="input--absolute mt-4 mb-2">
-                      <textarea onChange={this.handleInputChange} id="formMessage" name="formMessage" required={true} ref={(inputMessage) => this.inputMessage = inputMessage} />
+                      {this.state.isErrorBotShown && (
+                        <fieldset className="mb-3">
+                          <p className="text--small"><strong>We don&apos;t work with spammers and bots.</strong></p>
+                        </fieldset>
+                      )}
 
-                      <label htmlFor="formMessage">Message *</label>
-                    </fieldset>
+                      {this.state.isFormSubmitted && (
+                        <fieldset className="mb-3">
+                          <p className="text--small"><strong>Your message is on the way. We will reply in three days.</strong></p>
+                        </fieldset>
+                      )}
 
-                    <fieldset className="input--absolute input--username">
-                      <input onChange={this.handleInputChange} id="formUsername" name="formUsername" type="text" ref={(inputUsername) => this.inputUsername = inputUsername} />
+                      <button onClick={this.handleFormSubmit} className="btn btn--full-width btn--black contact-button-cta" data-text="Send">Send</button>
+                    </form>
+                  )}
 
-                      <label htmlFor="formUsername">Username *</label>
-                    </fieldset>
-
-                    <fieldset className="mb-3">
-                      <p className="text--small mt-0"><i>* All fields are required</i></p>
-                    </fieldset>
-
-                    {/* <fieldset className="mb-4">
-                      <ReCAPTCHA
-                        sitekey="6Ldt6RgUAAAAAKtaxY2787y3S7uP5Wp9kzL0PMMg"
-                        size="normal"
-                        onChange={this.onCaptchaVerify}
-                      />
-                    </fieldset> */}
-
-                    {this.state.isErrorShown && (
-                      <fieldset className="mb-3">
-                        <p className="text--small"><strong>Please, make sure to fill all fields.</strong></p>
-                      </fieldset>
-                    )}
-
-                    {this.state.isErrorBotShown && (
-                      <fieldset className="mb-3">
-                        <p className="text--small"><strong>We don't work with spammers and bots.</strong></p>
-                      </fieldset>
-                    )}
-
-                    {this.state.isFormSubmitted && (
-                      <fieldset className="mb-3">
-                        <p className="text--small"><strong>Your message is on the way. We will reply in three days.</strong></p>
-                      </fieldset>
-                    )}
-
-                    <button onClick={this.handleFormSubmit} className="btn btn--full-width btn--black contact-button-cta" data-text="Send">Send</button>
-                  </form>
+                  {this.state.isFormSubmitted && (
+                    <Lottie
+                      style={{
+                        width: 550,
+                        height: 550
+                      }}
+                      options={{
+                        animationData: formAnimation
+                      }}
+                    />
+                  )}
                 </div>
               </div>
             </div>
