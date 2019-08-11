@@ -28,17 +28,17 @@ export const Projects = () => {
 
             <div className="services__row services__row--one row pt-1">
               <div className="col-md-6 projects-col">
-                <div className="works__wrapper" style={{ backgroundColor: '#181b1f' }}>
-                  <div className="works__info">
-                    <h2 className="works__project-name">Supernova</h2>
+                <div className="projects__wrapper" style={{ backgroundColor: '#181b1f' }}>
+                  <div className="projects__info">
+                    <h2 className="projects__project-name">Supernova</h2>
 
-                    <h3 className="works__project-type">Web development</h3>
+                    <h3 className="projects__project-type">Web development</h3>
                   </div>
 
                   <ImageZoom
                     image={{
                       alt: 'Supernova',
-                      className: 'works__thumbnail thumbnail',
+                      className: 'projects__thumbnail thumbnail',
                       src: require('./../static/images/showcase-thumbnails/macbook-white-supernova@1x.png')
                     }}
                     zoomImage={{
@@ -52,17 +52,17 @@ export const Projects = () => {
               </div>
 
               <div className="col-md-6 projects-col">
-                <div className="works__wrapper" style={{ backgroundColor: '#ffb300' }}>
-                  <div className="works__info">
-                    <h2 className="works__project-name">Fresh &amp; Tasty</h2>
+                <div className="projects__wrapper" style={{ backgroundColor: '#ffb300' }}>
+                  <div className="projects__info">
+                    <h2 className="projects__project-name">Fresh &amp; Tasty</h2>
 
-                    <h3 className="works__project-type">Web development</h3>
+                    <h3 className="projects__project-type">Web development</h3>
                   </div>
 
                   <ImageZoom
                     image={{
                       alt: 'Fresh & Tasty',
-                      className: 'works__thumbnail thumbnail',
+                      className: 'projects__thumbnail thumbnail',
                       src: require('./../static/images/showcase-thumbnails/macbook-white-fresh-and-tasty@1x.png')
                     }}
                     zoomImage={{
@@ -76,17 +76,17 @@ export const Projects = () => {
               </div>
 
               <div className="col-md-6 projects-col">
-                <div className="works__wrapper" style={{ backgroundColor: '#c544a0' }}>
-                  <div className="works__info">
-                    <h2 className="works__project-name">Slavnosti Růžového Vína</h2>
+                <div className="projects__wrapper" style={{ backgroundColor: '#c544a0' }}>
+                  <div className="projects__info">
+                    <h2 className="projects__project-name">Slavnosti Růžového Vína</h2>
 
-                    <h3 className="works__project-type">Web development</h3>
+                    <h3 className="projects__project-type">Web development</h3>
                   </div>
 
                   <ImageZoom
                     image={{
                       alt: 'Slavnosti Růžového Vína',
-                      className: 'works__thumbnail thumbnail',
+                      className: 'projects__thumbnail thumbnail',
                       src: require('./../static/images/showcase-thumbnails/macbook-white-slavnosti-ruzoveho-vina@1x.png')
                     }}
                     zoomImage={{
@@ -100,17 +100,17 @@ export const Projects = () => {
               </div>
 
               <div className="col-md-6 projects-col">
-                <div className="works__wrapper" style={{ backgroundColor: '#323844' }}>
-                  <div className="works__info">
-                    <h2 className="works__project-name">Tesla</h2>
+                <div className="projects__wrapper" style={{ backgroundColor: '#323844' }}>
+                  <div className="projects__info">
+                    <h2 className="projects__project-name">Tesla</h2>
 
-                    <h3 className="works__project-type">Web design</h3>
+                    <h3 className="projects__project-type">Web design</h3>
                   </div>
 
                   <ImageZoom
                     image={{
                       alt: 'Tesla web design concept',
-                      className: 'works__thumbnail thumbnail',
+                      className: 'projects__thumbnail thumbnail',
                       src: require('./../static/images/showcase-thumbnails/macbook-white-tesla@1x.png')
                     }}
                     zoomImage={{
@@ -124,17 +124,17 @@ export const Projects = () => {
               </div>
 
               <div className="col-md-6 projects-col">
-                <div className="works__wrapper" style={{ backgroundColor: '#000' }}>
-                  <div className="works__info">
-                    <h2 className="works__project-name">Harley-Davidson</h2>
+                <div className="projects__wrapper" style={{ backgroundColor: '#000' }}>
+                  <div className="projects__info">
+                    <h2 className="projects__project-name">Harley-Davidson</h2>
 
-                    <h3 className="works__project-type">Web design</h3>
+                    <h3 className="projects__project-type">Web design</h3>
                   </div>
 
                   <ImageZoom
                     image={{
                       alt: 'Harley-Davidson web design concept',
-                      className: 'works__thumbnail thumbnail',
+                      className: 'projects__thumbnail thumbnail',
                       src: require('./../static/images/showcase-thumbnails/macbook-white-harley-davidson@1x.png')
                     }}
                     zoomImage={{
@@ -148,17 +148,17 @@ export const Projects = () => {
               </div>
 
               <div className="col-md-6 projects-col">
-                <div className="works__wrapper" style={{ backgroundColor: '#fca22d' }}>
-                  <div className="works__info">
-                    <h2 className="works__project-name">Česká Whisky</h2>
+                <div className="projects__wrapper" style={{ backgroundColor: '#fca22d' }}>
+                  <div className="projects__info">
+                    <h2 className="projects__project-name">Česká Whisky</h2>
 
-                    <h3 className="works__project-type">Web development</h3>
+                    <h3 className="projects__project-type">Web development</h3>
                   </div>
 
                   <ImageZoom
                     image={{
                       alt: 'Ceska Whisky web design concept',
-                      className: 'works__thumbnail thumbnail',
+                      className: 'projects__thumbnail thumbnail',
                       src: require('./../static/images/showcase-thumbnails/macbook-white-ceska-whisky@1x.png')
                     }}
                     zoomImage={{
@@ -172,17 +172,17 @@ export const Projects = () => {
               </div>
 
               <div className="col-md-6 projects-col">
-                <div className="works__wrapper" style={{ backgroundColor: '#3a401a' }}>
-                  <div className="works__info">
-                    <h2 className="works__project-name">National Park Šumava</h2>
+                <div className="projects__wrapper" style={{ backgroundColor: '#3a401a' }}>
+                  <div className="projects__info">
+                    <h2 className="projects__project-name">National Park Šumava</h2>
 
-                    <h3 className="works__project-type">Web design</h3>
+                    <h3 className="projects__project-type">Web design</h3>
                   </div>
 
                   <ImageZoom
                     image={{
                       alt: 'Sumava',
-                      className: 'works__thumbnail thumbnail',
+                      className: 'projects__thumbnail thumbnail',
                       src: require('./../static/images/showcase-thumbnails/macbook-white-sumava@1x.png')
                     }}
                     zoomImage={{
@@ -196,7 +196,7 @@ export const Projects = () => {
               </div>
             </div>
 
-            <div className="works__projects">
+            <div className="projects__projects">
               {isProjectsListVisible && (
                 <div className="row mb-5">
                   <div className="col-sm-2 col-md-4">
