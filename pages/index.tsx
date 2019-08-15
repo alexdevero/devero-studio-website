@@ -1,6 +1,6 @@
 import * as React from 'react'
 // import Link from 'next/link'
-import { hotjar } from 'react-hotjar'
+// import { hotjar } from 'react-hotjar'
 
 // Import utils
 import { initGA, logPageView } from '../utils/analytics'
@@ -33,9 +33,13 @@ export default class extends React.Component {
       window.GA_INITIALIZED = true
     }
 
-    hotjar.initialize(1435744, 6)
-
     logPageView()
+
+    // if (window!.hj._init) {
+      // window.hj._init._verifyInstallation()
+    // }
+    // hotjar.initialize(1435744, 6)
+
   }
 
   render() {
