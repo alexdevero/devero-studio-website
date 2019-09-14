@@ -25,9 +25,9 @@
     "react-hotjar": "^2.0.2",
     "react-medium-image-zoom": "^3.1.1",
     "react-spring": "^8.0.27",
-    "react-svg": "^10.0.17",
+    "react-svg": "^10.0.20",
     "react-waypoint": "^9.0.2",
-    "reaviz": "^2.6.0",
+    "reaviz": "^3.0.3",
     "xml-js": "^1.6.11"
   },
   "license": "ISC",
