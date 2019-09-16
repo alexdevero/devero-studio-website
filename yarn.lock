@@ -4949,7 +4949,7 @@ loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.3.1, loose-envify@^1.4
   dependencies:
     js-tokens "^3.0.0 || ^4.0.0"
 
-"lottie-api@github:bodymovin/lottie-api#master":
+lottie-api@bodymovin/lottie-api#master:
   version "1.0.2"
   resolved "https://codeload.github.com/bodymovin/lottie-api/tar.gz/793fcfc4d8f2da1b868977c1a2c36eaf696e28c0"
 
@@ -6470,7 +6470,7 @@ react-anchor-link-smooth-scroll@^1.0.12:
   resolved "https://registry.yarnpkg.com/react-anchor-link-smooth-scroll/-/react-anchor-link-smooth-scroll-1.0.12.tgz#5cd49c73e74be6d20b4c05a5e5c72d07ebbedac7"
   integrity sha512-aaY+9X0yh8YnC0jBfoTKpsiCLdO/Y6pCltww+VB+NnTBPDOvnIdnp1AlazajsDitc1j+cVSQ+yNtaVeTIMQbxw==
 
-react-async-script@^1.0.0:
+react-async-script@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/react-async-script/-/react-async-script-1.1.1.tgz#f481c6c5f094bf4b94a9d52da0d0dda2e1a74bdf"
   integrity sha512-pmgS3O7JcX4YtH/Xy//NXylpD5CNb5T4/zqlVUV3HvcuyOanatvuveYoxl3X30ZSq/+q/+mSXcNS8xDVQJpSeA==
@@ -6507,13 +6507,13 @@ react-ga@^2.6.0:
   resolved "https://registry.yarnpkg.com/react-ga/-/react-ga-2.6.0.tgz#c3fe830ead2ad25117e1d33280d9698de9b28496"
   integrity sha512-GWHBWZDFjDGMkIk1LzroIn0mNTygKw3adXuqvGvheFZvlbpqMPbHsQsTdQBIxRRdXGQM/Zq+dQLRPKbwIHMTaw==
 
-react-google-recaptcha@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/react-google-recaptcha/-/react-google-recaptcha-1.1.0.tgz#f33bef3e22e8c016820e80da48d573f516bb99e8"
-  integrity sha512-GMWZEsIKyBVG+iXfVMwtMVKFJATu5c+oguL/5i95H3Jb5d5CG4DY0W9t4QhdSSulgkXbZMgv0VSuGF/GV1ENTA==
+react-google-recaptcha@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/react-google-recaptcha/-/react-google-recaptcha-2.0.1.tgz#3276b29659493f7ca2a5b7739f6c239293cdf1d8"
+  integrity sha512-4Y8awVnarn7+gdVpu8uvSmRJzzlMMoXqdhLoyToTOfVK6oM+NaChNI8NShnu75Q2YGHLvR1IA1FWZesuYHwn5w==
   dependencies:
     prop-types "^15.5.0"
-    react-async-script "^1.0.0"
+    react-async-script "^1.1.1"
 
 react-hotjar@^2.0.2:
   version "2.0.2"
