@@ -9,7 +9,7 @@ export const Awards = () => {
     sectionAwards!.classList.add('fade-in-up')
   }
 
-  return(
+  return (
     <Waypoint onEnter={handleWaypointEnter} topOffset="-40%">
       <div className="container animated pt-5 pb-5" ref={el => sectionAwards = el}>
         <h1 className="h4 heading--small text--center">Featured in</h1>
