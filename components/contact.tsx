@@ -66,7 +66,7 @@ export class Contact extends React.Component {
   handleFormSubmit = (event: React.FormEventHandler) => {
     event.preventDefault()
 
-    if (this.state.formEmail.length > 0 && this.state.formName.length > 0 && this.state.formMessage.length > 0 && this.state.formUsername.length === 0 && this.state.formProject.length === 0 && this.state.formService.length === 0 /* && this.state.isCaptchaValid */) {
+    if (this.state.formEmail.length > 0 && this.state.formName.length > 0 && this.state.formMessage.length > 0 /* && this.state.isCaptchaValid */) {
       this.setState({
         isErrorShown: false
         // isFormValid: true
