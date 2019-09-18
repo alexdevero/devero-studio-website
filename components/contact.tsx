@@ -172,7 +172,7 @@ export class Contact extends React.Component {
                       <div className="row mt-3">
                         <div className="col-md-6">
                           <fieldset className="input--absolute">
-                            <select onChange={this.handleInputChange} id="inputService" name="inputService" type="text" required ref={(inputService) => this.inputService = inputService}>
+                            <select onChange={this.handleInputChange} id="inputService" name="formService" type="text" required ref={(inputService) => this.inputService = inputService}>
                               <option disabled selected value="">What do you need *</option>
                               <option value="Design">Design</option>
                               <option value="Development">Development</option>
@@ -185,7 +185,7 @@ export class Contact extends React.Component {
 
                         <div className="col-md-6 mt-3 mt-md-0">
                           <fieldset className="input--absolute">
-                            <select onChange={this.handleInputChange} id="inputProject" name="inputProject" type="text" required ref={(inputProject) => this.inputProject = inputProject}>
+                            <select onChange={this.handleInputChange} id="inputProject" name="formProject" type="text" required ref={(inputProject) => this.inputProject = inputProject}>
                               <option disabled selected value="">Type of project *</option>
                               <option value="App">App</option>
                               <option value="Web">Web</option>
