@@ -11,6 +11,8 @@
       $name = str_replace(array("\r","\n"),array(" "," "),$name);
       $email = filter_var(trim($_POST["formEmail"]), FILTER_SANITIZE_EMAIL);
       $message = trim($_POST["formMessage"]);
+      $project = trim($_POST["formProject"]);
+      $service = trim($_POST["formService"]);
       // $checkboxApp = trim($_POST["checkboxApp"]);
       // $checkboxConsultation = trim($_POST["checkboxConsultation"]);
       // $checkboxDesign = trim($_POST["checkboxDesign"]);
@@ -41,6 +43,8 @@
       // $email_content .= "Want design: $checkboxDesign\n";
       // $email_content .= "Want something else: $checkboxElse\n";
       // $email_content .= "Want frontend / backend: $checkboxFrontBack\n\n";
+      $email_content .= "Project type: $project\n\n";
+      $email_content .= "Service type: $service\n\n";
       $email_content .= "Message:\n$message\n\n";
       // $email_content .= "Want newsletter: $checkboxNewsletter\n\n";
 
