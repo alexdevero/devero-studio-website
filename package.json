@@ -1,6 +1,9 @@
 {
   "name": "devero-studio",
   "version": "1.0.0",
+  "license": "ISC",
+  "keywords": [],
+  "description": "DEVERO Studio website.",
   "scripts": {
     "build": "next build",
     "export": "next export",
@@ -30,9 +33,6 @@
     "reaviz": "^3.0.3",
     "xml-js": "^1.6.11"
   },
-  "license": "ISC",
-  "keywords": [],
-  "description": "",
   "devDependencies": {
     "@types/eslint": "^6.1.1",
     "@types/imagemin-optipng": "^5.2.0",
