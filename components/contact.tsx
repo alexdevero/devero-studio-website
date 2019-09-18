@@ -17,8 +17,8 @@ export class Contact extends React.Component {
     // isCaptchaValid: false,
     isErrorBotShown: false,
     isErrorShown: false,
-    isFormSubmitted: false,
-    isFormValid: false
+    isFormSubmitted: false
+    // isFormValid: false
   }
 
   inputEmail: HTMLInputElement | undefined
@@ -64,8 +64,8 @@ export class Contact extends React.Component {
 
     if (this.state.formEmail.length > 0 && this.state.formName.length > 0 && this.state.formMessage.length > 0 && this.state.formUsername.length === 0 /* && this.state.isCaptchaValid */) {
       this.setState({
-        isErrorShown: false,
-        isFormValid: true
+        isErrorShown: false
+        // isFormValid: true
       })
 
       setTimeout(() => {
@@ -92,8 +92,8 @@ export class Contact extends React.Component {
           // isCaptchaValid: false,
           isErrorBotShown: false,
           isErrorShown: false,
-          isFormSubmitted: true,
-          isFormValid: false
+          isFormSubmitted: true
+          // isFormValid: false
         })
       }, 1000)
     } else if (this.state.formUsername.length !== 0) {
