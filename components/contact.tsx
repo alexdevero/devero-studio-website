@@ -171,7 +171,7 @@ export class Contact extends React.Component {
                         </div>
                       </div>
 
-                      <div className="row">
+                      <div className="row mt-3">
                         <div className="col-sm-6">
                           <fieldset className="input--absolute">
                             <select onChange={this.handleInputChange} id="inputService" name="inputService" type="text" required ref={(inputService) => this.inputService = inputService}>
