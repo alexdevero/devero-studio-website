@@ -13,6 +13,8 @@ export class Contact extends React.Component {
     formEmail: '',
     formMessage: '',
     formName: '',
+    formProject: '',
+    formService: '',
     formUsername: '',
     // isCaptchaValid: false,
     isErrorBotShown: false,
@@ -33,6 +35,8 @@ export class Contact extends React.Component {
     if (event.target.value.length > 0 && event.target.name !== 'formEmail') {
       this.setState({
         [event.target.name]: event.target.value
+      }, () => {
+        console.log(this.state)
       })
     }
 
@@ -64,7 +68,7 @@ export class Contact extends React.Component {
   handleFormSubmit = (event: React.FormEventHandler) => {
     event.preventDefault()
 
-    if (this.state.formEmail.length > 0 && this.state.formName.length > 0 && this.state.formMessage.length > 0 && this.state.formUsername.length === 0 /* && this.state.isCaptchaValid */) {
+    if (this.state.formEmail.length > 0 && this.state.formName.length > 0 && this.state.formMessage.length > 0 && this.state.formUsername.length === 0 && this.state.formProject.length === 0 && this.state.formService.length === 0 /* && this.state.isCaptchaValid */) {
       this.setState({
         isErrorShown: false
         // isFormValid: true
@@ -90,6 +94,8 @@ export class Contact extends React.Component {
           formEmail: '',
           formMessage: '',
           formName: '',
+          formProject: '',
+          formService: '',
           formUsername: '',
           // isCaptchaValid: false,
           isErrorBotShown: false,
@@ -169,9 +175,10 @@ export class Contact extends React.Component {
                         <div className="col-sm-6">
                           <fieldset className="input--absolute">
                             <select onChange={this.handleInputChange} id="inputService" name="inputService" type="text" required ref={(inputService) => this.inputService = inputService}>
-                              <option value="">Design</option>
-                              <option value="">Development</option>
-                              <option value="">Design & Development</option>
+                              <option value="" />
+                              <option value="Design">Design</option>
+                              <option value="Development">Development</option>
+                              <option value="Design & Development">Design & Development</option>
                             </select>
 
                             <label htmlFor="inputService">What do you need *</label>
@@ -181,8 +188,9 @@ export class Contact extends React.Component {
                         <div className="col-sm-6 mt-3 mt-sm-0">
                           <fieldset className="input--absolute">
                             <select onChange={this.handleInputChange} id="inputProject" name="inputProject" type="text" required ref={(inputProject) => this.inputProject = inputProject}>
-                              <option value="">App</option>
-                              <option value="">Web</option>
+                              <option value="" />
+                              <option value="App">App</option>
+                              <option value="Web">Web</option>
                             </select>
 
                             <label htmlFor="inputProject">Type of project *</label>
