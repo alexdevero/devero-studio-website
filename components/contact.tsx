@@ -154,7 +154,7 @@ export class Contact extends React.Component {
                   {!this.state.isFormSubmitted && (
                     <form action="">
                       <div className="row">
-                        <div className="col-sm-6">
+                        <div className="col-md-6">
                           <fieldset className="input--absolute">
                             <input onChange={this.handleInputChange} id="formName" name="formName" type="text" required ref={(inputName) => this.inputName = inputName} />
 
@@ -162,7 +162,7 @@ export class Contact extends React.Component {
                           </fieldset>
                         </div>
 
-                        <div className="col-sm-6 mt-3 mt-sm-0">
+                        <div className="col-md-6 mt-3 mt-md-0">
                           <fieldset className="input--absolute">
                             <input onChange={this.handleInputChange} id="formEmail" name="formEmail" type="email" required ref={(inputEmail) => this.inputEmail = inputEmail} />
 
@@ -172,7 +172,7 @@ export class Contact extends React.Component {
                       </div>
 
                       <div className="row mt-3">
-                        <div className="col-sm-6">
+                        <div className="col-md-6">
                           <fieldset className="input--absolute">
                             <select onChange={this.handleInputChange} id="inputService" name="inputService" type="text" required ref={(inputService) => this.inputService = inputService}>
                               <option value="" />
@@ -185,7 +185,7 @@ export class Contact extends React.Component {
                           </fieldset>
                         </div>
 
-                        <div className="col-sm-6 mt-3 mt-sm-0">
+                        <div className="col-md-6 mt-3 mt-md-0">
                           <fieldset className="input--absolute">
                             <select onChange={this.handleInputChange} id="inputProject" name="inputProject" type="text" required ref={(inputProject) => this.inputProject = inputProject}>
                               <option value="" />
