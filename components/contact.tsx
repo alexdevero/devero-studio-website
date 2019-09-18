@@ -35,8 +35,6 @@ export class Contact extends React.Component {
     if (event.target.value.length > 0 && event.target.name !== 'formEmail') {
       this.setState({
         [event.target.name]: event.target.value
-      }, () => {
-        console.log(this.state)
       })
     }
 
