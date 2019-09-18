@@ -24,6 +24,8 @@ export class Contact extends React.Component {
   inputEmail: HTMLInputElement | undefined
   inputName: HTMLInputElement | undefined
   inputMessage: HTMLInputElement | undefined
+  inputProject: HTMLDivElement | undefined
+  inputService: HTMLDivElement | undefined
   inputUsername: HTMLInputElement | undefined
   sectionContact: HTMLDivElement | undefined
 
@@ -159,6 +161,31 @@ export class Contact extends React.Component {
                             <input onChange={this.handleInputChange} id="formEmail" name="formEmail" type="email" required ref={(inputEmail) => this.inputEmail = inputEmail} />
 
                             <label htmlFor="formEmail">Email *</label>
+                          </fieldset>
+                        </div>
+                      </div>
+
+                      <div className="row">
+                        <div className="col-sm-6">
+                          <fieldset className="input--absolute">
+                            <select onChange={this.handleInputChange} id="inputService" name="inputService" type="text" required ref={(inputService) => this.inputService = inputService}>
+                              <option value="">Design</option>
+                              <option value="">Development</option>
+                              <option value="">Design & Development</option>
+                            </select>
+
+                            <label htmlFor="inputService">What do you need *</label>
+                          </fieldset>
+                        </div>
+
+                        <div className="col-sm-6 mt-3 mt-sm-0">
+                          <fieldset className="input--absolute">
+                            <select onChange={this.handleInputChange} id="inputProject" name="inputProject" type="text" required ref={(inputProject) => this.inputProject = inputProject}>
+                              <option value="">App</option>
+                              <option value="">Web</option>
+                            </select>
+
+                            <label htmlFor="inputProject">Type of project *</label>
                           </fieldset>
                         </div>
                       </div>
