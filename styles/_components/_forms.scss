@@ -13,12 +13,14 @@ label {
   line-height: 1;
 
   & + input,
+  & + select,
   & + textarea {
     margin-top: 6px;
   }
 }
 
 input,
+select,
 textarea {
   padding: 24px 16px 16px;
   width: 100%;
