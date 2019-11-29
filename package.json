@@ -35,8 +35,6 @@
   },
   "devDependencies": {
     "@types/eslint": "^6.1.1",
-    "@types/imagemin-optipng": "^5.2.0",
-    "@types/imagemin-svgo": "^7.0.0",
     "@types/jquery": "^3.3.31",
     "@types/next": "8.0.6",
     "@types/next-seo": "^1.10.0",
