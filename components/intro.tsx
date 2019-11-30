@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Waypoint } from 'react-waypoint'
 
 export const Intro = () => {
-  let sectionIntro: HTMLDivElement | null
+  let sectionIntro: HTMLElement | null
 
   const handleWaypointEnter = () => {
     sectionIntro!.classList.add('fade-in-up')

@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Waypoint } from 'react-waypoint'
 
 export const Testimonials = () => {
-  let sectionTestimonials: HTMLDivElement | null
+  let sectionTestimonials: HTMLElement | null
 
   const [activeSlide, handleActiveSlideChange] = React.useState('one')
 
