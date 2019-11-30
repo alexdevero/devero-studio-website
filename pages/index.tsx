@@ -9,10 +9,10 @@ import { initGA, logPageView } from '../utils/analytics'
 import { Awards } from './../components/awards'
 // import { Blog } from './../components/blog'
 import { Contact } from './../components/contact'
-import { Faq } from './../components/faq'
+// import { Faq } from './../components/faq'
 import { Footer } from './../components/footer'
 import { Hero } from './../components/hero'
-import { Intro } from './../components/intro'
+// import { Intro } from './../components/intro'
 // import { MapComponent } from '../components/map'
 // import { Partners } from './../components/partners'
 // import { Pitch } from './../components/pitch'
@@ -53,7 +53,7 @@ export default class extends React.Component {
 
         {/* <Pitch /> */}
 
-        <Intro />
+        {/* <Intro /> */}
 
         {/* <Works /> */}
 
@@ -65,7 +65,7 @@ export default class extends React.Component {
 
         {/* <Partners /> */}
 
-        <Faq />
+        {/* <Faq /> */}
 
         <Testimonials />
 
