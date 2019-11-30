@@ -193,8 +193,9 @@
     // Node
     // "node/no-deprecated-api": "error",
     // "node/process-exit-as-throw": "error",
+
     // Promise
-    "promise/param-names": "error",
+    // "promise/param-names": "error",
 
     // React
     "react/no-access-state-in-setstate": "error",
