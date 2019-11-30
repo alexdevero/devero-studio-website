@@ -2,12 +2,11 @@
 /* Hero */
 .hero {
   display: flex;
-  align-items: flex-start;
   flex-flow: column;
-  justify-content: center;
   padding: 32px;
   min-height: 100vh;
-  background-color: var(--color-black);
+  background-color: var(--color-white);
+  color: var(--color-black);
 }
 
 .hero .container {
@@ -17,26 +16,38 @@
   display: flex;
   flex: 1;
   flex-flow: column nowrap;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .row {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .hero .row {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero .row {
+    align-items: center;
+  }
 }
 
 .hero__heading {
-  margin-bottom: 15px;
-  font-size: 50px;
+  margin-bottom: 32px;
+  font-size: 42px;
   font-weight: 700;
   line-height: 1;
-  color: #fff;
 
   @media (min-width: 360px) {
-    font-size: 60px;
+    font-size: 50px;
   }
 
-  @media (min-width: 25em) {
-    font-size: 78px;
-  }
-
-  @media (min-width: 31.875em) {
-    font-size: 108px;
+  @media (min-width: 768px) {
+    font-size: 65px;
   }
 }
 
@@ -45,16 +56,14 @@
     @media (max-width: 767.99px) {
       margin-top: 21px;
     }
-  }
 
-  & + .hero__text {
-    @media (min-width: 48em) {
+    @media (min-width: 768px) {
       margin-top: 8px;
     }
   }
 }
 
-.hero__title {
+/* .hero__title {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 32px;
@@ -84,17 +93,16 @@
     display: block;
     line-height: 1;
   }
-}
+} */
 
 .hero__text {
   margin-bottom: 0;
-  font-size: 18px;
+  font-size: 21px;
   font-weight: 300;
-  color: var(--color-white);
 
-  & + .hero__link {
+  /* & + .hero__link {
     margin-top: 16px;
-  }
+  } */
 }
 
 .hero__link {
@@ -117,45 +125,37 @@
 
 /* Lottie animation */
 .hero [aria-label=animation] {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  position: relative;
   width: 220px !important;
   height: 220px !important;
-  transform: translate(-50%, -50%);
+  max-width: 100%;
   z-index: 1;
 
   @media (min-width: 360px) {
-    width: 300px !important;
-    height: 300px !important;
+    width: 250px !important;
+    height: 250px !important;
   }
 
-  @media (min-width: 510px) {
-    margin-top: 70px !important;
+  /* @media (min-width: 510px) {
     width: 350px !important;
     height: 350px !important;
-  }
-
-  @media (min-width: 555px) {
-    width: 350px !important;
-    height: 350px !important;
-  }
+  } */
 
   @media (min-width: 768px) {
     width: 400px !important;
     height: 400px !important;
   }
+}
 
-  @media (min-width: 992px) {
-    margin-top: 20px !important;
-    width: 500px !important;
-    height: 500px !important;
+@media (max-width: 767px) {
+  .hero [aria-label=animation] {
+    margin: 0 auto 28px !important;
   }
 }
 
 /* Blob */
 /* Info: https://codesandbox.io/embed/8zx4ppk01l */
-.hooks-main {
+/* .hooks-main {
   position: absolute;
   top: 0;
   left: 0;
@@ -217,4 +217,4 @@
   left: 50px;
   width: 50px;
   height: 50px;
-}
+} */
