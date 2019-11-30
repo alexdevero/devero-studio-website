@@ -12,6 +12,21 @@
     "dev": "next",
     "ship": "npm run build && npm run export"
   },
+  "browserslist": {
+    "production": [
+      "last 6 versions",
+      "> 5%",
+      "ie >= 10",
+      "maintained node versions",
+      "not dead"
+    ],
+    "development": [
+      "last 5 chrome version",
+      "last 5 firefox version",
+      "last 2 safari version",
+      "last 2 ie version"
+    ]
+  },
   "dependencies": {
     "axios": "0.19.0",
     "jquery": "3.4.1",
