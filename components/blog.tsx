@@ -11,7 +11,7 @@ export const Blog = () => {
   React.useEffect(() => {
     async function fetchBlog() {
       const data = await axios.get(`${'https://cors-anywhere.herokuapp.com/'}https://blog.alexdevero.com/feed/`).then(res => res.data)
-      const dataConverted = await xml2js(data, { compact: true, spaces: 2 })
+      const dataConverted = await xml2js(data, { compact: true/*, spaces: 2*/ })
 
       let dataForState = []
       let month = ''

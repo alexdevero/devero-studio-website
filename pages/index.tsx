@@ -7,7 +7,7 @@ import { initGA, logPageView } from '../utils/analytics'
 
 // Import components
 import { Awards } from './../components/awards'
-import { Blog } from './../components/blog'
+// import { Blog } from './../components/blog'
 import { Contact } from './../components/contact'
 import { Faq } from './../components/faq'
 import { Footer } from './../components/footer'
@@ -28,9 +28,9 @@ import './../styles/styles.scss'
 
 export default class extends React.Component {
   componentDidMount() {
-    if (!window!.GA_INITIALIZED) {
-      initGA()
-      window.GA_INITIALIZED = true
+    if (!(window as any).GA_INITIALIZED) {
+      initGA();
+      (window as any).GA_INITIALIZED = true
     }
 
     logPageView()
@@ -73,7 +73,7 @@ export default class extends React.Component {
 
         <Awards />
 
-        <Blog />
+        {/* <Blog /> */}
 
         <Contact />
 
