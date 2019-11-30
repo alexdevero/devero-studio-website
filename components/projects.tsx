@@ -18,7 +18,7 @@ export const Projects = () => {
   }
 
   return (
-    <section className="pb-5">
+    <section id="works" className="pb-5">
       <div className="container pt-5 pb-5">
         <Waypoint onEnter={() => handleWaypointEnter('recentWorks')} topOffset="-40%">
           <div className="animated" ref={el => sectionRecentWorks = el}>

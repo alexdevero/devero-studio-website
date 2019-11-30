@@ -37,7 +37,7 @@ export const Hero = () => {
           </div>
         </div>
 
-      <AnchorLink className="hero__link" href="#intro"><span className="fas fa-long-arrow-alt-down" /> Learn more</AnchorLink>
+      <AnchorLink className="hero__link" href="#works"><span className="fas fa-long-arrow-alt-down" /> Learn more</AnchorLink>
     </div>
   )
 }
