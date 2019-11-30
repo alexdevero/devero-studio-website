@@ -1,5 +1,5 @@
 /* Projects */
-.projects-col {
+/* .projects-col {
   min-height: 460px;
 
   @media (max-width: 580px) and (min-width: 450px) {
@@ -13,20 +13,52 @@
   @media (min-width: 768px) {
     min-height: 360px;
   }
+} */
+
+.masonry-wrapper {
+  margin-right: -15px;
+  margin-left: -15px;
+
+  [class*=col] + [class*=col] {
+    margin-top: 21px;
+
+    @media (min-width: 576px) {
+      margin-top: 30px;
+    }
+
+    @media (min-width: 768px) {
+        margin-top: 32px;
+    }
+  }
+
+  [class*=col] {
+    @media (min-width: 576px) {
+      &:nth-of-type(2) {
+        margin-top: 0;
+      }
+    }
+
+    @media (min-width: 768px) {
+      &:nth-of-type(3) {
+        margin-top: 0;
+      }
+    }
+  }
 }
 
 .projects__wrapper {
   position: relative;
+  padding: 12px;
   width: 100%;
-  height: calc(100vw - 195px);
+  /* height: calc(100vw - 195px); */
   background-color: #181b1f;
   border-radius: 6px;
 
-  @media (max-width: 767.98px) {
+  /* @media (max-width: 767.98px) {
     margin-top: 21px;
-  }
+  } */
 
-  @media (max-width: 449.98px) {
+  /* @media (max-width: 449.98px) {
     height: calc(100vw - 150px);
   }
 
@@ -51,7 +83,7 @@
   @media (min-width: 1200px) {
     width: 420px;
     height: 250px;
-  }
+  } */
 }
 
 .projects__btn {
@@ -64,9 +96,9 @@
 }
 
 .projects__info {
-  position: absolute;
+  /* position: absolute;
   top: 21px;
-  left: 21px;
+  left: 21px; */
   color: #fff;
   transition: top .25s ease-out, left .25s ease-out;
 }
@@ -89,17 +121,21 @@
 }
 
 .projects__thumbnail {
-  position: absolute;
+  /* position: absolute;
   right: 0;
-  bottom: -82px;
+  bottom: -82px; */
+  margin: 32px auto 0;
   transition: all .25s ease-out;
 
   @media (max-width: 767.99px) {
-    left: 0;
-    margin: auto;
+    /* left: 0; */
   }
 
   @media (min-width: 768px) {
+    margin-top: 23px;
+  }
+
+  /* @media (min-width: 768px) {
     right: -50px;
     bottom: -52px;
   }
@@ -107,10 +143,10 @@
   @media (min-width: 992px) {
     right: -100px;
     bottom: -82px;
-  }
+  } */
 }
 
-.projects__wrapper:hover .projects__info {
+/* .projects__wrapper:hover .projects__info {
   top: 23px;
   left: 23px;
 
@@ -118,18 +154,19 @@
     top: 29px;
     left: 29px;
   }
-}
+} */
 
 .projects__wrapper:hover .projects__thumbnail {
-  transform: scale(1.05);
+  transform: scale(1.1);
 
   @media (min-width: 768px) {
+    transform: scale(1.15);
   }
 
-  @media (min-width: 992px) {
+  /* @media (min-width: 992px) {
     bottom: -72px;
     right: -90px;
-  }
+  } */
 }
 
 .projects__project-cta {

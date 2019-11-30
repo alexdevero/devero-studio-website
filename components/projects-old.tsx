@@ -3,7 +3,6 @@ import * as React from 'react'
 // import Link from 'next/link'
 import { Waypoint } from 'react-waypoint'
 import ImageZoom from 'react-medium-image-zoom'
-import Masonry from 'react-masonry-component'
 
 export const Projects = () => {
   let sectionRecentWorks: HTMLDivElement | null
@@ -27,8 +26,8 @@ export const Projects = () => {
 
             <div className="divider divider--red divider--slim mb-4" />
 
-            <Masonry className="masonry-wrapper">
-              <div className="col-sm-6 col-md-4">
+            <div className="services__row services__row--one row pt-1">
+              <div className="col-md-6 projects-col">
                 <div className="projects__wrapper" style={{ backgroundColor: '#181b1f' }}>
                   <div className="projects__info">
                     <h2 className="projects__project-name">Supernova</h2>
@@ -52,7 +51,7 @@ export const Projects = () => {
                 </div>
               </div>
 
-              <div className="col-sm-6 col-md-4">
+              <div className="col-md-6 projects-col">
                 <div className="projects__wrapper" style={{ backgroundColor: '#ffb300' }}>
                   <div className="projects__info">
                     <h2 className="projects__project-name">Fresh &amp; Tasty</h2>
@@ -76,7 +75,7 @@ export const Projects = () => {
                 </div>
               </div>
 
-              <div className="col-sm-6 col-md-4">
+              <div className="col-md-6 projects-col">
                 <div className="projects__wrapper" style={{ backgroundColor: '#c544a0' }}>
                   <div className="projects__info">
                     <h2 className="projects__project-name">Slavnosti Růžového Vína</h2>
@@ -100,7 +99,7 @@ export const Projects = () => {
                 </div>
               </div>
 
-              <div className="col-sm-6 col-md-4">
+              <div className="col-md-6 projects-col">
                 <div className="projects__wrapper" style={{ backgroundColor: '#323844' }}>
                   <div className="projects__info">
                     <h2 className="projects__project-name">Tesla</h2>
@@ -124,7 +123,7 @@ export const Projects = () => {
                 </div>
               </div>
 
-              <div className="col-sm-6 col-md-4">
+              <div className="col-md-6 projects-col">
                 <div className="projects__wrapper" style={{ backgroundColor: '#000' }}>
                   <div className="projects__info">
                     <h2 className="projects__project-name">Harley-Davidson</h2>
@@ -148,7 +147,7 @@ export const Projects = () => {
                 </div>
               </div>
 
-              <div className="col-sm-6 col-md-4">
+              <div className="col-md-6 projects-col">
                 <div className="projects__wrapper" style={{ backgroundColor: '#fca22d' }}>
                   <div className="projects__info">
                     <h2 className="projects__project-name">Česká Whisky</h2>
@@ -172,7 +171,7 @@ export const Projects = () => {
                 </div>
               </div>
 
-              <div className="col-sm-6 col-md-4">
+              <div className="col-md-6 projects-col">
                 <div className="projects__wrapper" style={{ backgroundColor: '#3a401a' }}>
                   <div className="projects__info">
                     <h2 className="projects__project-name">National Park Šumava</h2>
@@ -195,7 +194,7 @@ export const Projects = () => {
                   {/* <Link href={generateCaseStudyBtnLink()}><a className="link--black-red link--underline">See case study</a></Link> */}
                 </div>
               </div>
-            </Masonry>
+            </div>
 
             <div className="projects__projects">
               {isProjectsListVisible && (
