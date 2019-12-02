@@ -10,7 +10,7 @@ export const Hero = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-6">
-            <h1 className="hero__heading">Crafting beautiful websites & apps</h1>
+            <h1 className="hero__heading">Crafting beautiful websites &amp; apps</h1>
 
             {/* <div className="glitch-wrapper d-md-none">
               <h1 className="hero__title">
