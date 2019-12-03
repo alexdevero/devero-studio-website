@@ -1,4 +1,4 @@
-const withPlugins = require('next-compose-plugins')
+// const withPlugins = require('next-compose-plugins')
 const withOptimizedImages = require('next-optimized-images')
 // const withSass = require('@zeit/next-sass')
 // const withTypescript = require('@zeit/next-typescript')
