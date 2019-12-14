@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Waypoint } from 'react-waypoint'
-import ReactSVG from 'react-svg'
+import { ReactSVG } from 'react-svg'
 
 export const Awards = () => {
   let sectionAwards: HTMLDivElement | null
