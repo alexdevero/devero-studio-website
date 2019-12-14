@@ -3,6 +3,15 @@ import axios from 'axios'
 import { Waypoint } from 'react-waypoint'
 import { xml2js } from 'xml-js'
 
+interface PostInterface {
+  description: string;
+  id: string;
+  link: string;
+  // pubDate: string;
+  pubDate: Date;
+  title: string;
+}
+
 export const Blog = () => {
   let sectionBlog: HTMLDivElement | null
 
@@ -16,7 +25,7 @@ export const Blog = () => {
       let dataForState = []
       let month = ''
 
-      function dateFormatter(date) {
+      function dateFormatter(date: string) {
         switch (date.substr(8, 3)) {
           case 'Jan':
             month = '01'
@@ -58,7 +67,7 @@ export const Blog = () => {
         return `${date.substr(date.indexOf(', ') + 2, 2)}/${month}/${date.substr(12, 4)}`
       }
 
-      await dataConverted.rss.channel.item.map((post) => {
+      await dataConverted.rss.channel.item.map((post: PostInterface) => {
         dataForState.push({
           description: post.description._cdata,
           id: post['post-id']._text,
