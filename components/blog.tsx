@@ -4,12 +4,24 @@ import { Waypoint } from 'react-waypoint'
 import { xml2js } from 'xml-js'
 
 interface PostInterface {
-  description: string;
-  id: string;
-  link: string;
+  description: { _cdata: string };
+  id: {
+    _attributes: { xmlns: string };
+    _text: string
+  };
+  link: {
+    _attributes: { xmlns: string };
+    _text: string
+  };
   // pubDate: string;
-  pubDate: Date;
-  title: string;
+  pubDate: {
+    _attributes: { xmlns: string };
+    _text: string
+  };
+  title: {
+    _attributes: { xmlns: string };
+    _text: string
+  };
 }
 
 export const Blog = () => {
@@ -20,7 +32,9 @@ export const Blog = () => {
   React.useEffect(() => {
     async function fetchBlog() {
       const data = await axios.get(`${'https://cors-anywhere.herokuapp.com/'}https://blog.alexdevero.com/feed/`).then(res => res.data)
-      const dataConverted = await xml2js(data, { compact: true/*, spaces: 2*/ })
+      const dataConverted: any = await xml2js(data, { compact: true/*, spaces: 2*/ })
+
+      console.log(dataConverted)
 
       let dataForState = []
       let month = ''
