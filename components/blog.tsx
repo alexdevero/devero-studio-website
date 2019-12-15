@@ -34,51 +34,15 @@ export const Blog = () => {
       const data = await axios.get(`${'https://cors-anywhere.herokuapp.com/'}https://blog.alexdevero.com/feed/`).then(res => res.data)
       const dataConverted: any = await xml2js(data, { compact: true/*, spaces: 2*/ })
 
-      console.log(dataConverted)
-
       let dataForState = []
-      let month = ''
 
       function dateFormatter(date: string) {
-        switch (date.substr(8, 3)) {
-          case 'Jan':
-            month = '01'
-            break
-          case 'Feb':
-            month = '02'
-            break
-          case 'Mar':
-            month = '03'
-            break
-          case 'Apr':
-            month = '04'
-            break
-          case 'May':
-            month = '05'
-            break
-          case 'Jun':
-            month = '06'
-            break
-          case 'Jul':
-            month = '07'
-            break
-          case 'Aug':
-            month = '08'
-            break
-          case 'Sep':
-            month = '09'
-            break
-          case 'Oct':
-            month = '10'
-            break
-          case 'Nov':
-            month = '11'
-            break
-          default:
-            return '12'
-        }
+        const newDate = new Date(Date.parse(date))
+        let newDay = newDate.getDate() + 1 // Day starts with 0 so it is necessary to add 1
+        let newMonth = newDate.getMonth() + 1 // Month starts with 0 so it is necessary to add 1
+        let newYear = newDate.getFullYear()
 
-        return `${date.substr(date.indexOf(', ') + 2, 2)}/${month}/${date.substr(12, 4)}`
+        return `${newDay < 10 ? '0' + newDay : newDay}/${newMonth}/${newYear}`
       }
 
       await dataConverted.rss.channel.item.map((post: PostInterface) => {
