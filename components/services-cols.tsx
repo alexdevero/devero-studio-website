@@ -17,17 +17,17 @@ export const Services = () => {
             <div className="divider divider--red divider--slim divider--center" />
           </div>
 
-          <div className="row">
+          <div className="row mt-5">
             <div className="col-md-6 col-lg-3">
               <ReactSVG
                 beforeInjection={svg => {
-                  svg.classList.add('logo-design')
-                  svg.setAttribute('style', 'width: 110px; fill: #999;')
+                  svg.classList.add('icon-design')
+                  svg.setAttribute('style', 'display: block; margin: auto; width: 80px; fill: #333;')
                 }}
-                src='./../static/images/services-icons/logo-design.svg'
+                src='./../static/images/services-icons/service-icon-design.svg'
               />
 
-              <h2 className="h4">Design</h2>
+              <h2 className="h4 text--center mt-4 mb-4">Design</h2>
 
               <p>We will create functional and elegant designs for your website, or web app. We can also redesign your current website.</p>
 
@@ -42,13 +42,13 @@ export const Services = () => {
             <div className="col-md-6 col-lg-3">
               <ReactSVG
                 beforeInjection={svg => {
-                  svg.classList.add('logo-web-dev')
-                  svg.setAttribute('style', 'width: 110px; fill: #999;')
+                  svg.classList.add('icon-web-dev')
+                  svg.setAttribute('style', 'display: block; margin: auto; width: 80px; fill: #333;')
                 }}
-                src='./../static/images/services-icons/logo-web-dev.svg'
+                src='./../static/images/services-icons/service-icon-web-dev.svg'
               />
 
-              <h2 className="h4">Web Development</h2>
+              <h2 className="h4 text--center mt-4 mb-4">Web Development</h2>
 
               <p>We create and launch a website from scratch for you. We always follow the highest standards and the modern trends.</p>
 
@@ -63,13 +63,13 @@ export const Services = () => {
             <div className="col-md-6 col-lg-3">
               <ReactSVG
                 beforeInjection={svg => {
-                  svg.classList.add('logo-app')
-                  svg.setAttribute('style', 'width: 110px; fill: #999;')
+                  svg.classList.add('icon-app')
+                  svg.setAttribute('style', 'display: block; margin: auto; width: 80px; fill: #333;')
                 }}
-                src='./../static/images/services-icons/logo-app.svg'
+                src='./../static/images/services-icons/service-icon-app.svg'
               />
 
-              <h2 className="h4">App development</h2>
+              <h2 className="h4 text--center mt-4 mb-4">App development</h2>
 
               <p>From idea to launch. We create delightful iOS and Android mobile apps that make your users happy and achieve your business goals.</p>
 
@@ -85,13 +85,13 @@ export const Services = () => {
             <div className="col-md-6 col-lg-3">
               <ReactSVG
                 beforeInjection={svg => {
-                  svg.classList.add('logo-consulting')
-                  svg.setAttribute('style', 'width: 110px; fill: #999;')
+                  svg.classList.add('icon-consulting')
+                  svg.setAttribute('style', 'display: block; margin: auto; width: 80px; fill: #333;')
                 }}
-                src='./../static/images/services-icons/logo-consulting.svg'
+                src='./../static/images/services-icons/service-icon-consulting.svg'
               />
 
-              <h2 className="h4">Consulting</h2>
+              <h2 className="h4 text--center mt-4 mb-4">Consulting</h2>
 
               <p>We will help you find ways to improve your existing website or app, providing you with feedback, guidance and advice.</p>
 
