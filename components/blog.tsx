@@ -38,7 +38,7 @@ export const Blog = () => {
 
       function dateFormatter(date: string) {
         const newDate = new Date(Date.parse(date))
-        let newDay = newDate.getDate() + 1 // Day starts with 0 so it is necessary to add 1
+        let newDay = newDate.getDate()
         let newMonth = newDate.getMonth() + 1 // Month starts with 0 so it is necessary to add 1
         let newYear = newDate.getFullYear()
 
