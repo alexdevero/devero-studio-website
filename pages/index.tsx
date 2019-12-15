@@ -7,7 +7,7 @@ import { initGA, logPageView } from '../utils/analytics'
 
 // Import components
 import { Awards } from './../components/awards'
-// import { Blog } from './../components/blog'
+import { Blog } from './../components/blog'
 import { Contact } from './../components/contact'
 // import { Faq } from './../components/faq'
 import { Footer } from './../components/footer'
@@ -17,7 +17,7 @@ import { Hero } from './../components/hero'
 // import { Partners } from './../components/partners'
 // import { Pitch } from './../components/pitch'
 import { Projects } from '../components/projects'
-import { Services } from './../components/services'
+import { Services } from './../components/services-cols'
 // import { Stack } from './../components/stack'
 import { Testimonials } from './../components/testimonials'
 // import { Where } from '../components/where'
@@ -73,7 +73,7 @@ export default class extends React.Component {
 
         <Awards />
 
-        {/* <Blog /> */}
+        <Blog />
 
         <Contact />
 
