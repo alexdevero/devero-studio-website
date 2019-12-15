@@ -3,7 +3,7 @@
   text-align: center;
 
   &__text {
-    margin-bottom: 12px;
+    margin-bottom: 8px;
     font-style: initial;
     color: #878b94;
   }
@@ -25,10 +25,12 @@
   }
 
   &__autor {
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 700;
   }
 
   &__position {
-    font-size: 12px;
+    font-size: 15px;
+    font-style: italic;
   }
 }
