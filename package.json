@@ -52,7 +52,7 @@
   "devDependencies": {
     "@types/next-seo": "1.10.0",
     "@types/node": "12.12.21",
-    "@types/react": "16.9.16",
+    "@types/react": "16.9.17",
     "@types/react-dom": "16.9.4",
     "@types/react-medium-image-zoom": "3.0.0",
     "@typescript-eslint/eslint-plugin": "2.12.0",
