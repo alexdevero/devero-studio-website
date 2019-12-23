@@ -25,7 +25,7 @@ class MyApp extends App {
           <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossOrigin="anonymous" />
 
           {/* Hotjar Tracking Code for https://studio.devero.io/ */}
-          <script>
+          {/*<script>
             {`
               (function(h,o,t,j,a,r){
                   h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -36,7 +36,7 @@ class MyApp extends App {
                   a.appendChild(r);
               })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
             `}
-          </script>
+          </script>*/}
         </Head>
 
         <Component {...pageProps} />
