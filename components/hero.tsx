@@ -37,7 +37,12 @@ export const Hero = () => {
           </div>
         </div>
 
-      <AnchorLink className="hero__link" href="#works"><span className="fas fa-long-arrow-alt-down" /> Learn more</AnchorLink>
+      <AnchorLink className="hero__link" href="#works">
+        <span className="hero-scroll-btn">
+          <span className="hero-scroll-btn-dot"></span>
+        </span>
+        {/* <span className="fas fa-long-arrow-alt-down" />Learn more */}
+      </AnchorLink>
     </div>
   )
 }

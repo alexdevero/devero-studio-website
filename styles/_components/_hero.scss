@@ -118,7 +118,7 @@
   }
 
   span {
-    margin-right: 4px;
+    /* margin-right: 4px; */
     font-size: 14px;
   }
 }
@@ -151,6 +151,71 @@
   .hero [aria-label=animation] {
     margin: 0 auto 28px !important;
   }
+}
+
+/* Hero scroll icon */
+@keyframes fadeInTop {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 70%, 0)
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0)
+  }
+}
+
+.hero-scroll-btn {
+  position: absolute;
+  bottom: 30px;
+  left: calc(50% - 9px);
+  z-index: 2;
+  opacity: 0;
+  animation: fadeInTop 600ms cubic-bezier(.455, .03, .515, .955) 1500ms forwards;
+  cursor: pointer;
+  transition: padding 200ms cubic-bezier(.455, .03, .515, .955);
+}
+
+.hero-scroll-btn::before {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  display: inline-block;
+  width: 1px;
+  height: 20px;
+  content: '';
+  background: rgba(17, 17, 17, .5);
+}
+
+.hero-scroll-btn-dot {
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 32px;
+  border: 2px solid #111;
+  border-radius: 15px;
+}
+
+.hero-scroll-btn-dot::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  content: '';
+  background: #111;
+  border-radius: 50%;
+  transition: top 220ms cubic-bezier(.455, .03, .515, .955);
+}
+
+.hero-scroll-btn:hover {
+  padding-bottom: 5px;
+}
+
+.hero-scroll-btn:hover .hero-scroll-btn-dot::before {
+  top: 11px;
 }
 
 /* Blob */
