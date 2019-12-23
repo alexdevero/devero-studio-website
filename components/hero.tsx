@@ -24,7 +24,7 @@ export const Hero = () => {
               <h1 className="hero__title glitch" data-text="Delivering digital perfection">Delivering digital perfection</h1>
             </div> */}
 
-            <h3 className="hero__text">Devero Studio is a digital agency specializing in mobile and web design and development.</h3>
+            <h3 className="hero__text">Devero Studio is a digital agency specializing in web and mobile design and development.</h3>
           </div>
 
           <div className="col-md-6">
