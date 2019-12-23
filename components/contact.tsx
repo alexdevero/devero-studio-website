@@ -66,7 +66,7 @@ export class Contact extends React.Component {
   handleFormSubmit = (event: React.FormEvent<HTMLButtonElement>) => {
     event.preventDefault()
 
-    if (this.state.formEmail.length > 0 && this.state.formName.length > 0 && this.state.formMessage.length > 0 /* && this.state.isCaptchaValid */) {
+    if (this.state.formEmail.length > 0 && this.state.formName.length > 0 /* && this.state.formMessage.length > 0 /* && this.state.isCaptchaValid */) {
       this.setState({
         isErrorShown: false
         // isFormValid: true
@@ -114,11 +114,12 @@ export class Contact extends React.Component {
         this.inputEmail.classList.remove('input--with-error')
       }
 
-      if (this.state.formMessage.length === 0) {
-        this.inputMessage.classList.add('input--with-error')
-      } else {
-        this.inputMessage.classList.remove('input--with-error')
-      }
+      // Let's keep message optional
+      // if (this.state.formMessage.length === 0) {
+      //   this.inputMessage.classList.add('input--with-error')
+      // } else {
+      //   this.inputMessage.classList.remove('input--with-error')
+      // }
 
       if (this.state.formName.length === 0) {
         this.inputName.classList.add('input--with-error')
