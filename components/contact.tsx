@@ -13,8 +13,8 @@ export class Contact extends React.Component {
     formEmail: '',
     formMessage: '',
     formName: '',
-    formProject: '',
-    formService: '',
+    // formProject: '',
+    // formService: '',
     formUsername: '',
     // isCaptchaValid: false,
     isErrorBotShown: false,
@@ -26,8 +26,8 @@ export class Contact extends React.Component {
   inputEmail: HTMLInputElement | undefined
   inputName: HTMLInputElement | undefined
   inputMessage: HTMLTextAreaElement | undefined
-  inputProject: HTMLSelectElement | undefined
-  inputService: HTMLSelectElement | undefined
+  // inputProject: HTMLSelectElement | undefined
+  // inputService: HTMLSelectElement | undefined
   inputUsername: HTMLInputElement | undefined
   sectionContact: HTMLDivElement | undefined
 
@@ -93,8 +93,8 @@ export class Contact extends React.Component {
           formEmail: '',
           formMessage: '',
           formName: '',
-          formProject: '',
-          formService: '',
+          // formProject: '',
+          // formService: '',
           formUsername: '',
           // isCaptchaValid: false,
           isErrorBotShown: false,
@@ -170,7 +170,7 @@ export class Contact extends React.Component {
                         </div>
                       </div>
 
-                      <div className="row mt-3">
+                      {/* <div className="row mt-3">
                         <div className="col-md-6">
                           <fieldset className="input--absolute">
                             <select onChange={this.handleInputChange} id="inputService" name="formService" required ref={(inputService) => this.inputService = inputService}>
@@ -191,7 +191,7 @@ export class Contact extends React.Component {
                             </select>
                           </fieldset>
                         </div>
-                      </div>
+                      </div> */}
 
                       <fieldset className="input--absolute mt-4 mb-4">
                         <textarea onChange={this.handleInputChange} id="formMessage" name="formMessage" required ref={(inputMessage) => this.inputMessage = inputMessage} />
