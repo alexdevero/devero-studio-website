@@ -142,11 +142,11 @@ export class Contact extends React.Component {
         <div className="container pt-5 pb-5">
           <Waypoint onEnter={this.handleWaypointEnter} topOffset="-40%">
             <div ref={el => this.sectionContact = el} className="animated pb-5">
-              <h1 className="h3 heading--small text--center">Let&apos;s get started on your project</h1>
+              <h1 className="h3 heading--small text--center">A project with Devero Studio?</h1>
 
               <div className="divider divider--center divider--red divider--slim" />
 
-              <p className="text--center mb-5">Drop us a line and we&apos;ll contact you to build a plan together.</p>
+              <p className="text--center mb-5">Fill in this form or send us an <a href="mailto:studio@devero.io" className="link--black-red">e-mail</a>.</p>
 
               <div className="row justify-content-center">
                 <div className="col-md-11 col-md-9 col-lg-7">
@@ -157,7 +157,7 @@ export class Contact extends React.Component {
                           <fieldset className="input--absolute">
                             <input onChange={this.handleInputChange} id="formName" name="formName" type="text" required ref={(inputName) => this.inputName = inputName} />
 
-                            <label htmlFor="formName">Full name *</label>
+                            <label htmlFor="formName">Name</label>
                           </fieldset>
                         </div>
 
@@ -165,7 +165,7 @@ export class Contact extends React.Component {
                           <fieldset className="input--absolute">
                             <input onChange={this.handleInputChange} id="formEmail" name="formEmail" type="email" required ref={(inputEmail) => this.inputEmail = inputEmail} />
 
-                            <label htmlFor="formEmail">Email *</label>
+                            <label htmlFor="formEmail">Email</label>
                           </fieldset>
                         </div>
                       </div>
@@ -179,8 +179,6 @@ export class Contact extends React.Component {
                               <option value="Development">Development</option>
                               <option value="Design & Development">Design & Development</option>
                             </select>
-
-                            {/* <label htmlFor="inputService">What do you need *</label> */}
                           </fieldset>
                         </div>
 
@@ -191,26 +189,20 @@ export class Contact extends React.Component {
                               <option value="App">App</option>
                               <option value="Web">Web</option>
                             </select>
-
-                            {/* <label htmlFor="inputProject">Type of project *</label> */}
                           </fieldset>
                         </div>
                       </div>
 
-                      <fieldset className="input--absolute mt-4 mb-2">
+                      <fieldset className="input--absolute mt-4 mb-4">
                         <textarea onChange={this.handleInputChange} id="formMessage" name="formMessage" required ref={(inputMessage) => this.inputMessage = inputMessage} />
 
-                        <label htmlFor="formMessage">Message *</label>
+                        <label htmlFor="formMessage">Project details (optional)</label>
                       </fieldset>
 
                       <fieldset className="input--absolute input--username">
                         <input onChange={this.handleInputChange} id="formUsername" name="formUsername" type="text" ref={(inputUsername) => this.inputUsername = inputUsername} />
 
                         <label htmlFor="formUsername">Username *</label>
-                      </fieldset>
-
-                      <fieldset className="mb-3">
-                        <p className="text--small mt-0"><i>* All fields are required</i></p>
                       </fieldset>
 
                       {/* <fieldset className="mb-4">
