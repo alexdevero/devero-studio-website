@@ -143,32 +143,29 @@ export class Contact extends React.Component {
         <div className="container pt-5 pb-5">
           <Waypoint onEnter={this.handleWaypointEnter} topOffset="-40%">
             <div ref={el => this.sectionContact = el} className="animated pb-5">
-              <h1 className="h3 heading--small text--center">A project with Devero Studio?</h1>
 
-              <div className="divider divider--center divider--red divider--slim" />
+              <div className="row">
+                <div className="col-md-8 col-lg-7 mb-5 mt-lg-0">
+                  <h1 className="h3 heading--small">A project with Devero Studio?</h1>
 
-              <p className="text--center mb-5">Fill in this form or send us an <a href="mailto:studio@devero.io" className="link--black-red">e-mail</a>.</p>
+                  <div className="divider divider--red divider--slim" />
 
-              <div className="row justify-content-center">
-                <div className="col-md-11 col-md-9 col-lg-7">
+                  <p className="mb-5">Fill in this form or send us an <a href="mailto:studio@devero.io" className="link--black-red">e-mail</a>.</p>
+
                   {!this.state.isFormSubmitted && (
                     <form action="">
-                      <div className="row">
-                        <div className="col-md-6">
-                          <fieldset className="input--absolute">
-                            <input onChange={this.handleInputChange} id="formName" name="formName" type="text" required ref={(inputName) => this.inputName = inputName} />
+                      <fieldset className="input--absolute">
+                        <input onChange={this.handleInputChange} id="formName" name="formName" type="text" required ref={(inputName) => this.inputName = inputName} />
 
-                            <label htmlFor="formName">Name</label>
-                          </fieldset>
-                        </div>
+                        <label htmlFor="formName">Name</label>
+                      </fieldset>
 
-                        <div className="col-md-6 mt-3 mt-md-0">
-                          <fieldset className="input--absolute">
-                            <input onChange={this.handleInputChange} id="formEmail" name="formEmail" type="email" required ref={(inputEmail) => this.inputEmail = inputEmail} />
+                      <div className="mt-3">
+                        <fieldset className="input--absolute">
+                          <input onChange={this.handleInputChange} id="formEmail" name="formEmail" type="email" required ref={(inputEmail) => this.inputEmail = inputEmail} />
 
-                            <label htmlFor="formEmail">Email</label>
-                          </fieldset>
-                        </div>
+                          <label htmlFor="formEmail">Email</label>
+                        </fieldset>
                       </div>
 
                       {/* <div className="row mt-3">
@@ -232,7 +229,7 @@ export class Contact extends React.Component {
                         </fieldset>
                       )}
 
-                      <button onClick={this.handleFormSubmit} className="btn btn--full-width btn--black contact-button-cta" data-text="Send">Send</button>
+                      <button onClick={this.handleFormSubmit} className="btn btn--full-width btn--black-red contact-button-cta" data-text="Send">Send</button>
                     </form>
                   )}
 
@@ -247,6 +244,76 @@ export class Contact extends React.Component {
                       }}
                     />
                   )}
+                </div>
+
+                <div className="col-md-4 offset-lg-1">
+                  <h2 className="h3 heading--small">Contacts</h2>
+
+                  <div className="divider divider--red divider--slim" />
+
+                  <h3 className="h5 mb-1">Hire:</h3>
+
+                  <a href="mailto:studio@devero.io" className="link--black-red">studio@devero.io</a>
+
+                  <h3 className="h5 mt-4 mb-1">Follow:</h3>
+
+                  <ul className="list--inline list--unstyled contact-social-media-list">
+                    <li className="list--inline-item">
+                      <a href="https://twitter.com/alexdevero" target="_blank">
+                        <span className="fab fa-twitter"></span>
+                      </a>
+                    </li>
+
+                    <li className="list--inline-item">
+                      <a href="https://github.com/alexdevero" target="_blank">
+                        <span className="fab fa-github"></span>
+                      </a>
+                    </li>
+
+                    {/* <li className="list--inline-item">
+                      <a href="https://codesandbox.io/u/alexdevero" target="_blank">
+                        <span className="fab fa-sandbox"></span>
+                      </a>
+                    </li> */}
+
+                    <li className="list--inline-item">
+                      <a href="https://codepen.io/alexdevero/" target="_blank">
+                        <span className="fab fa-codepen"></span>
+                      </a>
+                    </li>
+
+                    <li className="list--inline-item">
+                      <a href="https://stackoverflow.com/story/alexdevero" target="_blank">
+                        <span className="fab fa-stack-overflow"></span>
+                      </a>
+                    </li>
+                  </ul>
+
+                  <ul className="list--inline list--unstyled contact-social-media-list">
+                    <li className="list--inline-item">
+                      <a href="https://dribbble.com/alexdevero" target="_blank">
+                        <span className="fab fa-dribbble"></span>
+                      </a>
+                    </li>
+
+                    {/* <li className="list--inline-item">
+                      <a href="https://www.behance.net/alexdevero" target="_blank">
+                        <span className="fab fa-behance"></span>
+                      </a>
+                    </li> */}
+
+                    {/* <li className="list--inline-item">
+                      <a href="https://www.facebook.com/deveroalex" target="_blank">
+                        <span className="fab fa-facebook"></span>
+                      </a>
+                    </li> */}
+
+                    <li className="list--inline-item">
+                      <a href="https://www.instagram.com/alexdevero/" target="_blank">
+                        <span className="fab fa-instagram"></span>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>

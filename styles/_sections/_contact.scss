@@ -1,0 +1,21 @@
+/* Contact */
+.contact-social-media-list {
+  li {
+    min-width: 29px;
+  }
+
+  .list--inline-item:not(:last-child) {
+    margin-right: 21px;
+  }
+
+  a {
+    font-size: 28px;
+    color: var(--color-black);
+    transition: color var(--tr-part);
+
+    &:hover {
+      color: var(--color-brand);
+      cursor: pointer;
+    }
+  }
+}
