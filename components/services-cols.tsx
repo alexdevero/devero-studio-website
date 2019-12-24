@@ -55,6 +55,7 @@ export const Services = () => {
               <ul className="list--unstyled mt-3">
                 <li>&bull; UI/UX design</li>
                 <li>&bull; Prototyping</li>
+                <li>&bull; Responsive websites</li>
                 <li>&bull; Frontend</li>
                 <li>&bull; Backend</li>
               </ul>
@@ -76,6 +77,7 @@ export const Services = () => {
               <ul className="list--unstyled mt-3">
                 <li>&bull; UI/UX design</li>
                 <li>&bull; Prototyping</li>
+                <li>&bull; Web apps</li>
                 <li>&bull; PWA development</li>
                 <li>&bull; SPA development</li>
                 <li>&bull; iOS &amp; Android development (React Native)</li>
@@ -102,6 +104,7 @@ export const Services = () => {
                 <li>&bull; App development</li>
                 <li>&bull; Re-design</li>
                 <li>&bull; Code reviews</li>
+                <li>&bull; Consulting</li>
               </ul>
             </div>
           </div>
