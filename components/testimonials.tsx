@@ -74,7 +74,7 @@ export const Testimonials = () => {
                 <div className="row justify-content-center">
                   <div className="col-md-8">
                     <blockquote className="blockquote">
-                      <p className="blockquote__text">&ldquo;Team at Devero Studio has been a tremendous help. What would have taken other agencies 6 months only took them 1.5 months.&rdquo;</p>
+                      <p className="blockquote__text">&ldquo;Devero Studio has been a tremendous help. What would have taken other agencies 6 months only took them 1.5 months.&rdquo;</p>
                       <footer className="blockquote__footer">
                         <img className="blockquote__avatar" src={require('./../static/images/testimonials-photos/photo-terrence-jackson.jpg')} />
 
@@ -91,7 +91,7 @@ export const Testimonials = () => {
                 <div className="row justify-content-center">
                   <div className="col-md-8">
                     <blockquote className="blockquote">
-                      <p className="blockquote__text">&ldquo;Great work and delivered in time! This is very important especially for time-sensitive projects.&rdquo;</p>
+                      <p className="blockquote__text">&ldquo;Great work and delivered in time! Their way of handling projects is excellent and interactive. It was great experience to work with Devero Studio.&rdquo;</p>
                       <footer className="blockquote__footer">
                         <img className="blockquote__avatar" src={require('./../static/images/testimonials-photos/photo-terri-morris.jpg')} />
 
@@ -108,7 +108,7 @@ export const Testimonials = () => {
                 <div className="row justify-content-center">
                   <div className="col-md-8">
                     <blockquote className="blockquote">
-                      <p className="blockquote__text">&ldquo;Devero Studio was a pleasure to work with. They compiled my vision into a true masterpiece, that I am proud to show.&rdquo;</p>
+                      <p className="blockquote__text">&ldquo;Devero Studio was a pleasure to work with. They re-designed our website and created design I am proud to show.&rdquo;</p>
                       <footer className="blockquote__footer">
                         <img className="blockquote__avatar" src={require('./../static/images/testimonials-photos/photo-joshua-harvey.jpg')} />
 
