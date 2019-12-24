@@ -8,6 +8,8 @@ export default () => {
   const [isDropdownTypeVisible, handleDropdownType] = React.useState(false)
   const [isDropdownYearVisible, handleDropdownYear] = React.useState(false)
 
+  console.log(publishingYear)
+
   return (
     <div>
       <Head>
@@ -37,6 +39,7 @@ export default () => {
 
             <div className="dropdown__menu">
               <span className="dropdown__item" onClick={() => handlePublishingYearChange('2019')}>2019</span>
+              <span className="dropdown__item" onClick={() => handlePublishingYearChange('2018')}>2018</span>
             </div>
           </div>
         </div>
@@ -45,7 +48,7 @@ export default () => {
           <div className="col-md-6 col-lg-4">
             <Link href="/portfolio/">
               <a className="portfolio__link">
-                <img className="portfolio__thumbnail thumbnail" src={require('./../static/images/showcase-thumbnails/thumbnail-supernova@2x.jpg')} alt="Supernova" />
+                <img className="portfolio__thumbnail thumbnail" src={require('./../static/images/showcase-thumbnails/snapshot-top-supernova.png')} alt="Supernova" />
               </a>
             </Link>
           </div>
@@ -53,7 +56,7 @@ export default () => {
           <div className="col-md-6 col-lg-4">
             <Link href="/portfolio/">
               <a className="portfolio__link">
-                <img className="portfolio__thumbnail thumbnail" src={require('./../static/images/showcase-thumbnails/thumbnail-tesla@2x.jpg')} alt="Tesla" />
+                <img className="portfolio__thumbnail thumbnail" src={require('./../static/images/showcase-thumbnails/snapshot-top-tesla-web-design-concept.jpg')} alt="Tesla" />
               </a>
             </Link>
           </div>
@@ -61,7 +64,7 @@ export default () => {
           <div className="col-md-6 col-lg-4">
             <Link href="/portfolio/">
               <a className="portfolio__link">
-                <img className="portfolio__thumbnail thumbnail" src={require('./../static/images/showcase-thumbnails/thumbnail-harley-davidson@2x.jpg')} alt="Harley-Davidson" />
+                <img className="portfolio__thumbnail thumbnail" src={require('./../static/images/showcase-thumbnails/snapshot-top-harley-davidson-landing-page-v6-desktop.jpg')} alt="Harley-Davidson" />
               </a>
             </Link>
           </div>
@@ -69,7 +72,7 @@ export default () => {
           <div className="col-md-6 col-lg-4">
             <Link href="/portfolio/">
               <a className="portfolio__link">
-                <img className="portfolio__thumbnail thumbnail" src={require('./../static/images/showcase-thumbnails/thumbnail-ceska-whisky@2x.jpg')} alt="Ceska Whisky" />
+                <img className="portfolio__thumbnail thumbnail" src={require('./../static/images/showcase-thumbnails/snapshot-top-ceska-whisky-desktop-v6.jpg')} alt="Ceska Whisky" />
               </a>
             </Link>
           </div>
@@ -77,7 +80,7 @@ export default () => {
           <div className="col-md-6 col-lg-4">
             <Link href="/portfolio/">
               <a className="portfolio__link">
-                <img className="portfolio__thumbnail thumbnail" src={require('./../static/images/showcase-thumbnails/thumbnail-slavnosti-ruzoveho-vina@2x.jpg')} alt="Slavnosti Růžového Vína" />
+                <img className="portfolio__thumbnail thumbnail" src={require('./../static/images/showcase-thumbnails/snapshot-top-slavnosti-ruzoveho-vina.png')} alt="Slavnosti Růžového Vína" />
               </a>
             </Link>
           </div>
@@ -85,7 +88,7 @@ export default () => {
           <div className="col-md-6 col-lg-4">
             <Link href="/portfolio/">
               <a className="portfolio__link">
-                <img className="portfolio__thumbnail thumbnail" src={require('./../static/images/showcase-thumbnails/thumbnail-fresh-tasty@2x.jpg')} alt="Fresh & Tasty" />
+                <img className="portfolio__thumbnail thumbnail" src={require('./../static/images/showcase-thumbnails/snapshot-top-fresh-and-tasty.png')} alt="Fresh & Tasty" />
               </a>
             </Link>
           </div>
@@ -93,7 +96,7 @@ export default () => {
           <div className="col-md-6 col-lg-4">
             <Link href="/portfolio/">
               <a className="portfolio__link">
-                <img className="portfolio__thumbnail thumbnail" src={require('./../static/images/showcase-thumbnails/thumbnail-sumava@2x.jpg')} alt="Sumava" />
+                <img className="portfolio__thumbnail thumbnail" src={require('./../static/images/showcase-thumbnails/snapshot-top-sumava-v2.jpg')} alt="Sumava" />
               </a>
             </Link>
           </div>
