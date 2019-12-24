@@ -16,6 +16,7 @@ import { Hero } from './../components/hero'
 // import { MapComponent } from '../components/map'
 // import { Partners } from './../components/partners'
 // import { Pitch } from './../components/pitch'
+import { OurProcess } from '../components/our-process'
 import { Projects } from '../components/projects'
 import { Services } from './../components/services-cols'
 // import { Stack } from './../components/stack'
@@ -60,6 +61,8 @@ export default class extends React.Component {
         <Projects />
 
         <Services />
+
+        <OurProcess />
 
         {/* <Stack /> */}
 
