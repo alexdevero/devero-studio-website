@@ -84,7 +84,14 @@
 }
 
 .projects__info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  padding: 14px 14px 24px;
+  width: 100%;
   color: #fff;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, .45) 70%, transparent);
   transition: top .25s ease-out, left .25s ease-out;
 }
 
@@ -95,13 +102,13 @@
 }
 
 .projects__project-name {
-  margin-bottom: 16px;
-  font-size: 24px;
+  margin-bottom: 8px;
+  font-size: 18px;
   font-weight: 700;
 }
 
 .projects__project-type {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
 }
 
@@ -109,6 +116,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1;
   margin: 0;
   width: 100%;
   height: 100%;
