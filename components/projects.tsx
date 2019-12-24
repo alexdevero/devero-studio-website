@@ -29,7 +29,7 @@ export const Projects = () => {
 
             <Masonry className="masonry-wrapper">
               <div className="col-sm-6 col-md-4">
-                <div className="projects__wrapper" style={{ backgroundColor: '#181b1f' }}>
+                <div className="projects__wrapper">
                   <div className="projects__info">
                     <h2 className="projects__project-name">Supernova</h2>
 
@@ -53,7 +53,7 @@ export const Projects = () => {
               </div>
 
               <div className="col-sm-6 col-md-4">
-                <div className="projects__wrapper" style={{ backgroundColor: '#ffb300' }}>
+                <div className="projects__wrapper">
                   <div className="projects__info">
                     <h2 className="projects__project-name">Fresh &amp; Tasty</h2>
 
@@ -77,7 +77,7 @@ export const Projects = () => {
               </div>
 
               <div className="col-sm-6 col-md-4">
-                <div className="projects__wrapper" style={{ backgroundColor: '#c544a0' }}>
+                <div className="projects__wrapper">
                   <div className="projects__info">
                     <h2 className="projects__project-name">Slavnosti Růžového Vína</h2>
 
@@ -101,7 +101,7 @@ export const Projects = () => {
               </div>
 
               <div className="col-sm-6 col-md-4">
-                <div className="projects__wrapper" style={{ backgroundColor: '#323844' }}>
+                <div className="projects__wrapper">
                   <div className="projects__info">
                     <h2 className="projects__project-name">Tesla</h2>
 
@@ -125,7 +125,7 @@ export const Projects = () => {
               </div>
 
               <div className="col-sm-6 col-md-4">
-                <div className="projects__wrapper" style={{ backgroundColor: '#000' }}>
+                <div className="projects__wrapper">
                   <div className="projects__info">
                     <h2 className="projects__project-name">Harley-Davidson</h2>
 
@@ -149,7 +149,7 @@ export const Projects = () => {
               </div>
 
               <div className="col-sm-6 col-md-4">
-                <div className="projects__wrapper" style={{ backgroundColor: '#fca22d' }}>
+                <div className="projects__wrapper">
                   <div className="projects__info">
                     <h2 className="projects__project-name">Česká Whisky</h2>
 
@@ -173,7 +173,7 @@ export const Projects = () => {
               </div>
 
               <div className="col-sm-6 col-md-4">
-                <div className="projects__wrapper" style={{ backgroundColor: '#3a401a' }}>
+                <div className="projects__wrapper">
                   <div className="projects__info">
                     <h2 className="projects__project-name">National Park Šumava</h2>
 
