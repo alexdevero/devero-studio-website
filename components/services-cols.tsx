@@ -22,7 +22,7 @@ export const Services = () => {
               <ReactSVG
                 beforeInjection={svg => {
                   svg.classList.add('icon-design')
-                  svg.setAttribute('style', 'display: block; margin: auto; width: 80px; fill: #333;')
+                  svg.setAttribute('style', 'display: block; margin: auto; width: 70px; fill: #333;')
                 }}
                 src='./../static/images/services-icons/service-icon-design.svg'
               />
@@ -43,7 +43,7 @@ export const Services = () => {
               <ReactSVG
                 beforeInjection={svg => {
                   svg.classList.add('icon-web-dev')
-                  svg.setAttribute('style', 'display: block; margin: auto; width: 80px; fill: #333;')
+                  svg.setAttribute('style', 'display: block; margin: auto; width: 70px; fill: #333;')
                 }}
                 src='./../static/images/services-icons/service-icon-web-dev.svg'
               />
@@ -64,9 +64,9 @@ export const Services = () => {
               <ReactSVG
                 beforeInjection={svg => {
                   svg.classList.add('icon-app')
-                  svg.setAttribute('style', 'display: block; margin: auto; width: 80px; fill: #333;')
+                  svg.setAttribute('style', 'display: block; margin: auto; width: 70px; fill: #333;')
                 }}
-                src='./../static/images/services-icons/service-icon-app.svg'
+                src='./../static/images/services-icons/icon-smartphone.svg'
               />
 
               <h2 className="h4 text--center mt-4 mb-4">App development</h2>
@@ -86,7 +86,7 @@ export const Services = () => {
               <ReactSVG
                 beforeInjection={svg => {
                   svg.classList.add('icon-consulting')
-                  svg.setAttribute('style', 'display: block; margin: auto; width: 80px; fill: #333;')
+                  svg.setAttribute('style', 'display: block; margin: auto; width: 70px; fill: #333;')
                 }}
                 src='./../static/images/services-icons/service-icon-consulting.svg'
               />
