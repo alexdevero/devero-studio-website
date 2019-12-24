@@ -28,7 +28,7 @@ export const Projects = () => {
             <div className="divider divider--center divider--red divider--slim mb-4" />
 
             <Masonry className="masonry-wrapper">
-              <div className="col-sm-6 col-md-4">
+              <div className="col-md-6 col-lg-4">
                 <div className="projects__wrapper">
                   <div className="projects__info">
                     <h2 className="projects__project-name">Supernova</h2>
@@ -52,7 +52,7 @@ export const Projects = () => {
                 </div>
               </div>
 
-              <div className="col-sm-6 col-md-4">
+              <div className="col-md-6 col-lg-4">
                 <div className="projects__wrapper">
                   <div className="projects__info">
                     <h2 className="projects__project-name">Fresh &amp; Tasty</h2>
@@ -76,7 +76,7 @@ export const Projects = () => {
                 </div>
               </div>
 
-              <div className="col-sm-6 col-md-4">
+              <div className="col-md-6 col-lg-4">
                 <div className="projects__wrapper">
                   <div className="projects__info">
                     <h2 className="projects__project-name">Slavnosti Růžového Vína</h2>
@@ -100,7 +100,7 @@ export const Projects = () => {
                 </div>
               </div>
 
-              <div className="col-sm-6 col-md-4">
+              <div className="col-md-6 col-lg-4">
                 <div className="projects__wrapper">
                   <div className="projects__info">
                     <h2 className="projects__project-name">Tesla</h2>
@@ -124,7 +124,7 @@ export const Projects = () => {
                 </div>
               </div>
 
-              <div className="col-sm-6 col-md-4">
+              <div className="col-md-6 col-lg-4">
                 <div className="projects__wrapper">
                   <div className="projects__info">
                     <h2 className="projects__project-name">Harley-Davidson</h2>
@@ -148,7 +148,7 @@ export const Projects = () => {
                 </div>
               </div>
 
-              <div className="col-sm-6 col-md-4">
+              <div className="col-md-6 col-lg-4">
                 <div className="projects__wrapper">
                   <div className="projects__info">
                     <h2 className="projects__project-name">Česká Whisky</h2>
@@ -172,7 +172,7 @@ export const Projects = () => {
                 </div>
               </div>
 
-              <div className="col-sm-6 col-md-4">
+              <div className="col-md-6 col-lg-4">
                 <div className="projects__wrapper">
                   <div className="projects__info">
                     <h2 className="projects__project-name">National Park Šumava</h2>
