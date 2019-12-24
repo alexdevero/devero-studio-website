@@ -4,23 +4,39 @@ import { Waypoint } from 'react-waypoint'
 export const Testimonials = () => {
   let sectionTestimonials: HTMLElement | null
 
-  const [activeSlide, handleActiveSlideChange] = React.useState('one')
+  const [activeSlide, handleActiveSlideChange] = React.useState(1)
 
   const handleWaypointEnter = () => {
     sectionTestimonials!.classList.add('fade-in-up')
   }
 
+  // const handleTestimonialSlideChange = (direction: string) => {
+  //   if (direction === 'left') {
+  //     if (activeSlide - 1 < 0) {
+  //       handleActiveSlideChange(activeSlide + 1)
+  //     } else {
+  //       handleActiveSlideChange(activeSlide - 1)
+  //     }
+  //   } else {
+  //     if (activeSlide + 1 < 6) {
+  //       handleActiveSlideChange(activeSlide + 1)
+  //     } else {
+  //       handleActiveSlideChange(activeSlide - 1)
+  //     }
+  //   }
+  // }
+
   return (
     <Waypoint onEnter={handleWaypointEnter} topOffset="-40%">
       <section className="animated" ref={el => sectionTestimonials = el}>
         <div className="container pt-5 pb-5">
-          <h1 className="h3 heading--small text--center">What people say</h1>
+          <h1 className="h3 heading--small text--center">Feedback from our clients</h1>
 
           <div className="divider divider--red divider--center" />
 
-          <div className={`slider__slide${activeSlide === 'one' ? ' slider__slide--active' : ''}`}>
-            <div className="row">
-              <div className="col-md-4 col-lg-4">
+          <div className={`slider__slide${activeSlide === 1 ? ' slider__slide--active' : ''}`}>
+            <div className="row justify-content-center">
+              <div className="col-md-8">
                 <blockquote className="blockquote">
                   <p className="blockquote__text">&ldquo;Devero Studio is great to work with. Professional, responsive and delivered outstanding work. We will definitely hire them again.&rdquo;</p>
                   <footer className="blockquote__footer">
@@ -32,8 +48,12 @@ export const Testimonials = () => {
                   </footer>
                 </blockquote>
               </div>
+            </div>
+          </div>
 
-              <div className="col-md-4 col-lg-4">
+          <div className={`slider__slide${activeSlide === 2 ? ' slider__slide--active' : ''}`}>
+            <div className="row justify-content-center">
+              <div className="col-md-8">
                 <blockquote className="blockquote">
                   <p className="blockquote__text">&ldquo;Devero Studio proved to be a very good choice. They did a great job re-designing our website. It exceeded my expectations.&rdquo;</p>
                   <footer className="blockquote__footer">
@@ -45,8 +65,12 @@ export const Testimonials = () => {
                   </footer>
                 </blockquote>
               </div>
+            </div>
+          </div>
 
-              <div className="col-md-4 col-lg-4">
+          <div className={`slider__slide${activeSlide === 3 ? ' slider__slide--active' : ''}`}>
+            <div className="row justify-content-center">
+              <div className="col-md-8">
                 <blockquote className="blockquote">
                   <p className="blockquote__text">&ldquo;Team at Devero Studio has been a tremendous help. What would have taken other agencies 6 months only took them 1.5 months.&rdquo;</p>
                   <footer className="blockquote__footer">
@@ -61,9 +85,9 @@ export const Testimonials = () => {
             </div>
           </div>
 
-          <div className={`slider__slide${activeSlide === 'two' ? ' slider__slide--active' : ''}`}>
-            <div className="row">
-              <div className="col-md-4 col-lg-4">
+          <div className={`slider__slide${activeSlide === 4 ? ' slider__slide--active' : ''}`}>
+            <div className="row justify-content-center">
+              <div className="col-md-8">
                 <blockquote className="blockquote">
                   <p className="blockquote__text">&ldquo;Great work and delivered in time! This is very important especially for time-sensitive projects.&rdquo;</p>
                   <footer className="blockquote__footer">
@@ -75,8 +99,12 @@ export const Testimonials = () => {
                   </footer>
                 </blockquote>
               </div>
+            </div>
+          </div>
 
-              <div className="col-md-4 col-lg-4">
+          <div className={`slider__slide${activeSlide === 5 ? ' slider__slide--active' : ''}`}>
+            <div className="row justify-content-center">
+              <div className="col-md-8">
                 <blockquote className="blockquote">
                   <p className="blockquote__text">&ldquo;Devero Studio was a pleasure to work with. They compiled my vision into a true masterpiece, that I am proud to show.&rdquo;</p>
                   <footer className="blockquote__footer">
@@ -88,8 +116,12 @@ export const Testimonials = () => {
                   </footer>
                 </blockquote>
               </div>
+            </div>
+          </div>
 
-              <div className="col-md-4 col-lg-4">
+          <div className={`slider__slide${activeSlide === 6 ? ' slider__slide--active' : ''}`}>
+            <div className="row justify-content-center">
+              <div className="col-md-8">
                 <blockquote className="blockquote">
                   <p className="blockquote__text">&ldquo;Devero Studio is professional, very reliable, flexible, and delivers on time. We was glad to work with this agency.&rdquo;</p>
                   <footer className="blockquote__footer">
@@ -106,11 +138,27 @@ export const Testimonials = () => {
 
           <ul className="slider__dots list--unstyled">
             <li>
-              <span className={`slider__dot${activeSlide === 'one' ? ' slider__dot--active' : ''}`} onClick={() => handleActiveSlideChange('one')} />
+              <span className={`slider__dot${activeSlide === 1 ? ' slider__dot--active' : ''}`} onClick={() => handleActiveSlideChange(1)} />
             </li>
 
             <li>
-              <span className={`slider__dot${activeSlide === 'two' ? ' slider__dot--active' : ''}`} onClick={() => handleActiveSlideChange('two')} />
+              <span className={`slider__dot${activeSlide === 2 ? ' slider__dot--active' : ''}`} onClick={() => handleActiveSlideChange(2)} />
+            </li>
+
+            <li>
+              <span className={`slider__dot${activeSlide === 3 ? ' slider__dot--active' : ''}`} onClick={() => handleActiveSlideChange(3)} />
+            </li>
+
+            <li>
+              <span className={`slider__dot${activeSlide === 4 ? ' slider__dot--active' : ''}`} onClick={() => handleActiveSlideChange(4)} />
+            </li>
+
+            <li>
+              <span className={`slider__dot${activeSlide === 5 ? ' slider__dot--active' : ''}`} onClick={() => handleActiveSlideChange(5)} />
+            </li>
+
+            <li>
+              <span className={`slider__dot${activeSlide === 6 ? ' slider__dot--active' : ''}`} onClick={() => handleActiveSlideChange(6)} />
             </li>
           </ul>
         </div>
