@@ -69,9 +69,9 @@ export const Blog = () => {
   return (
     <Waypoint onEnter={handleWaypointEnter} topOffset="-40%">
       <div className="container animated pb-5" ref={el => sectionBlog = el}>
-        <h1 className="h4 heading--small text--center">From our blog</h1>
+        <h1 className="h4 heading--small">From our blog</h1>
 
-        <div className="divider divider--red divider--center" />
+        <div className="divider divider--red" />
 
         <div className="row">
           {blogData.map((blogPost, index) => {

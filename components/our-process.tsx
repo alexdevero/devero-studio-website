@@ -11,12 +11,12 @@ export const OurProcess = () => {
 
   return (
     <section>
-      <div className="container pt-5 pb-5 text--center">
+      <div className="container pt-5 pb-5">
         <Waypoint onEnter={handleWaypointEnter} topOffset="-90%">
           <div ref={el => sectionOurProcess = el} className="animated">
             <h1 className="h3 heading--small">Our work process</h1>
 
-            <div className="divider divider--center divider--red divider--slim mb-5" />
+            <div className="divider divider--red divider--slim mb-5" />
 
             <div className="row">
               <div className="col-md-6 col-lg-4">

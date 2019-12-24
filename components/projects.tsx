@@ -23,9 +23,9 @@ export const Projects = () => {
       <div className="container pt-5 pb-5">
         <Waypoint onEnter={() => handleWaypointEnter('recentWorks')} topOffset="-40%">
           <div className="animated" ref={el => sectionRecentWorks = el}>
-            <h2 className="h3 heading--small text--center">Featured projects</h2>
+            <h2 className="h3 heading--small">Featured projects</h2>
 
-            <div className="divider divider--center divider--red divider--slim mb-4" />
+            <div className="divider divider--red divider--slim mb-4" />
 
             <Masonry className="masonry-wrapper">
               <div className="col-md-6 col-lg-4">
