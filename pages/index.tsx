@@ -70,11 +70,11 @@ export default class extends React.Component {
 
         {/* <Faq /> */}
 
-        <Testimonials />
-
         {/* <Where /> */}
 
         <Awards />
+
+        <Testimonials />
 
         <Blog />
 
