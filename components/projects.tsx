@@ -40,11 +40,11 @@ export const Projects = () => {
                     image={{
                       alt: 'Supernova',
                       className: 'projects__thumbnail thumbnail',
-                      src: require('./../static/images/showcase-thumbnails/macbook-white-supernova@1x.png')
+                      src: require('./../static/images/showcase-thumbnails/snapshot-top-supernova.png')
                     }}
                     zoomImage={{
                       alt: 'Supernova',
-                      src: require('./../static/images/showcase-thumbnails/macbook-white-supernova@2x.png')
+                      src: require('./../static/images/showcase-thumbnails/snapshot-top-supernova.png')
                     }}
                   />
 
@@ -64,11 +64,11 @@ export const Projects = () => {
                     image={{
                       alt: 'Fresh & Tasty',
                       className: 'projects__thumbnail thumbnail',
-                      src: require('./../static/images/showcase-thumbnails/macbook-white-fresh-and-tasty@1x.png')
+                      src: require('./../static/images/showcase-thumbnails/snapshot-top-fresh-and-tasty.png')
                     }}
                     zoomImage={{
                       alt: 'Fresh & Tasty',
-                      src: require('./../static/images/showcase-thumbnails/macbook-white-fresh-and-tasty@2x.png')
+                      src: require('./../static/images/showcase-thumbnails/snapshot-top-fresh-and-tasty.png')
                     }}
                   />
 
@@ -88,11 +88,11 @@ export const Projects = () => {
                     image={{
                       alt: 'Slavnosti Růžového Vína',
                       className: 'projects__thumbnail thumbnail',
-                      src: require('./../static/images/showcase-thumbnails/macbook-white-slavnosti-ruzoveho-vina@1x.png')
+                      src: require('./../static/images/showcase-thumbnails/snapshot-top-slavnosti-ruzoveho-vina.png')
                     }}
                     zoomImage={{
                       alt: 'Slavnosti Růžového Vína',
-                      src: require('./../static/images/showcase-thumbnails/macbook-white-slavnosti-ruzoveho-vina@2x.png')
+                      src: require('./../static/images/showcase-thumbnails/snapshot-top-slavnosti-ruzoveho-vina.png')
                     }}
                   />
 
@@ -112,11 +112,11 @@ export const Projects = () => {
                     image={{
                       alt: 'Tesla web design concept',
                       className: 'projects__thumbnail thumbnail',
-                      src: require('./../static/images/showcase-thumbnails/macbook-white-tesla@1x.png')
+                      src: require('./../static/images/showcase-thumbnails/snapshot-top-tesla-web-design-concept.jpg')
                     }}
                     zoomImage={{
                       alt: 'Tesla web design concept',
-                      src: require('./../static/images/showcase-thumbnails/macbook-white-tesla@2x.png')
+                      src: require('./../static/images/showcase-thumbnails/snapshot-top-tesla-web-design-concept.jpg')
                     }}
                   />
 
@@ -136,11 +136,11 @@ export const Projects = () => {
                     image={{
                       alt: 'Harley-Davidson web design concept',
                       className: 'projects__thumbnail thumbnail',
-                      src: require('./../static/images/showcase-thumbnails/macbook-white-harley-davidson@1x.png')
+                      src: require('./../static/images/showcase-thumbnails/snapshot-top-harley-davidson-landing-page-v6-desktop.jpg')
                     }}
                     zoomImage={{
                       alt: 'Harley-Davidson web design concept',
-                      src: require('./../static/images/showcase-thumbnails/macbook-white-harley-davidson@2x.png')
+                      src: require('./../static/images/showcase-thumbnails/snapshot-top-harley-davidson-landing-page-v6-desktop.jpg')
                     }}
                   />
 
@@ -160,11 +160,11 @@ export const Projects = () => {
                     image={{
                       alt: 'Ceska Whisky web design concept',
                       className: 'projects__thumbnail thumbnail',
-                      src: require('./../static/images/showcase-thumbnails/macbook-white-ceska-whisky@1x.png')
+                      src: require('./../static/images/showcase-thumbnails/snapshot-top-ceska-whisky-desktop-v6.jpg')
                     }}
                     zoomImage={{
                       alt: 'Ceska Whisky web design concept',
-                      src: require('./../static/images/showcase-thumbnails/macbook-white-ceska-whisky@2x.png')
+                      src: require('./../static/images/showcase-thumbnails/snapshot-top-ceska-whisky-desktop-v6.jpg')
                     }}
                   />
 
@@ -184,11 +184,11 @@ export const Projects = () => {
                     image={{
                       alt: 'Sumava',
                       className: 'projects__thumbnail thumbnail',
-                      src: require('./../static/images/showcase-thumbnails/macbook-white-sumava@1x.png')
+                      src: require('./../static/images/showcase-thumbnails/snapshot-top-sumava-v2.jpg')
                     }}
                     zoomImage={{
                       alt: '',
-                      src: require('./../static/images/showcase-thumbnails/macbook-white-sumava@2x.png')
+                      src: require('./../static/images/showcase-thumbnails/snapshot-top-sumava-v2.jpg')
                     }}
                   />
 
