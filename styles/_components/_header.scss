@@ -6,12 +6,13 @@
   z-index: 10;
   width: 100%;
   background: #fff;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, .05);
 
   .list--inline-item:not(:last-child) {
     margin-right: 18px;
   }
 
-  li {
+  li:not(.quote-btn-wrapper) {
     border-top: 3px solid transparent;
     transition: border-top-color var(--tr-part);
 
@@ -30,5 +31,11 @@
     &:hover {
       color: var(--color-brand);
     }
+  }
+
+  .btn {
+    position: relative;
+    padding: 15px 28px;
+    font-size: 15px;
   }
 }
