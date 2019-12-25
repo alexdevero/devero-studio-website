@@ -11,6 +11,7 @@ import { Blog } from './../components/blog'
 import { Contact } from './../components/contact'
 // import { Faq } from './../components/faq'
 import { Footer } from './../components/footer'
+import { Header } from '../components/header'
 import { Hero } from './../components/hero'
 // import { Intro } from './../components/intro'
 // import { MapComponent } from '../components/map'
@@ -18,6 +19,7 @@ import { Hero } from './../components/hero'
 // import { Pitch } from './../components/pitch'
 import { OurProcess } from '../components/our-process'
 import { Projects } from '../components/projects'
+import { QuoteModal } from '../components/quote-modal'
 import { Services } from './../components/services-cols'
 // import { Stack } from './../components/stack'
 import { Testimonials } from './../components/testimonials'
@@ -28,6 +30,10 @@ import { Testimonials } from './../components/testimonials'
 import './../styles/styles.scss'
 
 export default class extends React.Component {
+  state = {
+    isQuoteModalShown: false
+  }
+
   componentDidMount() {
     if (!(window as any).GA_INITIALIZED) {
       initGA();
@@ -43,12 +49,20 @@ export default class extends React.Component {
 
   }
 
+  handleQuoteClick = () => {
+    this.setState({
+      isQuoteModalShown: !this.state.isQuoteModalShown
+    })
+  }
+
   render() {
     return (
-      <div>
+      <div className={this.state.isQuoteModalShown ? 'page-overlay' : ''}>
         {/* <Link href='/about'>
           <a>About</a>
         </Link> */}
+
+        <Header handleQuoteClick={this.handleQuoteClick} />
 
         <Hero />
 
@@ -83,6 +97,8 @@ export default class extends React.Component {
         {/* <MapComponent /> */}
 
         <Footer />
+
+        {this.state.isQuoteModalShown && <QuoteModal handleQuoteClick={this.handleQuoteClick} />}
       </div>
     )
   }
