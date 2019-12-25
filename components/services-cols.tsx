@@ -39,7 +39,7 @@ export const Services = () => {
               </ul>
             </div>
 
-            <div className="col-md-6 col-lg-3">
+            <div className="col-md-6 col-lg-3 mt-5 mt-md-0">
               <ReactSVG
                 beforeInjection={svg => {
                   svg.classList.add('icon-web-dev')
@@ -61,7 +61,7 @@ export const Services = () => {
               </ul>
             </div>
 
-            <div className="col-md-6 col-lg-3">
+            <div className="col-md-6 col-lg-3 mt-5 mt-lg-0">
               <ReactSVG
                 beforeInjection={svg => {
                   svg.classList.add('icon-app')
@@ -84,7 +84,7 @@ export const Services = () => {
               </ul>
             </div>
 
-            <div className="col-md-6 col-lg-3">
+            <div className="col-md-6 col-lg-3 mt-5 mt-lg-0">
               <ReactSVG
                 beforeInjection={svg => {
                   svg.classList.add('icon-consulting')
