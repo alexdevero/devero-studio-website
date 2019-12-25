@@ -1,29 +1,70 @@
 import * as React from 'react'
+import $ from 'jquery'
 
 interface QuoteModalInterface {
   handleQuoteClick: () => void;
 }
 
 export const QuoteModal = (props: QuoteModalInterface) => {
-  const [currency, setCurrency] = React.useState('EUR')
+  const [currency, setCurrency] = React.useState<'EUR' | 'USD'>('EUR')
   const [name, setName] = React.useState('')
   const [email, setEmail] = React.useState('')
   const [description, setDescription] = React.useState('')
   const [projectType, setProjectType] = React.useState('')
-  const [] = React.useState('')
+  const [budget, setBudget] = React.useState('1')
+  const [qUsername, setQUsername] = React.useState('')
+  const [isQuoteErrorShown, setIsQuoteErrorShown] = React.useState(false)
+  const [isQuoteErrorBotShown, setIsQuoteErrorBotShown] = React.useState(false)
+  const [isQuoteFormSubmitted, setIsQuoteFormSubmitted] = React.useState(false)
 
-  // const handleCurrencyChange = (currency: string) => {
-  //   console.log(currency)
-  // }
+  const handleQuoteFormSubmit = (event: React.FormEvent<HTMLButtonElement>) => {
+    event.preventDefault()
 
-  // const handleInputChange = (inputType: string, event: React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>) => {
-  //   switch (inputType) {
-  //     case 'name'
-  //   }
-  // }
+    if (qUsername.length > 0) {
+      setIsQuoteErrorBotShown(true)
+      return
+    }
 
-  const handleQuoteFormSubmit = () => {
-    if (currency.length !== 0 && name.length !== 0 && email.length !== 0 && description.length !== 0 && projectType.length !== 0) {}
+    if (currency.length !== 0 && name.length !== 0 && email.length !== 0 && description.length !== 0 && projectType.length !== 0 && budget.length !== 0) {
+      setTimeout(() => {
+        const data = {
+          currency: currency,
+          name: name,
+          email: email,
+          description: description,
+          projectType: projectType,
+          budget: budget
+        }
+
+        $.ajax({
+          data: data,
+          method: 'POST',
+          url: './../static/quote.php',
+          headers: {
+            'Access-Control-Allow-Origin': '*'
+         },
+          success: function(data) {
+            console.info(data)
+
+            setIsQuoteFormSubmitted(true)
+          },
+          error: function(xhr, status, err) {
+            console.log(xhr)
+            console.error(status, err.toString())
+          }
+        })
+
+        setCurrency('EUR')
+        setName('')
+        setEmail('')
+        setDescription('')
+        setProjectType('')
+        setBudget('1')
+        setQUsername('')
+      }, 1000)
+    } else {
+      setIsQuoteErrorShown(true)
+    }
   }
 
   return (
@@ -31,57 +72,79 @@ export const QuoteModal = (props: QuoteModalInterface) => {
       <button className="quote-modal__button" onClick={props.handleQuoteClick} />
 
       <form>
-        <h2 className="h3">1) How can we help you?</h2>
+        <h2 className="h4">1) How can we help you?</h2>
 
         <div className="row">
-          <div className="col-sm-6 col-md-4 col-lg-3">
-            <label htmlFor="radQuoteDesign" onClick={() => setProjectType('Web Design')}>
-              <input type="radio" name="radQuote" id="radQuoteDesign"/>
+          <div className="col-sm-6 col-md-4">
+            <input className="radio-radio" defaultChecked={projectType === 'Web Design'} type="radio" name="radQuote" id="radQuoteDesign" />
 
-              <span>Web Design</span>
+            <label className="radio-wrapper" htmlFor="radQuoteDesign" onClick={() => setProjectType('Web Design')}>
+              <span className="radio-label">Web Design</span>
             </label>
           </div>
 
-          <div className="col-sm-6 col-md-4 col-lg-3">
-            <label htmlFor="radQuoteDevelopment" onClick={() => setProjectType('Web Development')}>
-              <input type="radio" name="radQuote" id="radQuoteDevelopment"/>
+          <div className="col-sm-6 col-md-4 mt-3 mt-sm-0">
+            <input className="radio-radio" defaultChecked={projectType === 'Web Development'} type="radio" name="radQuote" id="radQuoteDevelopment" />
 
-              <span>Web Development</span>
+            <label className="radio-wrapper" htmlFor="radQuoteDevelopment" onClick={() => setProjectType('Web Development')}>
+              <span className="radio-label">Web Development</span>
             </label>
           </div>
 
-          <div className="col-sm-6 col-md-4 col-lg-3">
-            <label htmlFor="radQuoteWebsite" onClick={() => setProjectType('New Website')}>
-              <input type="radio" name="radQuote" id="radQuoteWebsite"/>
+          {/* <div className="col-sm-6 col-md-4">
+            <input className="radio-radio" defaultChecked={projectType === 'New Website'} type="radio" name="radQuote" id="radQuoteNewWebsite" />
 
-              <span>New Website</span>
+            <label className="radio-wrapper" htmlFor="radQuoteNewWebsite" onClick={() => setProjectType('New Website')}>
+              <span className="radio-label">New Website</span>
+            </label>
+          </div> */}
+
+          <div className="col-sm-6 col-md-4 mt-3 mt-md-0">
+            <input defaultChecked={projectType === 'Existing Website'} className="radio-radio" type="radio" name="radQuote" id="radQuoteExWebsite" />
+
+            <label className="radio-wrapper" htmlFor="radQuoteExWebsite" onClick={() => setProjectType('Existing Website')}>
+              <span className="radio-label">Existing Website</span>
             </label>
           </div>
 
-          <div className="col-sm-6 col-md-4 col-lg-3">
-            <label htmlFor="radQuoteWebsite" onClick={() => setProjectType('Existing Website')}>
-              <input type="radio" name="radQuote" id="radQuoteWebsite"/>
+          <div className="col-sm-6 col-md-4 mt-3">
+            <input className="radio-radio" defaultChecked={projectType === 'eCommerce'} type="radio" name="radQuote" id="radQuoteCommerce" />
 
-              <span>Existing Website</span>
+            <label className="radio-wrapper" htmlFor="radQuoteCommerce" onClick={() => setProjectType('eCommerce')}>
+              <span className="radio-label">eCommerce</span>
             </label>
           </div>
 
-          <div className="col-sm-6 col-md-4 col-lg-3">
-            <label htmlFor="radQuoteCommerce" onClick={() => setProjectType('eCommerce')}>
-              <input type="radio" name="radQuote" id="radQuoteCommerce"/>
+          <div className="col-sm-6 col-md-4 mt-3">
+            <input className="radio-radio" defaultChecked={projectType === 'App Design'} type="radio" name="radQuote" id="radQuoteAppDesign" />
 
-              <span>eCommerce</span>
+            <label className="radio-wrapper" htmlFor="radQuoteAppDesign" onClick={() => setProjectType('App Design')}>
+              <span className="radio-label">App Design</span>
+            </label>
+          </div>
+
+          <div className="col-sm-6 col-md-4 mt-3">
+            <input className="radio-radio" defaultChecked={projectType === 'App Development'} type="radio" name="radQuote" id="radQuoteAppDev" />
+
+            <label className="radio-wrapper" htmlFor="radQuoteAppDev" onClick={() => setProjectType('App Development')}>
+              <span className="radio-label">App Development</span>
             </label>
           </div>
         </div>
 
-        <h2 className="h3 mt-4">2) Describe project</h2>
+        <h2 className="h4 mt-4">2) Describe project</h2>
 
-        <textarea name="quoteDescription" id="quoteDescription"  onChange={(event) => setDescription(event.currentTarget.value)}></textarea>
+        <fieldset className="input--absolute mt-4 mb-4">
+          <textarea placeholder="The more details you give, the more accurate is the estimation" name="quoteDescription" id="quoteDescription" onChange={(event) => setDescription(event.currentTarget.value)} required />
+        </fieldset>
 
-        <h2 className="h3 mt-4">3) Intended Budget (<span onClick={() => setCurrency('EUR')}>EUR</span>/<span onClick={() => setCurrency('USD')}>USD</span>)</h2>¨
+        <h2 className="h4 mt-4">3) Intended Budget (<span className="link--black-red text--underline" onClick={() => setCurrency('EUR')}>EUR</span>/<span className="link--black-red text--underline" onClick={() => setCurrency('USD')}>USD</span>)</h2>
 
-        <h2 className="h3 mt-4">4) Contact information</h2>
+        <input defaultValue={budget} type="range" name="quoteBudget" id="quoteBudget" min={1} max={100} step={1} onChange={(event) => setBudget(event.currentTarget.value)} />
+
+        <small><strong>Current budget: {budget === '1' ? '<=' + budget : budget === '100' ? '>=' + budget : budget} K {currency}</strong></small>
+
+        <h2 className="h4 mt-4">4) Contact information</h2>
 
         <div className="row">
           <div className="col-sm-6">
@@ -100,6 +163,30 @@ export const QuoteModal = (props: QuoteModalInterface) => {
             </fieldset>
           </div>
         </div>
+
+        <fieldset className="input--absolute input--username">
+          <input onChange={(event) => setQUsername(event.currentTarget.value)} id="quoteUsername" name="quoteUsername" type="text" />
+
+          <label htmlFor="quoteUsername">Username *</label>
+        </fieldset>
+
+        {isQuoteErrorShown && (
+          <fieldset className="mb-3 mt-3">
+            <p className="text--small"><strong>Please, make sure to fill all fields.</strong></p>
+          </fieldset>
+        )}
+
+        {isQuoteErrorBotShown && (
+          <fieldset className="mb-3 mt-3">
+            <p className="text--small"><strong>We don&apos;t work with spammers and bots.</strong></p>
+          </fieldset>
+        )}
+
+        {isQuoteFormSubmitted && (
+          <fieldset className="mb-3 mt-3">
+            <p className="text--small"><strong>Your message is on the way. We will reply in three days.</strong></p>
+          </fieldset>
+        )}
 
         <button onClick={handleQuoteFormSubmit} className="btn btn--full-width btn--black-red contact-button-cta mt-4" data-text="Send">Send</button>
       </form>
