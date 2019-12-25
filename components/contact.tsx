@@ -139,7 +139,7 @@ export class Contact extends React.Component {
 
   render() {
     return (
-      <section>
+      <section id="contact">
         <div className="container pt-5 pb-5">
           <Waypoint onEnter={this.handleWaypointEnter} topOffset="-40%">
             <div ref={el => this.sectionContact = el} className="animated pb-5">

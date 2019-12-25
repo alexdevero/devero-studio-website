@@ -10,7 +10,7 @@ export const OurProcess = () => {
   }
 
   return (
-    <section>
+    <section id="ourProcess">
       <div className="container pt-5 pb-5">
         <Waypoint onEnter={handleWaypointEnter} topOffset="-90%">
           <div ref={el => sectionOurProcess = el} className="animated">
