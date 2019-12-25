@@ -13,11 +13,13 @@
   }
 
   li:not(.quote-btn-wrapper) {
-    border-top: 3px solid transparent;
-    transition: border-top-color var(--tr-part);
+    @media (min-width: 768px) {
+      border-top: 3px solid transparent;
+      transition: border-top-color var(--tr-part);
 
-    &:hover {
-      border-top-color: var(--color-brand);
+      &:hover {
+        border-top-color: var(--color-brand);
+      }
     }
   }
 
@@ -33,9 +35,100 @@
     }
   }
 
+  .container {
+    @media (max-width: 767px) {
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  nav {
+    display: block;
+  }
+
   .btn {
     position: relative;
     padding: 15px 28px;
     font-size: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translateX(250px);
+    min-width: 220px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, .05);
+    transition: all var(--tr-part);
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      padding-top: 17px;
+      height: 100%;
+    }
+
+    .quote-btn-wrapper {
+      margin-right: 18px;
+    }
+  }
+
+  .nav-visible {
+    transform: translateX(0);
+  }
+
+  .nav .quote-modal__button {
+    position: static;
+    margin-right: 10px;
+  }
+}
+
+.header-mobile-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  padding: 0;
+  width: 27px;
+  height: 22px;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  span {
+    display: block;
+    width: 27px;
+    height: 3px;
+    background: var(--color-black);
+    transition: background var(--tr-part);
+  }
+
+  &:focus,
+  &:hover {
+    span {
+      background: var(--color-brand);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .header-mobile-btn,
+  .header-mobile-btn--close {
+    display: none !important;
   }
 }
