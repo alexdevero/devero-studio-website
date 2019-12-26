@@ -29,77 +29,67 @@ import { Works } from '../components/works'
 // Import styles
 import './../styles/styles.scss'
 
-export default class extends React.Component {
-  state = {
-    isQuoteModalShown: false
-  }
+const Home = () => {
+  const [isQuoteModalShown, setIsQuoteModalShown] = React.useState(false)
 
-  componentDidMount() {
+  React.useEffect(() => {
     if (!(window as any).GA_INITIALIZED) {
       initGA();
       (window as any).GA_INITIALIZED = true
     }
 
     logPageView()
+  })
 
-    // if (window!.hj._init) {
-      // window.hj._init._verifyInstallation()
-    // }
-    // hotjar.initialize(1435744, 6)
-
+  const handleQuoteClick = () => {
+    setIsQuoteModalShown(!isQuoteModalShown)
   }
 
-  handleQuoteClick = () => {
-    this.setState({
-      isQuoteModalShown: !this.state.isQuoteModalShown
-    })
-  }
+  return (
+    <div className={isQuoteModalShown ? 'page-overlay' : ''}>
+      {/* <Link href='/about'>
+        <a>About</a>
+      </Link> */}
 
-  render() {
-    return (
-      <div className={this.state.isQuoteModalShown ? 'page-overlay' : ''}>
-        {/* <Link href='/about'>
-          <a>About</a>
-        </Link> */}
+      <Header handleQuoteClick={handleQuoteClick} />
 
-        <Header handleQuoteClick={this.handleQuoteClick} />
+      <Hero />
 
-        <Hero />
+      {/* <Pitch /> */}
 
-        {/* <Pitch /> */}
+      {/* <Intro /> */}
 
-        {/* <Intro /> */}
+      <Works />
 
-        <Works />
+      <Projects />
 
-        <Projects />
+      <Services />
 
-        <Services />
+      <OurProcess />
 
-        <OurProcess />
+      {/* <Stack /> */}
 
-        {/* <Stack /> */}
+      {/* <Partners /> */}
 
-        {/* <Partners /> */}
+      {/* <Faq /> */}
 
-        {/* <Faq /> */}
+      {/* <Where /> */}
 
-        {/* <Where /> */}
+      <Awards />
 
-        <Awards />
+      <Testimonials />
 
-        <Testimonials />
+      <Blog />
 
-        <Blog />
+      <Contact />
 
-        <Contact />
+      {/* <MapComponent /> */}
 
-        {/* <MapComponent /> */}
+      <Footer />
 
-        <Footer />
-
-        {this.state.isQuoteModalShown && <QuoteModal handleQuoteClick={this.handleQuoteClick} />}
-      </div>
-    )
-  }
+      {isQuoteModalShown && <QuoteModal handleQuoteClick={handleQuoteClick} />}
+    </div>
+  )
 }
+
+export default Home
