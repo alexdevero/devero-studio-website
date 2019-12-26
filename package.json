@@ -21,10 +21,11 @@
       "not dead"
     ],
     "development": [
-      "last 5 chrome version",
-      "last 5 firefox version",
-      "last 2 safari version",
-      "last 2 ie version"
+      "ie >= 10",
+      "last 5 chrome versions",
+      "last 5 firefox versions",
+      "last 2 safari versions",
+      "last 4 versions"
     ]
   },
   "dependencies": {
