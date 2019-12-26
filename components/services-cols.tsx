@@ -32,10 +32,12 @@ export const Services = () => {
               <p>We will create functional and elegant designs for your website, or web app. We can also redesign your current website.</p>
 
               <ul className="list--unstyled mt-3">
-                <li>&bull; UI/UX design</li>
+                <li>&bull; UI design</li>
+                <li>&bull; UX design</li>
                 <li>&bull; Web design</li>
                 <li>&bull; App design</li>
                 <li>&bull; Re-design</li>
+                <li>&bull; Prototyping</li>
               </ul>
             </div>
 
@@ -53,11 +55,12 @@ export const Services = () => {
               <p>We create and launch a website from scratch for you. We always follow the highest standards and the modern trends.</p>
 
               <ul className="list--unstyled mt-3">
-                <li>&bull; UI/UX design</li>
-                <li>&bull; Prototyping</li>
-                <li>&bull; Responsive websites</li>
                 <li>&bull; Frontend</li>
                 <li>&bull; Backend</li>
+                <li>&bull; Single-page apps (SPA)</li>
+                <li>&bull; Progressive web apps (PWA)</li>
+                <li>&bull; Web apps</li>
+                <li>&bull; Responsive websites</li>
               </ul>
             </div>
 
@@ -75,12 +78,8 @@ export const Services = () => {
               <p>From idea to launch. We create delightful iOS and Android mobile apps that make your users happy and achieve your business goals.</p>
 
               <ul className="list--unstyled mt-3">
-                <li>&bull; UI/UX design</li>
-                <li>&bull; Prototyping</li>
-                <li>&bull; Web apps</li>
-                <li>&bull; PWA development</li>
-                <li>&bull; SPA development</li>
-                <li>&bull; iOS &amp; Android development (React Native)</li>
+                <li>&bull; iOS apps (React Native)</li>
+                <li>&bull; Android apps (React Native)</li>
               </ul>
             </div>
 
@@ -95,7 +94,7 @@ export const Services = () => {
 
               <h2 className="h4 mt-4 mb-4">Consulting</h2>
 
-              <p>We will help you find ways to improve your existing website or app, providing you with feedback, guidance and advice.</p>
+              <p>We will help you help improve your website or app, or build a startup, providing you with feedback, guidance and advice.</p>
 
               <ul className="list--unstyled mt-3">
                 <li>&bull; Web design</li>
@@ -104,7 +103,11 @@ export const Services = () => {
                 <li>&bull; App development</li>
                 <li>&bull; Re-design</li>
                 <li>&bull; Code reviews</li>
-                <li>&bull; Consulting</li>
+                <li>&bull; Idea validation</li>
+                <li>&bull; Market research</li>
+                <li>&bull; Competitor research</li>
+                <li>&bull; Opportunity discovery</li>
+                <li>&bull; Individual consulting</li>
               </ul>
             </div>
           </div>
