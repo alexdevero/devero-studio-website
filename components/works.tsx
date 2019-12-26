@@ -40,7 +40,7 @@ export const Works = () => {
                     image={{
                       alt: 'Supernova',
                       className: 'projects__thumbnail thumbnail',
-                      src: require('./../static/images/showcase-thumbnails/snapshot-top-supernova.png')
+                      src: require('./../static/images/showcase-thumbnails/snapshot-top-supernova-small.png')
                     }}
                     zoomImage={{
                       alt: 'Supernova',
@@ -64,7 +64,7 @@ export const Works = () => {
                     image={{
                       alt: 'Fresh & Tasty',
                       className: 'projects__thumbnail thumbnail',
-                      src: require('./../static/images/showcase-thumbnails/snapshot-top-fresh-and-tasty.png')
+                      src: require('./../static/images/showcase-thumbnails/snapshot-top-fresh-and-tasty-small.png')
                     }}
                     zoomImage={{
                       alt: 'Fresh & Tasty',
@@ -88,7 +88,7 @@ export const Works = () => {
                     image={{
                       alt: 'Slavnosti Růžového Vína',
                       className: 'projects__thumbnail thumbnail',
-                      src: require('./../static/images/showcase-thumbnails/snapshot-top-slavnosti-ruzoveho-vina.png')
+                      src: require('./../static/images/showcase-thumbnails/snapshot-top-slavnosti-ruzoveho-vina-small.png')
                     }}
                     zoomImage={{
                       alt: 'Slavnosti Růžového Vína',
@@ -112,7 +112,7 @@ export const Works = () => {
                     image={{
                       alt: 'Tesla web design concept',
                       className: 'projects__thumbnail thumbnail',
-                      src: require('./../static/images/showcase-thumbnails/snapshot-top-tesla-web-design-concept.jpg')
+                      src: require('./../static/images/showcase-thumbnails/snapshot-top-tesla-web-design-concept-small.jpg')
                     }}
                     zoomImage={{
                       alt: 'Tesla web design concept',
@@ -136,7 +136,7 @@ export const Works = () => {
                     image={{
                       alt: 'Harley-Davidson web design concept',
                       className: 'projects__thumbnail thumbnail',
-                      src: require('./../static/images/showcase-thumbnails/snapshot-top-harley-davidson-landing-page-v6-desktop.jpg')
+                      src: require('./../static/images/showcase-thumbnails/snapshot-top-harley-davidson-landing-page-v6-desktop-small.jpg')
                     }}
                     zoomImage={{
                       alt: 'Harley-Davidson web design concept',
@@ -160,7 +160,7 @@ export const Works = () => {
                     image={{
                       alt: 'Ceska Whisky web design concept',
                       className: 'projects__thumbnail thumbnail',
-                      src: require('./../static/images/showcase-thumbnails/snapshot-top-ceska-whisky-desktop-v6.jpg')
+                      src: require('./../static/images/showcase-thumbnails/snapshot-top-ceska-whisky-desktop-v6-small.jpg')
                     }}
                     zoomImage={{
                       alt: 'Ceska Whisky web design concept',
