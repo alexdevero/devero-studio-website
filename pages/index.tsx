@@ -24,7 +24,7 @@ import { Services } from './../components/services-cols'
 // import { Stack } from './../components/stack'
 import { Testimonials } from './../components/testimonials'
 // import { Where } from '../components/where'
-// import { Works } from '../components/works'
+import { Works } from '../components/works'
 
 // Import styles
 import './../styles/styles.scss'
@@ -70,7 +70,7 @@ export default class extends React.Component {
 
         {/* <Intro /> */}
 
-        {/* <Works /> */}
+        <Works />
 
         <Projects />
 
