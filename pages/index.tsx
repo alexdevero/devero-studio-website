@@ -51,7 +51,7 @@ const Home = () => {
         <a>About</a>
       </Link> */}
 
-      <Header handleQuoteClick={handleQuoteClick} />
+      <Header isHomepage={true} handleQuoteClick={handleQuoteClick} />
 
       <Hero />
 
