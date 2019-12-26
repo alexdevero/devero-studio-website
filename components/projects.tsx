@@ -8,8 +8,6 @@ import Masonry from 'react-masonry-component'
 export const Projects = () => {
   let sectionRecentWorks: HTMLDivElement | null
 
-  const [isProjectsListVisible, handleOpenProjectsList] = React.useState(false)
-
   const handleWaypointEnter = (section: string) => {
     switch (section) {
       case 'recentWorks':
@@ -31,20 +29,20 @@ export const Projects = () => {
               <div className="col-md-6 col-lg-4">
                 <div className="projects__wrapper">
                   <div className="projects__info">
-                    <h2 className="projects__project-name">Supernova</h2>
+                    <h2 className="projects__project-name">Trinity</h2>
 
-                    <h3 className="projects__project-type">Web development</h3>
+                    <h3 className="projects__project-type">Web design, web development</h3>
                   </div>
 
                   <ImageZoom
                     image={{
-                      alt: 'Supernova',
+                      alt: 'Trinity',
                       className: 'projects__thumbnail thumbnail',
-                      src: require('./../static/images/showcase-thumbnails/snapshot-top-supernova.png')
+                      src: require('./../static/images/projects-thumbnails/snapshot-top-trinity-small.jpg')
                     }}
                     zoomImage={{
-                      alt: 'Supernova',
-                      src: require('./../static/images/showcase-thumbnails/snapshot-top-supernova.png')
+                      alt: 'Trinity',
+                      src: require('./../static/images/projects-thumbnails/snapshot-top-trinity.jpg')
                     }}
                   />
 
@@ -55,20 +53,20 @@ export const Projects = () => {
               <div className="col-md-6 col-lg-4">
                 <div className="projects__wrapper">
                   <div className="projects__info">
-                    <h2 className="projects__project-name">Fresh &amp; Tasty</h2>
+                    <h2 className="projects__project-name">Maelstrom</h2>
 
-                    <h3 className="projects__project-type">Web development</h3>
+                    <h3 className="projects__project-type">Web design, web development</h3>
                   </div>
 
                   <ImageZoom
                     image={{
-                      alt: 'Fresh & Tasty',
+                      alt: 'Maelstrom',
                       className: 'projects__thumbnail thumbnail',
-                      src: require('./../static/images/showcase-thumbnails/snapshot-top-fresh-and-tasty.png')
+                      src: require('./../static/images/projects-thumbnails/snapshot-top-maelstrom-small.jpg')
                     }}
                     zoomImage={{
-                      alt: 'Fresh & Tasty',
-                      src: require('./../static/images/showcase-thumbnails/snapshot-top-fresh-and-tasty.png')
+                      alt: 'Maelstrom',
+                      src: require('./../static/images/projects-thumbnails/snapshot-top-maelstrom.jpg')
                     }}
                   />
 
@@ -79,20 +77,20 @@ export const Projects = () => {
               <div className="col-md-6 col-lg-4">
                 <div className="projects__wrapper">
                   <div className="projects__info">
-                    <h2 className="projects__project-name">Slavnosti Růžového Vína</h2>
+                    <h2 className="projects__project-name">Material</h2>
 
-                    <h3 className="projects__project-type">Web development</h3>
+                    <h3 className="projects__project-type">Web design, web development</h3>
                   </div>
 
                   <ImageZoom
                     image={{
-                      alt: 'Slavnosti Růžového Vína',
+                      alt: 'Material',
                       className: 'projects__thumbnail thumbnail',
-                      src: require('./../static/images/showcase-thumbnails/snapshot-top-slavnosti-ruzoveho-vina.png')
+                      src: require('./../static/images/projects-thumbnails/snapshot-top-material-small.jpg')
                     }}
                     zoomImage={{
-                      alt: 'Slavnosti Růžového Vína',
-                      src: require('./../static/images/showcase-thumbnails/snapshot-top-slavnosti-ruzoveho-vina.png')
+                      alt: 'Material',
+                      src: require('./../static/images/projects-thumbnails/snapshot-top-material.jpg')
                     }}
                   />
 
@@ -103,20 +101,20 @@ export const Projects = () => {
               <div className="col-md-6 col-lg-4">
                 <div className="projects__wrapper">
                   <div className="projects__info">
-                    <h2 className="projects__project-name">Tesla</h2>
+                    <h2 className="projects__project-name">Alice</h2>
 
-                    <h3 className="projects__project-type">Web design</h3>
+                    <h3 className="projects__project-type">Web design, web development</h3>
                   </div>
 
                   <ImageZoom
                     image={{
-                      alt: 'Tesla web design concept',
+                      alt: 'Alice',
                       className: 'projects__thumbnail thumbnail',
-                      src: require('./../static/images/showcase-thumbnails/snapshot-top-tesla-web-design-concept.jpg')
+                      src: require('./../static/images/projects-thumbnails/snapshot-top-alice-small.jpg')
                     }}
                     zoomImage={{
-                      alt: 'Tesla web design concept',
-                      src: require('./../static/images/showcase-thumbnails/snapshot-top-tesla-web-design-concept.jpg')
+                      alt: 'Alice',
+                      src: require('./../static/images/projects-thumbnails/snapshot-top-alice.jpg')
                     }}
                   />
 
@@ -127,44 +125,20 @@ export const Projects = () => {
               <div className="col-md-6 col-lg-4">
                 <div className="projects__wrapper">
                   <div className="projects__info">
-                    <h2 className="projects__project-name">Harley-Davidson</h2>
+                    <h2 className="projects__project-name">Cube</h2>
 
-                    <h3 className="projects__project-type">Web design</h3>
+                    <h3 className="projects__project-type">Web design, web development</h3>
                   </div>
 
                   <ImageZoom
                     image={{
-                      alt: 'Harley-Davidson web design concept',
+                      alt: 'Cube',
                       className: 'projects__thumbnail thumbnail',
-                      src: require('./../static/images/showcase-thumbnails/snapshot-top-harley-davidson-landing-page-v6-desktop.jpg')
+                      src: require('./../static/images/projects-thumbnails/snapshot-top-cube-small.jpg')
                     }}
                     zoomImage={{
-                      alt: 'Harley-Davidson web design concept',
-                      src: require('./../static/images/showcase-thumbnails/snapshot-top-harley-davidson-landing-page-v6-desktop.jpg')
-                    }}
-                  />
-
-                  {/* <Link href={generateCaseStudyBtnLink()}><a className="link--black-red link--underline">See case study</a></Link> */}
-                </div>
-              </div>
-
-              <div className="col-md-6 col-lg-4">
-                <div className="projects__wrapper">
-                  <div className="projects__info">
-                    <h2 className="projects__project-name">Česká Whisky</h2>
-
-                    <h3 className="projects__project-type">Web development</h3>
-                  </div>
-
-                  <ImageZoom
-                    image={{
-                      alt: 'Ceska Whisky web design concept',
-                      className: 'projects__thumbnail thumbnail',
-                      src: require('./../static/images/showcase-thumbnails/snapshot-top-ceska-whisky-desktop-v6.jpg')
-                    }}
-                    zoomImage={{
-                      alt: 'Ceska Whisky web design concept',
-                      src: require('./../static/images/showcase-thumbnails/snapshot-top-ceska-whisky-desktop-v6.jpg')
+                      alt: 'Cube',
+                      src: require('./../static/images/projects-thumbnails/snapshot-top-cube.jpg')
                     }}
                   />
 
@@ -177,18 +151,18 @@ export const Projects = () => {
                   <div className="projects__info">
                     <h2 className="projects__project-name">National Park Šumava</h2>
 
-                    <h3 className="projects__project-type">Web design</h3>
+                    <h3 className="projects__project-type">Web design, web development</h3>
                   </div>
 
                   <ImageZoom
                     image={{
                       alt: 'Sumava',
                       className: 'projects__thumbnail thumbnail',
-                      src: require('./../static/images/showcase-thumbnails/snapshot-top-sumava-v2.jpg')
+                      src: require('./../static/images/projects-thumbnails/snapshot-top-sumava-v2-small.jpg')
                     }}
                     zoomImage={{
-                      alt: '',
-                      src: require('./../static/images/showcase-thumbnails/snapshot-top-sumava-v2.jpg')
+                      alt: 'Sumava',
+                      src: require('./../static/images/projects-thumbnails/snapshot-top-sumava-v2.jpg')
                     }}
                   />
 
@@ -196,65 +170,6 @@ export const Projects = () => {
                 </div>
               </div>
             </Masonry>
-
-            <div className="projects__projects">
-              {isProjectsListVisible && (
-                <div className="row mb-5">
-                  <div className="col-sm-2 col-md-4">
-                    <h2 className="h5">Web design</h2>
-
-                    <ul className="list--unstyled">
-                      <li>Tesla Motors</li>
-                      <li>Harley Davidson</li>
-                      <li>Česká Whisky</li>
-                      <li>Posli</li>
-                    </ul>
-                  </div>
-
-                  <div className="col-sm-2 col-md-4">
-                    <h2 className="h5 mt-4">Web development</h2>
-
-                    <ul className="list--unstyled">
-                      <li>Supernova <a href="https://www.supernova.io" className="link--black-red" target="_blank" rel="noopener noreferrer"><span className="fas fa-external-link-alt" style={{ fontSize: 12 }} /></a></li>
-                      <li>Fresh & Tasty <a href="https://www.freshandtasty.cz" className="link--black-red" target="_blank" rel="noopener noreferrer"><span className="fas fa-external-link-alt" style={{ fontSize: 12 }} /></a></li>
-                      <li>Čerstvá Sváča</li>
-                      <li>Slavnosti Růžového Vína <a href="https://www.slavnostiruzovehovina.cz" className="link--black-red" target="_blank" rel="noopener noreferrer"><span className="fas fa-external-link-alt" style={{ fontSize: 12 }} /></a></li>
-                      <li>Česká Whisky <a href="https://www.ceskawhisky.cz" className="link--black-red" target="_blank" rel="noopener noreferrer"><span className="fas fa-external-link-alt" style={{ fontSize: 12 }} /></a></li>
-                      <li>Trinity</li>
-                      <li>Material</li>
-                      <li>Maelstrom</li>
-                      <li>Sumava</li>
-                    </ul>
-                  </div>
-
-                  <div className="col-sm-2 col-md-4">
-                    {/* <h2 className="h5">App design</h2>
-
-                    <ul className="list--unstyled">
-                      <li></li>
-                    </ul> */}
-
-                    <h2 className="h5">App development</h2>
-
-                    <ul className="list--unstyled">
-                      <li>Supernova Cloud <a href="https://www.app.supernova.io" className="link--black-red" target="_blank" rel="noopener noreferrer"><span className="fas fa-external-link-alt" style={{ fontSize: 12 }} /></a></li>
-                      <li>StartMonday</li>
-                      <li>Účetnictví Online <a href="https://www.uol.cz" className="link--black-red" target="_blank" rel="noopener noreferrer"><span className="fas fa-external-link-alt" style={{ fontSize: 12 }} /></a></li>
-                    </ul>
-
-                    {/* <h2 className="h5">Consulting</h2>
-
-                    <ul className="list--unstyled">
-                      <li>DámeJídlo</li>
-                    </ul> */}
-                  </div>
-                </div>
-              )}
-
-              <div className="text--center">
-                <a className="link--black-red" onClick={() => handleOpenProjectsList(!isProjectsListVisible)}><span className={`fas fa-angle-${isProjectsListVisible ? 'up' : 'down'}`} style={{ marginRight: 4 }} /> {isProjectsListVisible ? 'Hide' : 'View'} all projects</a>
-              </div>
-            </div>
           </div>
         </Waypoint>
       </div>
