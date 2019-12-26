@@ -1,7 +1,9 @@
 import * as React from 'react'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import Link from 'next/link'
 
 interface HeaderInterface {
+  isHomepage: boolean;
   handleQuoteClick: () => void;
 }
 
@@ -23,25 +25,39 @@ export const Header = (props: HeaderInterface) => {
               <button className="quote-modal__button header-mobile-btn--close" onClick={() => setIsNavVisible(!isNavVisible)} />
             </li>
 
-            <li className="list--inline-item">
-              <AnchorLink href="#works">Works</AnchorLink>
-            </li>
+            {!props.isHomepage ? (
+              <>
+                <li className="list--inline-item">
+                  <Link href="/">Home</Link>
+                </li>
 
-            <li className="list--inline-item">
-              <AnchorLink href="#whatWeDo">Services</AnchorLink>
-            </li>
+                <li className="list--inline-item">
+                  <Link href="/#contact">Hire us</Link>
+                </li>
+              </>
+            ) : (
+              <>
+                <li className="list--inline-item">
+                  <AnchorLink href="/#works">Works</AnchorLink>
+                </li>
 
-            <li className="list--inline-item">
-              <AnchorLink href="#ourProcess">Process</AnchorLink>
-            </li>
+                <li className="list--inline-item">
+                  <AnchorLink href="#whatWeDo">Services</AnchorLink>
+                </li>
 
-            <li className="list--inline-item">
-              <a href="https://blog.alexdevero.com" target="_blank" rel="noopener noreferrer">Blog</a>
-            </li>
+                <li className="list--inline-item">
+                  <AnchorLink href="#ourProcess">Process</AnchorLink>
+                </li>
 
-            <li className="list--inline-item">
-              <AnchorLink href="#contact">Hire us</AnchorLink>
-            </li>
+                <li className="list--inline-item">
+                  <a href="https://blog.alexdevero.com" target="_blank" rel="noopener noreferrer">Blog</a>
+                </li>
+
+                <li className="list--inline-item">
+                  <AnchorLink href="#contact">Hire us</AnchorLink>
+                </li>
+              </>
+            )}
 
             <li className="list--inline-item quote-btn-wrapper">
               <button className="btn btn--black-red" onClick={props.handleQuoteClick} data-text="Get quote">Get quote</button>
