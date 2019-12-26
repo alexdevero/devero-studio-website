@@ -14,7 +14,7 @@
   },
   "browserslist": {
     "production": [
-      "last 6 versions",
+      "last 5 versions",
       "> 5%",
       "ie >= 10",
       "maintained node versions",
