@@ -171,30 +171,6 @@ export const Works = () => {
                   {/* <Link href={generateCaseStudyBtnLink()}><a className="link--black-red link--underline">See case study</a></Link> */}
                 </div>
               </div>
-
-              <div className="col-md-6 col-lg-4">
-                <div className="projects__wrapper">
-                  <div className="projects__info">
-                    <h2 className="projects__project-name">National Park Šumava</h2>
-
-                    <h3 className="projects__project-type">Web design</h3>
-                  </div>
-
-                  <ImageZoom
-                    image={{
-                      alt: 'Sumava',
-                      className: 'projects__thumbnail thumbnail',
-                      src: require('./../static/images/showcase-thumbnails/snapshot-top-sumava-v2.jpg')
-                    }}
-                    zoomImage={{
-                      alt: '',
-                      src: require('./../static/images/showcase-thumbnails/snapshot-top-sumava-v2.jpg')
-                    }}
-                  />
-
-                  {/* <Link href={generateCaseStudyBtnLink()}><a className="link--black-red link--underline">See case study</a></Link> */}
-                </div>
-              </div>
             </Masonry>
 
             <div className="projects__projects">
