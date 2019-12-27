@@ -19,3 +19,9 @@ body {
     background: rgba(100, 100, 100, .5);
   }
 }
+
+.page-content {
+  flex: 1;
+  padding-top: 51px; // header height
+  min-height: calc(100vh - 51px - 156px); // header - 51px; footer cca 156px
+}
