@@ -96,12 +96,15 @@
 }
 
 .projects__project-name,
+.projects__project-name a,
 .projects__project-type {
   line-height: 1;
+  color: inherit;
   user-select: none;
 }
 
-.projects__project-name {
+.projects__project-name,
+.projects__project-name a {
   margin-bottom: 8px;
   font-size: 18px;
   font-weight: 700;
