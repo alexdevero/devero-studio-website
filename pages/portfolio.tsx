@@ -4,23 +4,32 @@ import ImageZoom from 'react-medium-image-zoom'
 import Link from 'next/link'
 import Masonry from 'react-masonry-component'
 
+import { Footer } from './../components/footer'
+import { Header } from './../components/header'
+import { QuoteModal } from './../components/quote-modal'
+
 export default () => {
   const [projectType, handleProjectTypeChange] = React.useState('all')
   const [publishingYear, handlePublishingYearChange] = React.useState('2019')
   const [isDropdownTypeVisible, handleDropdownType] = React.useState(false)
   const [isDropdownYearVisible, handleDropdownYear] = React.useState(false)
+  const [isQuoteModalShown, setIsQuoteModalShown] = React.useState(false)
+
+  const handleQuoteClick = () => {
+    setIsQuoteModalShown(!isQuoteModalShown)
+  }
 
   console.log(publishingYear)
 
   return (
-    <div>
+    <div className={isQuoteModalShown ? 'page-overlay' : ''}>
       <Head>
         <title>Portfolio | Devero Studio</title>
       </Head>
 
-      <Link href='/'><a>back home</a></Link>
+      <Header isHomepage={false} handleQuoteClick={handleQuoteClick} />
 
-      <div className="container">
+      <div className="container page-content pb-6">
         <div className="portfolio__project-filter">
           <h2>Portfolio</h2>
 
@@ -218,6 +227,10 @@ export default () => {
           </div>
         </Masonry>
       </div>
+
+      <Footer />
+
+      {isQuoteModalShown && <QuoteModal handleQuoteClick={handleQuoteClick} />}
     </div>
   )
 }
