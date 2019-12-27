@@ -113,6 +113,56 @@ const CaseSupernova = () => {
           </div>
         </div>
 
+        <div className="row mt-5">
+          <div className="col-sm-4">
+            <h2 className="h4 mt-0">Some numbers</h2>
+          </div>
+
+          <div className="col-sm-8">
+            <div className="row">
+              <div className="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div className="circle circle--centered circle--green">
+                  <span className="circle__label">94%</span>
+                </div>
+
+                <h3 className="h5 text--center mt-3">Performance</h3>
+              </div>
+
+              <div className="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div className="circle circle--centered circle--green">
+                  <span className="circle__label">97%</span>
+                </div>
+
+                <h3 className="h5 text--center mt-3">Accessibility</h3>
+              </div>
+
+              <div className="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div className="circle circle--centered circle--green">
+                  <span className="circle__label">93%</span>
+                </div>
+
+                <h3 className="h5 text--center mt-3">Best practices</h3>
+              </div>
+
+              <div className="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div className="circle circle--centered circle--green">
+                  <span className="circle__label">92%</span>
+                </div>
+
+                <h3 className="h5 text--center mt-3">SEO</h3>
+              </div>
+
+              <div className="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div className="circle circle--centered circle--black">
+                  <span className="circle__label">PWA</span>
+                </div>
+
+                <h3 className="h5 text--center mt-3">Progressive Web App (PWA)</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <a className="link--black-red" href="https:supernova.io" target="_blank" rel="noopener noreferrer">Link to website</a>
       </div>
 
