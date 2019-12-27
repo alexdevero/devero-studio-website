@@ -28,15 +28,15 @@ export const Header = (props: HeaderInterface) => {
             {!props.isHomepage ? (
               <>
                 <li className="list--inline-item">
-                  <Link href="/">Home</Link>
+                  <Link href="/"><a>Home</a></Link>
                 </li>
 
                 <li className="list--inline-item">
-                  <Link href="/portfolio">Works</Link>
+                  <Link href="/portfolio"><a>Works</a></Link>
                 </li>
 
                 <li className="list--inline-item">
-                  <Link href="/#contact">Hire us</Link>
+                  <Link href="/#contact"><a>Hire us</a></Link>
                 </li>
               </>
             ) : (
