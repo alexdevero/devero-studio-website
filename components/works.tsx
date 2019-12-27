@@ -32,7 +32,7 @@ export const Works = () => {
                 <div className="projects__wrapper">
                   <div className="projects__info">
                     <h2 className="projects__project-name">
-                      <Link href="/case-supernova">Supernova</Link>
+                      <Link href="/case-supernova"><a>Supernova</a></Link>
                     </h2>
 
                     <h3 className="projects__project-type">Web development</h3>
