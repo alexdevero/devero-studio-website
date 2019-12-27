@@ -57,6 +57,30 @@ export const Works = () => {
               <div className="col-md-6 col-lg-4">
                 <div className="projects__wrapper">
                   <div className="projects__info">
+                    <h2 className="projects__project-name">Cerstva Svaca</h2>
+
+                    <h3 className="projects__project-type">Web development</h3>
+                  </div>
+
+                  <ImageZoom
+                    image={{
+                      alt: 'Cerstva Svaca',
+                      className: 'projects__thumbnail thumbnail',
+                      src: require('./../static/images/showcase-thumbnails/snapshot-top-cerstvasvaca-small.jpg')
+                    }}
+                    zoomImage={{
+                      alt: 'Cerstva Svaca',
+                      src: require('./../static/images/showcase-thumbnails/snapshot-top-cerstvasvaca.jpg')
+                    }}
+                  />
+
+                  {/* <Link href={generateCaseStudyBtnLink()}><a className="link--black-red link--underline">See case study</a></Link> */}
+                </div>
+              </div>
+
+              <div className="col-md-6 col-lg-4">
+                <div className="projects__wrapper">
+                  <div className="projects__info">
                     <h2 className="projects__project-name">Fresh &amp; Tasty</h2>
 
                     <h3 className="projects__project-type">Web development</h3>
