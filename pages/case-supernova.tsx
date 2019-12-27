@@ -115,7 +115,7 @@ const CaseSupernova = () => {
 
         <div className="row mt-5">
           <div className="col-sm-4">
-            <h2 className="h4 mt-0">Some numbers</h2>
+            <h2 className="h4 mt-0">Final score</h2>
           </div>
 
           <div className="col-sm-8">
