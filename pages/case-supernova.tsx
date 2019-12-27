@@ -14,13 +14,12 @@ const CaseSupernova = () => {
   return (
     <div className={isQuoteModalShown ? 'page-overlay' : ''}>
       <Header isHomepage={false} handleQuoteClick={handleQuoteClick} />
+      <div className="case-study-hero">
+        <img className="case-study-hero-image img-responsive" src="./../static/images/showcase-thumbnails/snapshot-top-supernova.png" alt="Supernova Studio" />
+      </div>
 
-      <div className="container page-content">
-        <div className="case-study-hero">
-          <img className="case-study-hero-image img-responsive" src="./../static/images/showcase-thumbnails/snapshot-top-supernova.png" alt="Supernova Studio" />
-        </div>
-
-        <h1 className="h2 mt-4">Supernova Studio website case study</h1>
+      <div className="container page-content pb-6">
+        <h1 className="h2 mt-0">Supernova Studio website case study</h1>
 
         <div className="row mt-5">
           <div className="col-sm-4">
@@ -28,7 +27,7 @@ const CaseSupernova = () => {
           </div>
 
           <div className="col-sm-8">
-            <p>Modern and fast website for Supernova Studio app. Supernova Studio app allows designers and developers to build, prototype, polish and deploy their mobile apps within minutes.</p>
+            <p>Modern and fast website for Supernova Studio. Supernova Studio allows designers and developers to build, prototype, polish and deploy their mobile apps within minutes.</p>
           </div>
         </div>
 
@@ -94,17 +93,17 @@ const CaseSupernova = () => {
           </div>
 
           <div className="col-sm-8">
-            <p>We started this project by building the React app for the website from scratch. We didn't use any framework. The whole website was build as a system of reusable components. We were usually working on page at the time. When page was finished we went through extensive testing and reviews with Supernova Studio CEO and designer. Only when the page was accepted by all stakeholders we started working on another one.</p>
+            <p>We started this project by building the React app for the website from scratch. We didn't use any framework. The whole website was built as a system of reusable components. We were usually working on page at the time. When page was finished we went through extensive testing and reviews with Supernova Studio CEO and designer. Only when the page was accepted by all stakeholders we started working on another one.</p>
           </div>
         </div>
 
         <div className="row mt-5">
           <div className="col-sm-4">
-            <h2 className="h4 mt-0">Solution</h2>
+            <h2 className="h4 mt-0">The Solution</h2>
           </div>
 
           <div className="col-sm-8">
-            <p>Here you can check the screens showing user journey. They feature all the flow of choice and customization of a burger as well as the screens for delivery or picking up an order.</p>
+            <p>We've built the website as a custom React app. We followed the best practices for asset optimization to ensure website will load fast, even on slow bandwidth and devices. The layout of every page has been optimized and extensively tested. This helped us create great experience on all devices, from mobile phones and tablets, to desktops and HD TVs. Thanks to component-based approached, the website can be continually extended and upgraded.</p>
           </div>
         </div>
       </div>
