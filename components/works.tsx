@@ -179,7 +179,7 @@ export const Works = () => {
                   <div className="projects__info">
                     <h2 className="projects__project-name">Česká Whisky</h2>
 
-                    <h3 className="projects__project-type">Web development</h3>
+                    <h3 className="projects__project-type">Web design & development</h3>
                   </div>
 
                   <ImageZoom
