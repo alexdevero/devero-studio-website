@@ -1,9 +1,9 @@
 /* eslint-disable react/no-multi-comp */
 import * as React from 'react'
-// import Link from 'next/link'
-import { Waypoint } from 'react-waypoint'
 import ImageZoom from 'react-medium-image-zoom'
+import Link from 'next/link'
 import Masonry from 'react-masonry-component'
+import { Waypoint } from 'react-waypoint'
 
 export const Works = () => {
   let sectionRecentWorks: HTMLDivElement | null
@@ -31,7 +31,9 @@ export const Works = () => {
               <div className="col-md-6 col-lg-4">
                 <div className="projects__wrapper">
                   <div className="projects__info">
-                    <h2 className="projects__project-name">Supernova</h2>
+                    <h2 className="projects__project-name">
+                      <Link href="/case-supernova">Supernova</Link>
+                    </h2>
 
                     <h3 className="projects__project-type">Web development</h3>
                   </div>
