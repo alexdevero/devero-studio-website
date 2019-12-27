@@ -23,31 +23,31 @@ const CaseSupernova = () => {
         <h1 className="h3 heading--small">Supernova website case study</h1>
 
         <div className="row">
-          <div className="col-md-6 col-lg-4">
+          <div className="col-sm-4 col-md-3">
             <h2 className="h4 heading-small">Overview</h2>
           </div>
 
-          <div className="col-md-6 col-lg-8">
+          <div className="col-sm-8 col-md-9">
             <p>Modern and fast website for Supernova Studio app. Supernova Studio app allows designers and developers to build, prototype, polish and deploy their mobile apps within minutes.</p>
           </div>
         </div>
 
         <div className="row">
-          <div className="col-md-6 col-lg-4">
+          <div className="col-sm-4 col-md-3">
             <h2 className="h4 heading-small">Our role</h2>
           </div>
 
-          <div className="col-md-6 col-lg-8">
+          <div className="col-sm-8 col-md-9">
             <p></p>
           </div>
         </div>
 
         <div className="row">
-          <div className="col-md-6 col-lg-4">
+          <div className="col-sm-4 col-md-3">
             <h2 className="h4 heading-small">Objectives</h2>
           </div>
 
-          <div className="col-md-6 col-lg-8">
+          <div className="col-sm-8 col-md-9">
             <ul>
               <li>Build responsive pixel-perfect website</li>
 
@@ -61,11 +61,11 @@ const CaseSupernova = () => {
         </div>
 
         <div className="row">
-          <div className="col-md-6 col-lg-4">
+          <div className="col-sm-4 col-md-3">
             <h2 className="h4 heading-small">Solution</h2>
           </div>
 
-          <div className="col-md-6 col-lg-8">
+          <div className="col-sm-8 col-md-9">
             <p>Here you can check the screens showing user journey. They feature all the flow of choice and customization of a burger as well as the screens for delivery or picking up an order.</p>
           </div>
         </div>
