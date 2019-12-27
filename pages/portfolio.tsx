@@ -19,7 +19,25 @@ export default () => {
     setIsQuoteModalShown(!isQuoteModalShown)
   }
 
-  console.log(publishingYear)
+  const handleDropdownClick = (dropdownType: string) => {
+    if (dropdownType === 'year') {
+      handleDropdownYear(!isDropdownYearVisible)
+      handleDropdownType(false)
+    } else {
+      handleDropdownType(!isDropdownTypeVisible)
+      handleDropdownYear(false)
+    }
+  }
+
+  const handleDropdownItemClick = (dropdownType: string, value: string) => {
+    if (dropdownType === 'year') {
+      handlePublishingYearChange(value)
+      handleDropdownYear(!isDropdownYearVisible)
+    } else {
+      handleProjectTypeChange(value)
+      handleDropdownType(!isDropdownTypeVisible)
+    }
+  }
 
   return (
     <div className={isQuoteModalShown ? 'page-overlay' : ''}>
@@ -31,26 +49,33 @@ export default () => {
 
       <div className="container page-content pb-6">
         <div className="portfolio__project-filter">
-          <h2>Portfolio</h2>
+          <h2 className="h3">Portfolio</h2>
 
-          <div className="dropdown">
-            <button className="dropdown__toggler" onClick={() => handleDropdownType(!isDropdownTypeVisible)}>{projectType}</button>
+          <div className="row mt-3 mb-4">
+            <div className="col-sm-6 col-md-4 col-lg-3">
+              <div className="dropdown dropdown--full-width">
+                <button className="dropdown__toggler" onClick={() => handleDropdownClick('type')}>{projectType}</button>
 
-            <div className="dropdown__menu">
-              <span className="dropdown__item" onClick={() => handleProjectTypeChange('all')}>All</span>
-              <span className="dropdown__item" onClick={() => handleProjectTypeChange('websites')}>Websites</span>
-              <span className="dropdown__item" onClick={() => handleProjectTypeChange('web apps')}>Web apps</span>
-              <span className="dropdown__item" onClick={() => handleProjectTypeChange('e-commerce')}>E-commerce</span>
-              <span className="dropdown__item" onClick={() => handleProjectTypeChange('mobile apps')}>Mobile apps</span>
+                <div className={isDropdownTypeVisible ? 'dropdown__menu dropdown__menu--visible' : 'dropdown__menu'}>
+                  <span className="dropdown__item" onClick={() => handleDropdownItemClick('type', 'All')}>All</span>
+                  <span className="dropdown__item" onClick={() => handleDropdownItemClick('type', 'Websites')}>Websites</span>
+                  <span className="dropdown__item" onClick={() => handleDropdownItemClick('type', 'Web apps')}>Web apps</span>
+                  <span className="dropdown__item" onClick={() => handleDropdownItemClick('type', 'E-commerce')}>E-commerce</span>
+                  <span className="dropdown__item" onClick={() => handleDropdownItemClick('type', 'Mobile apps')}>Mobile apps</span>
+                </div>
+              </div>
             </div>
-          </div>
 
-          <div className="dropdown">
-            <button className="dropdown__toggler" onClick={() => handleDropdownType(!handleDropdownYear)}>{isDropdownYearVisible}</button>
+            <div className="col-sm-6 col-md-4 col-lg-3">
+              <div className="dropdown dropdown--full-width">
+                <button className="dropdown__toggler" onClick={() => handleDropdownClick('year')}>{publishingYear}</button>
 
-            <div className="dropdown__menu">
-              <span className="dropdown__item" onClick={() => handlePublishingYearChange('2019')}>2019</span>
-              <span className="dropdown__item" onClick={() => handlePublishingYearChange('2018')}>2018</span>
+                <div className={isDropdownYearVisible ? 'dropdown__menu dropdown__menu--visible' : 'dropdown__menu'}>
+                  <span className="dropdown__item" onClick={() => handleDropdownItemClick('year', '2017')}>2018</span>
+                  <span className="dropdown__item" onClick={() => handleDropdownItemClick('year', '2018')}>2018</span>
+                  <span className="dropdown__item" onClick={() => handleDropdownItemClick('year', '2019')}>2019</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
