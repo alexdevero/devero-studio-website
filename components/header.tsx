@@ -32,6 +32,10 @@ export const Header = (props: HeaderInterface) => {
                 </li>
 
                 <li className="list--inline-item">
+                  <Link href="/portfolio">Works</Link>
+                </li>
+
+                <li className="list--inline-item">
                   <Link href="/#contact">Hire us</Link>
                 </li>
               </>
