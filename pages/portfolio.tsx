@@ -9,8 +9,8 @@ import { Header } from './../components/header'
 import { QuoteModal } from './../components/quote-modal'
 
 export default () => {
-  const [projectType, handleProjectTypeChange] = React.useState('all')
-  const [publishingYear, handlePublishingYearChange] = React.useState('2019')
+  const [projectType, handleProjectTypeChange] = React.useState('All types')
+  const [publishingYear, handlePublishingYearChange] = React.useState('All years')
   const [isDropdownTypeVisible, handleDropdownType] = React.useState(false)
   const [isDropdownYearVisible, handleDropdownYear] = React.useState(false)
   const [isQuoteModalShown, setIsQuoteModalShown] = React.useState(false)
@@ -54,10 +54,10 @@ export default () => {
           <div className="row mt-3 mb-4">
             <div className="col-sm-6 col-md-4 col-lg-3">
               <div className="dropdown dropdown--full-width">
-                <button className="dropdown__toggler" onClick={() => handleDropdownClick('type')}>{projectType}</button>
+                <button className="dropdown__toggler" onClick={() => handleDropdownClick('type')}>{projectType} <span>&#9662;</span></button>
 
                 <div className={isDropdownTypeVisible ? 'dropdown__menu dropdown__menu--visible' : 'dropdown__menu'}>
-                  <span className="dropdown__item" onClick={() => handleDropdownItemClick('type', 'All')}>All</span>
+                  <span className="dropdown__item" onClick={() => handleDropdownItemClick('type', 'All types')}>All types</span>
                   <span className="dropdown__item" onClick={() => handleDropdownItemClick('type', 'Websites')}>Websites</span>
                   <span className="dropdown__item" onClick={() => handleDropdownItemClick('type', 'Web apps')}>Web apps</span>
                   <span className="dropdown__item" onClick={() => handleDropdownItemClick('type', 'E-commerce')}>E-commerce</span>
@@ -68,10 +68,11 @@ export default () => {
 
             <div className="col-sm-6 col-md-4 col-lg-3">
               <div className="dropdown dropdown--full-width">
-                <button className="dropdown__toggler" onClick={() => handleDropdownClick('year')}>{publishingYear}</button>
+                <button className="dropdown__toggler" onClick={() => handleDropdownClick('year')}>{publishingYear} <span>&#9662;</span></button>
 
                 <div className={isDropdownYearVisible ? 'dropdown__menu dropdown__menu--visible' : 'dropdown__menu'}>
-                  <span className="dropdown__item" onClick={() => handleDropdownItemClick('year', '2017')}>2018</span>
+                  <span className="dropdown__item" onClick={() => handleDropdownItemClick('year', 'All years')}>All years</span>
+                  <span className="dropdown__item" onClick={() => handleDropdownItemClick('year', '2017')}>2017</span>
                   <span className="dropdown__item" onClick={() => handleDropdownItemClick('year', '2018')}>2018</span>
                   <span className="dropdown__item" onClick={() => handleDropdownItemClick('year', '2019')}>2019</span>
                 </div>
@@ -81,7 +82,7 @@ export default () => {
         </div>
 
         <Masonry className="masonry-wrapper">
-          <div className="col-md-6 col-lg-4">
+          {(projectType === 'All types' || projectType === 'Websites') && <div className="col-md-6 col-lg-4">
             <div className="projects__wrapper">
               <div className="projects__info">
                 <h2 className="projects__project-name">
@@ -105,9 +106,9 @@ export default () => {
 
               {/* <Link href={generateCaseStudyBtnLink()}><a className="link--black-red link--underline">See case study</a></Link> */}
             </div>
-          </div>
+          </div>}
 
-          <div className="col-md-6 col-lg-4">
+          {(projectType === 'All types' || projectType === 'Websites') && <div className="col-md-6 col-lg-4">
             <div className="projects__wrapper">
               <div className="projects__info">
                 <h2 className="projects__project-name">Cerstva Svaca</h2>
@@ -129,9 +130,9 @@ export default () => {
 
               {/* <Link href={generateCaseStudyBtnLink()}><a className="link--black-red link--underline">See case study</a></Link> */}
             </div>
-          </div>
+          </div>}
 
-          <div className="col-md-6 col-lg-4">
+          {(projectType === 'All types' || projectType === 'Websites') && <div className="col-md-6 col-lg-4">
             <div className="projects__wrapper">
               <div className="projects__info">
                 <h2 className="projects__project-name">Fresh &amp; Tasty</h2>
@@ -153,9 +154,9 @@ export default () => {
 
               {/* <Link href={generateCaseStudyBtnLink()}><a className="link--black-red link--underline">See case study</a></Link> */}
             </div>
-          </div>
+          </div>}
 
-          <div className="col-md-6 col-lg-4">
+          {(projectType === 'All types' || projectType === 'Websites') && <div className="col-md-6 col-lg-4">
             <div className="projects__wrapper">
               <div className="projects__info">
                 <h2 className="projects__project-name">Slavnosti Růžového Vína</h2>
@@ -177,9 +178,9 @@ export default () => {
 
               {/* <Link href={generateCaseStudyBtnLink()}><a className="link--black-red link--underline">See case study</a></Link> */}
             </div>
-          </div>
+          </div>}
 
-          <div className="col-md-6 col-lg-4">
+          {(projectType === 'All types' || projectType === 'Websites') && <div className="col-md-6 col-lg-4">
             <div className="projects__wrapper">
               <div className="projects__info">
                 <h2 className="projects__project-name">Tesla</h2>
@@ -201,9 +202,9 @@ export default () => {
 
               {/* <Link href={generateCaseStudyBtnLink()}><a className="link--black-red link--underline">See case study</a></Link> */}
             </div>
-          </div>
+          </div>}
 
-          <div className="col-md-6 col-lg-4">
+          {(projectType === 'All types' || projectType === 'Websites') && <div className="col-md-6 col-lg-4">
             <div className="projects__wrapper">
               <div className="projects__info">
                 <h2 className="projects__project-name">Harley-Davidson</h2>
@@ -225,9 +226,9 @@ export default () => {
 
               {/* <Link href={generateCaseStudyBtnLink()}><a className="link--black-red link--underline">See case study</a></Link> */}
             </div>
-          </div>
+          </div>}
 
-          <div className="col-md-6 col-lg-4">
+          {(projectType === 'All types' || projectType === 'Websites') && <div className="col-md-6 col-lg-4">
             <div className="projects__wrapper">
               <div className="projects__info">
                 <h2 className="projects__project-name">Česká Whisky</h2>
@@ -249,7 +250,11 @@ export default () => {
 
               {/* <Link href={generateCaseStudyBtnLink()}><a className="link--black-red link--underline">See case study</a></Link> */}
             </div>
-          </div>
+          </div>}
+
+          {(projectType === 'Web apps' || projectType === 'E-commerce' || projectType === 'Mobile apps') && (
+            <div className="col-12 text--center">Sorry, there are no projects to show for this selection.</div>
+          )}
         </Masonry>
       </div>
 
