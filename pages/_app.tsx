@@ -5,6 +5,9 @@ import NextSeo from 'next-seo'
 
 import SEOConfig from './../next-seo.config'
 
+// Import styles
+import './../styles/styles.scss'
+
 class MyApp extends App {
   render() {
     const { Component, pageProps } = this.props

@@ -26,9 +26,6 @@ import { Testimonials } from './../components/testimonials'
 // import { Where } from '../components/where'
 import { Works } from '../components/works'
 
-// Import styles
-import './../styles/styles.scss'
-
 const Home = () => {
   const [isQuoteModalShown, setIsQuoteModalShown] = React.useState(false)
 
