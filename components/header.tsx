@@ -42,7 +42,7 @@ export const Header = (props: HeaderInterface) => {
             ) : (
               <>
                 <li className="list--inline-item">
-                  <AnchorLink href="/#works">Works</AnchorLink>
+                  <AnchorLink href="#works">Works</AnchorLink>
                 </li>
 
                 <li className="list--inline-item">
