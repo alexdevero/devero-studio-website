@@ -1,4 +1,5 @@
 import * as React from 'react'
+import Head from 'next/head'
 
 import { Footer } from './../components/footer'
 import { Header } from './../components/header'
@@ -13,7 +14,12 @@ const CaseSupernova = () => {
 
   return (
     <div className={isQuoteModalShown ? 'page-overlay' : ''}>
+      <Head>
+        <title>Supernova Studio case study | Devero Studio</title>
+      </Head>
+
       <Header isHomepage={false} handleQuoteClick={handleQuoteClick} />
+
       <div className="case-study-hero">
         <img className="case-study-hero-image img-responsive" src="./../static/images/showcase-thumbnails/snapshot-top-supernova.png" alt="Supernova Studio" />
       </div>
