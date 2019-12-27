@@ -1,0 +1,42 @@
+/* Charts */
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 75px;
+  border: 4px solid;
+  border-radius: 50%;
+
+  &--centered {
+    margin: auto;
+  }
+
+  &--green {
+    color: #0cce6b;
+    border-color: #0cce6b;
+    background: #1f3228;
+  }
+
+  &--red {
+    color: #ff4e42;
+    border-color: #ff4e42;
+    background: #372624;
+  }
+
+  &--orange {
+    color: #ffa400;
+    border-color: #ffa400;
+    background: #372e1e;
+  }
+
+  &--black {
+    color: #fff;
+    border-color: #424242;
+    background: #424242;
+  }
+
+  &__label {
+    font-size: 19px;
+  }
+}
