@@ -1,6 +1,8 @@
 import * as React from 'react'
 import Head from 'next/head'
+import ImageZoom from 'react-medium-image-zoom'
 import Link from 'next/link'
+import Masonry from 'react-masonry-component'
 
 export default () => {
   const [projectType, handleProjectTypeChange] = React.useState('all')
@@ -44,63 +46,177 @@ export default () => {
           </div>
         </div>
 
-        <div className="row">
+        <Masonry className="masonry-wrapper">
           <div className="col-md-6 col-lg-4">
-            <Link href="/portfolio/">
-              <a className="portfolio__link">
-                <img className="portfolio__thumbnail thumbnail" src={require('./../static/images/showcase-thumbnails/snapshot-top-supernova.png')} alt="Supernova" />
-              </a>
-            </Link>
+            <div className="projects__wrapper">
+              <div className="projects__info">
+                <h2 className="projects__project-name">
+                  <Link href="/case-supernova"><a>Supernova</a></Link>
+                </h2>
+
+                <h3 className="projects__project-type">Web development</h3>
+              </div>
+
+              <ImageZoom
+                image={{
+                  alt: 'Supernova',
+                  className: 'projects__thumbnail thumbnail',
+                  src: require('./../static/images/showcase-thumbnails/snapshot-top-supernova-small.png')
+                }}
+                zoomImage={{
+                  alt: 'Supernova',
+                  src: require('./../static/images/showcase-thumbnails/snapshot-top-supernova.png')
+                }}
+              />
+
+              {/* <Link href={generateCaseStudyBtnLink()}><a className="link--black-red link--underline">See case study</a></Link> */}
+            </div>
           </div>
 
           <div className="col-md-6 col-lg-4">
-            <Link href="/portfolio/">
-              <a className="portfolio__link">
-                <img className="portfolio__thumbnail thumbnail" src={require('./../static/images/showcase-thumbnails/snapshot-top-tesla-web-design-concept.jpg')} alt="Tesla" />
-              </a>
-            </Link>
+            <div className="projects__wrapper">
+              <div className="projects__info">
+                <h2 className="projects__project-name">Cerstva Svaca</h2>
+
+                <h3 className="projects__project-type">Web development</h3>
+              </div>
+
+              <ImageZoom
+                image={{
+                  alt: 'Cerstva Svaca',
+                  className: 'projects__thumbnail thumbnail',
+                  src: require('./../static/images/showcase-thumbnails/snapshot-top-cerstvasvaca-small.jpg')
+                }}
+                zoomImage={{
+                  alt: 'Cerstva Svaca',
+                  src: require('./../static/images/showcase-thumbnails/snapshot-top-cerstvasvaca.jpg')
+                }}
+              />
+
+              {/* <Link href={generateCaseStudyBtnLink()}><a className="link--black-red link--underline">See case study</a></Link> */}
+            </div>
           </div>
 
           <div className="col-md-6 col-lg-4">
-            <Link href="/portfolio/">
-              <a className="portfolio__link">
-                <img className="portfolio__thumbnail thumbnail" src={require('./../static/images/showcase-thumbnails/snapshot-top-harley-davidson-landing-page-v6-desktop.jpg')} alt="Harley-Davidson" />
-              </a>
-            </Link>
+            <div className="projects__wrapper">
+              <div className="projects__info">
+                <h2 className="projects__project-name">Fresh &amp; Tasty</h2>
+
+                <h3 className="projects__project-type">Web development</h3>
+              </div>
+
+              <ImageZoom
+                image={{
+                  alt: 'Fresh & Tasty',
+                  className: 'projects__thumbnail thumbnail',
+                  src: require('./../static/images/showcase-thumbnails/snapshot-top-fresh-and-tasty-small.png')
+                }}
+                zoomImage={{
+                  alt: 'Fresh & Tasty',
+                  src: require('./../static/images/showcase-thumbnails/snapshot-top-fresh-and-tasty.png')
+                }}
+              />
+
+              {/* <Link href={generateCaseStudyBtnLink()}><a className="link--black-red link--underline">See case study</a></Link> */}
+            </div>
           </div>
 
           <div className="col-md-6 col-lg-4">
-            <Link href="/portfolio/">
-              <a className="portfolio__link">
-                <img className="portfolio__thumbnail thumbnail" src={require('./../static/images/showcase-thumbnails/snapshot-top-ceska-whisky-desktop-v6.jpg')} alt="Ceska Whisky" />
-              </a>
-            </Link>
+            <div className="projects__wrapper">
+              <div className="projects__info">
+                <h2 className="projects__project-name">Slavnosti Růžového Vína</h2>
+
+                <h3 className="projects__project-type">Web development</h3>
+              </div>
+
+              <ImageZoom
+                image={{
+                  alt: 'Slavnosti Růžového Vína',
+                  className: 'projects__thumbnail thumbnail',
+                  src: require('./../static/images/showcase-thumbnails/snapshot-top-slavnosti-ruzoveho-vina-small.png')
+                }}
+                zoomImage={{
+                  alt: 'Slavnosti Růžového Vína',
+                  src: require('./../static/images/showcase-thumbnails/snapshot-top-slavnosti-ruzoveho-vina.png')
+                }}
+              />
+
+              {/* <Link href={generateCaseStudyBtnLink()}><a className="link--black-red link--underline">See case study</a></Link> */}
+            </div>
           </div>
 
           <div className="col-md-6 col-lg-4">
-            <Link href="/portfolio/">
-              <a className="portfolio__link">
-                <img className="portfolio__thumbnail thumbnail" src={require('./../static/images/showcase-thumbnails/snapshot-top-slavnosti-ruzoveho-vina.png')} alt="Slavnosti Růžového Vína" />
-              </a>
-            </Link>
+            <div className="projects__wrapper">
+              <div className="projects__info">
+                <h2 className="projects__project-name">Tesla</h2>
+
+                <h3 className="projects__project-type">Web design</h3>
+              </div>
+
+              <ImageZoom
+                image={{
+                  alt: 'Tesla web design concept',
+                  className: 'projects__thumbnail thumbnail',
+                  src: require('./../static/images/showcase-thumbnails/snapshot-top-tesla-web-design-concept-small.jpg')
+                }}
+                zoomImage={{
+                  alt: 'Tesla web design concept',
+                  src: require('./../static/images/showcase-thumbnails/snapshot-top-tesla-web-design-concept.jpg')
+                }}
+              />
+
+              {/* <Link href={generateCaseStudyBtnLink()}><a className="link--black-red link--underline">See case study</a></Link> */}
+            </div>
           </div>
 
           <div className="col-md-6 col-lg-4">
-            <Link href="/portfolio/">
-              <a className="portfolio__link">
-                <img className="portfolio__thumbnail thumbnail" src={require('./../static/images/showcase-thumbnails/snapshot-top-fresh-and-tasty.png')} alt="Fresh & Tasty" />
-              </a>
-            </Link>
+            <div className="projects__wrapper">
+              <div className="projects__info">
+                <h2 className="projects__project-name">Harley-Davidson</h2>
+
+                <h3 className="projects__project-type">Web design</h3>
+              </div>
+
+              <ImageZoom
+                image={{
+                  alt: 'Harley-Davidson web design concept',
+                  className: 'projects__thumbnail thumbnail',
+                  src: require('./../static/images/showcase-thumbnails/snapshot-top-harley-davidson-landing-page-v6-desktop-small.jpg')
+                }}
+                zoomImage={{
+                  alt: 'Harley-Davidson web design concept',
+                  src: require('./../static/images/showcase-thumbnails/snapshot-top-harley-davidson-landing-page-v6-desktop.jpg')
+                }}
+              />
+
+              {/* <Link href={generateCaseStudyBtnLink()}><a className="link--black-red link--underline">See case study</a></Link> */}
+            </div>
           </div>
 
           <div className="col-md-6 col-lg-4">
-            <Link href="/portfolio/">
-              <a className="portfolio__link">
-                <img className="portfolio__thumbnail thumbnail" src={require('./../static/images/showcase-thumbnails/snapshot-top-sumava-v2.jpg')} alt="Sumava" />
-              </a>
-            </Link>
+            <div className="projects__wrapper">
+              <div className="projects__info">
+                <h2 className="projects__project-name">Česká Whisky</h2>
+
+                <h3 className="projects__project-type">Web design & development</h3>
+              </div>
+
+              <ImageZoom
+                image={{
+                  alt: 'Ceska Whisky web design concept',
+                  className: 'projects__thumbnail thumbnail',
+                  src: require('./../static/images/showcase-thumbnails/snapshot-top-ceska-whisky-desktop-v6-small.jpg')
+                }}
+                zoomImage={{
+                  alt: 'Ceska Whisky web design concept',
+                  src: require('./../static/images/showcase-thumbnails/snapshot-top-ceska-whisky-desktop-v6.jpg')
+                }}
+              />
+
+              {/* <Link href={generateCaseStudyBtnLink()}><a className="link--black-red link--underline">See case study</a></Link> */}
+            </div>
           </div>
-        </div>
+        </Masonry>
       </div>
     </div>
   )
