@@ -163,7 +163,7 @@ const CaseSupernova = () => {
           </div>
         </div>
 
-        <a className="link--black-red" href="https:supernova.io" target="_blank" rel="noopener noreferrer">Link to website</a>
+        <a className="link--black-red" href="https:supernova.io" target="_blank" rel="noopener noreferrer">Visit website <span className="fas fa-external-link-alt text--smaller" /></a>
       </div>
 
       <Footer />
