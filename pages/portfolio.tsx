@@ -215,7 +215,7 @@ export default () => {
           </div>}
 
           {(projectType === 'Web apps' || projectType === 'E-commerce' || projectType === 'Mobile apps') && (
-            <div className="col-12 text--center">Sorry, there are no projects to show for this selection.</div>
+            <div className="col-12 text--center"><em>Sorry, there are no projects to show for this selection.</em></div>
           )}
         </Masonry>
       </div>
