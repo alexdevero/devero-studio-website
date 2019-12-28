@@ -67,7 +67,7 @@ export const Works = () => {
 
               <div className="col-md-6 col-lg-4">
                 <div className="projects__wrapper">
-                <Link href="/">{/* /case-fresh-tasty */}
+                <Link href="/case-fresh-tasty">
                     <a>
                       <div className="projects__info">
                         <h2 className="projects__project-name">Fresh &amp; Tasty</h2>
