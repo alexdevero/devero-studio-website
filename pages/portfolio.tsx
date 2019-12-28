@@ -82,7 +82,7 @@ export default () => {
         </div>
 
         <Masonry className="masonry-wrapper">
-          {(projectType === 'All types' || projectType === 'Websites') && <div className="col-md-6 col-lg-4">
+          {((projectType === 'All types' || projectType === 'Websites') && (publishingYear === 'All years' || publishingYear === '2019')) && <div className="col-md-6 col-lg-4">
             <div className="projects__wrapper">
               <div className="projects__info">
                 <h2 className="projects__project-name">
@@ -108,7 +108,7 @@ export default () => {
             </div>
           </div>}
 
-          {(projectType === 'All types' || projectType === 'Websites') && <div className="col-md-6 col-lg-4">
+          {((projectType === 'All types' || projectType === 'Websites') && (publishingYear === 'All years' || publishingYear === '2019')) && <div className="col-md-6 col-lg-4">
             <div className="projects__wrapper">
               <div className="projects__info">
                 <h2 className="projects__project-name">Cerstva Svaca</h2>
@@ -132,7 +132,7 @@ export default () => {
             </div>
           </div>}
 
-          {(projectType === 'All types' || projectType === 'Websites') && <div className="col-md-6 col-lg-4">
+          {((projectType === 'All types' || projectType === 'Websites') && (publishingYear === 'All years' || publishingYear === '2018')) && <div className="col-md-6 col-lg-4">
             <div className="projects__wrapper">
               <div className="projects__info">
                 <h2 className="projects__project-name">Fresh &amp; Tasty</h2>
@@ -156,7 +156,7 @@ export default () => {
             </div>
           </div>}
 
-          {(projectType === 'All types' || projectType === 'Websites') && <div className="col-md-6 col-lg-4">
+          {((projectType === 'All types' || projectType === 'Websites') && (publishingYear === 'All years' || publishingYear === '2017')) && <div className="col-md-6 col-lg-4">
             <div className="projects__wrapper">
               <div className="projects__info">
                 <h2 className="projects__project-name">Slavnosti Růžového Vína</h2>
@@ -180,7 +180,7 @@ export default () => {
             </div>
           </div>}
 
-          {(projectType === 'All types' || projectType === 'Websites') && <div className="col-md-6 col-lg-4">
+          {((projectType === 'All types' || projectType === 'Websites') && (publishingYear === 'All years' || publishingYear === '2018')) && <div className="col-md-6 col-lg-4">
             <div className="projects__wrapper">
               <div className="projects__info">
                 <h2 className="projects__project-name">Tesla</h2>
@@ -204,7 +204,7 @@ export default () => {
             </div>
           </div>}
 
-          {(projectType === 'All types' || projectType === 'Websites') && <div className="col-md-6 col-lg-4">
+          {((projectType === 'All types' || projectType === 'Websites') && (publishingYear === 'All years' || publishingYear === '2018')) && <div className="col-md-6 col-lg-4">
             <div className="projects__wrapper">
               <div className="projects__info">
                 <h2 className="projects__project-name">Harley-Davidson</h2>
@@ -228,7 +228,7 @@ export default () => {
             </div>
           </div>}
 
-          {(projectType === 'All types' || projectType === 'Websites') && <div className="col-md-6 col-lg-4">
+          {((projectType === 'All types' || projectType === 'Websites') && (publishingYear === 'All years' || publishingYear === '2018')) && <div className="col-md-6 col-lg-4">
             <div className="projects__wrapper">
               <div className="projects__info">
                 <h2 className="projects__project-name">Česká Whisky</h2>
