@@ -8,7 +8,7 @@ import { Waypoint } from 'react-waypoint'
 export const Works = () => {
   let sectionRecentWorks: HTMLDivElement | null
 
-  const [isProjectsListVisible, handleOpenProjectsList] = React.useState(false)
+  // const [isProjectsListVisible, handleOpenProjectsList] = React.useState(false)
 
   const handleWaypointEnter = (section: string) => {
     switch (section) {
@@ -199,8 +199,8 @@ export const Works = () => {
               </div>
             </Masonry>
 
-            <div className="projects__projects">
-              {isProjectsListVisible && (
+            <div className="projects__projects mt-6">
+              {/* {isProjectsListVisible && (
                 <div className="row mb-5">
                   <div className="col-sm-2 col-md-4">
                     <h2 className="h5">Web design</h2>
@@ -230,11 +230,11 @@ export const Works = () => {
                   </div>
 
                   <div className="col-sm-2 col-md-4">
-                    {/* <h2 className="h5">App design</h2>
+                    <h2 className="h5">App design</h2>
 
                     <ul className="list--unstyled">
                       <li></li>
-                    </ul> */}
+                    </ul>
 
                     <h2 className="h5">App development</h2>
 
@@ -244,17 +244,20 @@ export const Works = () => {
                       <li>Účetnictví Online <a href="https://www.uol.cz" className="link--black-red" target="_blank" rel="noopener noreferrer"><span className="fas fa-external-link-alt" style={{ fontSize: 12 }} /></a></li>
                     </ul>
 
-                    {/* <h2 className="h5">Consulting</h2>
+                    <h2 className="h5">Consulting</h2>
 
                     <ul className="list--unstyled">
                       <li>DámeJídlo</li>
-                    </ul> */}
+                    </ul>
                   </div>
                 </div>
-              )}
+              )} */}
 
               <div className="text--center">
-                <a className="link--black-red" onClick={() => handleOpenProjectsList(!isProjectsListVisible)}><span className={`fas fa-angle-${isProjectsListVisible ? 'up' : 'down'}`} style={{ marginRight: 4 }} /> {isProjectsListVisible ? 'Hide' : 'View'} all projects</a>
+                {/* <a className="link--black-red" onClick={() => handleOpenProjectsList(!isProjectsListVisible)}><span className={`fas fa-angle-${isProjectsListVisible ? 'up' : 'down'}`} style={{ marginRight: 4 }} /> {isProjectsListVisible ? 'Hide' : 'View'} all projects</a> */}
+                <Link href="/portfolio">
+                  <a className="h4 link--black-red"><strong>View all projects <span className="fas fa-long-arrow-alt-right text--underline" /></strong></a>
+                </Link>
               </div>
             </div>
           </div>
