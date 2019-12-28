@@ -49,8 +49,6 @@ export const Works = () => {
                       src: require('./../static/images/showcase-thumbnails/snapshot-top-supernova.png')
                     }}
                   />
-
-                  {/* <Link href={generateCaseStudyBtnLink()}><a className="link--black-red link--underline">See case study</a></Link> */}
                 </div>
               </div>
 
@@ -73,8 +71,6 @@ export const Works = () => {
                       src: require('./../static/images/showcase-thumbnails/snapshot-top-cerstvasvaca.jpg')
                     }}
                   />
-
-                  {/* <Link href={generateCaseStudyBtnLink()}><a className="link--black-red link--underline">See case study</a></Link> */}
                 </div>
               </div>
 
@@ -97,8 +93,6 @@ export const Works = () => {
                       src: require('./../static/images/showcase-thumbnails/snapshot-top-fresh-and-tasty.png')
                     }}
                   />
-
-                  {/* <Link href={generateCaseStudyBtnLink()}><a className="link--black-red link--underline">See case study</a></Link> */}
                 </div>
               </div>
 
@@ -121,8 +115,6 @@ export const Works = () => {
                       src: require('./../static/images/showcase-thumbnails/snapshot-top-slavnosti-ruzoveho-vina.png')
                     }}
                   />
-
-                  {/* <Link href={generateCaseStudyBtnLink()}><a className="link--black-red link--underline">See case study</a></Link> */}
                 </div>
               </div>
 
@@ -145,8 +137,6 @@ export const Works = () => {
                       src: require('./../static/images/showcase-thumbnails/snapshot-top-tesla-web-design-concept.jpg')
                     }}
                   />
-
-                  {/* <Link href={generateCaseStudyBtnLink()}><a className="link--black-red link--underline">See case study</a></Link> */}
                 </div>
               </div>
 
@@ -169,8 +159,6 @@ export const Works = () => {
                       src: require('./../static/images/showcase-thumbnails/snapshot-top-harley-davidson-landing-page-v6-desktop.jpg')
                     }}
                   />
-
-                  {/* <Link href={generateCaseStudyBtnLink()}><a className="link--black-red link--underline">See case study</a></Link> */}
                 </div>
               </div>
 
@@ -193,8 +181,6 @@ export const Works = () => {
                       src: require('./../static/images/showcase-thumbnails/snapshot-top-ceska-whisky-desktop-v6.jpg')
                     }}
                   />
-
-                  {/* <Link href={generateCaseStudyBtnLink()}><a className="link--black-red link--underline">See case study</a></Link> */}
                 </div>
               </div>
             </Masonry>
