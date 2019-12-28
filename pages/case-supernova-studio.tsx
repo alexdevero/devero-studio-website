@@ -1,9 +1,9 @@
 import * as React from 'react'
 import Head from 'next/head'
 
-import { Footer } from './../components/footer'
-import { Header } from './../components/header'
-import { QuoteModal } from './../components/quote-modal'
+import { Footer } from '../components/footer'
+import { Header } from '../components/header'
+import { QuoteModal } from '../components/quote-modal'
 
 const CaseSupernova = () => {
   const [isQuoteModalShown, setIsQuoteModalShown] = React.useState(false)
