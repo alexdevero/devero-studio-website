@@ -109,7 +109,7 @@ const CaseSupernova = () => {
           </div>
 
           <div className="col-sm-8">
-            <p>We've built the website as a custom React app. We followed the best practices for asset optimization to ensure website will load fast, even on slow bandwidth and devices. The layout of every page has been optimized and extensively tested. This helped us create great experience on all devices, from mobile phones and tablets, to small and large desktops and even TVs. Thanks to component-based approached, the website can be continually extended and upgraded.</p>
+            <p>We've built the website as a custom React app. We followed the best practices for asset optimization to ensure website will load fast, even on slow bandwidth and devices. The layout of every page has been optimized and extensively tested. This helped us create great experience on all devices, from mobile phones and tablets, to small and large desktops and even TVs. Thanks to our component-based approach, the website can be continually extended and upgraded.</p>
           </div>
         </div>
 
