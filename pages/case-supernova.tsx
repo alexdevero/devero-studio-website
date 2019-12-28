@@ -21,7 +21,7 @@ const CaseSupernova = () => {
       <Header isHomepage={false} handleQuoteClick={handleQuoteClick} />
 
       <div className="case-study-hero">
-        <img className="case-study-hero-image img-responsive" src="./../static/images/showcase-thumbnails/snapshot-top-supernova.png" alt="Supernova Studio" />
+        <img className="case-study-hero-image img-responsive" src="./../static/images/showcase-thumbnails/snapshot-top-supernova.png" alt="Supernova Studio website snapshot" />
       </div>
 
       <div className="container page-content pb-6">
