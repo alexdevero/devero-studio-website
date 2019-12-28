@@ -156,6 +156,30 @@ export default () => {
             </div>
           </div>}
 
+          {((projectType === 'All types' || projectType === 'Websites') && (publishingYear === 'All years' || publishingYear === '2018')) && <div className="col-md-6 col-lg-4">
+            <div className="projects__wrapper">
+              <div className="projects__info">
+                <h2 className="projects__project-name">Česká Whisky</h2>
+
+                <h3 className="projects__project-type">Web design & development</h3>
+              </div>
+
+              <ImageZoom
+                image={{
+                  alt: 'Ceska Whisky web design concept',
+                  className: 'projects__thumbnail thumbnail',
+                  src: require('./../static/images/showcase-thumbnails/snapshot-top-ceska-whisky-desktop-v6-small.jpg')
+                }}
+                zoomImage={{
+                  alt: 'Ceska Whisky web design concept',
+                  src: require('./../static/images/showcase-thumbnails/snapshot-top-ceska-whisky-desktop-v6.jpg')
+                }}
+              />
+
+              {/* <Link href={generateCaseStudyBtnLink()}><a className="link--black-red link--underline">See case study</a></Link> */}
+            </div>
+          </div>}
+
           {((projectType === 'All types' || projectType === 'Websites') && (publishingYear === 'All years' || publishingYear === '2017')) && <div className="col-md-6 col-lg-4">
             <div className="projects__wrapper">
               <div className="projects__info">
@@ -221,30 +245,6 @@ export default () => {
                 zoomImage={{
                   alt: 'Harley-Davidson web design concept',
                   src: require('./../static/images/showcase-thumbnails/snapshot-top-harley-davidson-landing-page-v6-desktop.jpg')
-                }}
-              />
-
-              {/* <Link href={generateCaseStudyBtnLink()}><a className="link--black-red link--underline">See case study</a></Link> */}
-            </div>
-          </div>}
-
-          {((projectType === 'All types' || projectType === 'Websites') && (publishingYear === 'All years' || publishingYear === '2018')) && <div className="col-md-6 col-lg-4">
-            <div className="projects__wrapper">
-              <div className="projects__info">
-                <h2 className="projects__project-name">Česká Whisky</h2>
-
-                <h3 className="projects__project-type">Web design & development</h3>
-              </div>
-
-              <ImageZoom
-                image={{
-                  alt: 'Ceska Whisky web design concept',
-                  className: 'projects__thumbnail thumbnail',
-                  src: require('./../static/images/showcase-thumbnails/snapshot-top-ceska-whisky-desktop-v6-small.jpg')
-                }}
-                zoomImage={{
-                  alt: 'Ceska Whisky web design concept',
-                  src: require('./../static/images/showcase-thumbnails/snapshot-top-ceska-whisky-desktop-v6.jpg')
                 }}
               />
 
