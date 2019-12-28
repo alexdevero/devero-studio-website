@@ -29,7 +29,7 @@ export const Works = () => {
             <Masonry className="masonry-wrapper">
               <div className="col-md-6 col-lg-4">
                 <div className="projects__wrapper">
-                  <Link href="/case-supernova">
+                  <Link href="/case-supernova-studio">
                     <a>
                       <div className="projects__info">
                         <h2 className="projects__project-name">Supernova Studio</h2>
