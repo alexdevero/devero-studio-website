@@ -21,7 +21,7 @@ const CaseSvaca = () => {
       <Header isHomepage={false} handleQuoteClick={handleQuoteClick} />
 
       <div className="case-study-hero">
-        <img className="case-study-hero-image img-responsive" src="./../static/images/showcase-thumbnails/snapshot-top-fresh-and-tasty.jpg" alt="Fresh & Tasty website snapshot" />
+        <img className="case-study-hero-image img-responsive" src="./../static/images/showcase-thumbnails/snapshot-top-fresh-and-tasty.png" alt="Fresh & Tasty website snapshot" />
       </div>
 
       <div className="container page-content pb-6">
