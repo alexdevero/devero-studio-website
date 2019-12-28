@@ -102,7 +102,7 @@ export default () => {
 
           {((projectType === 'All types' || projectType === 'Websites') && (publishingYear === 'All years' || publishingYear === '2019')) && <div className="col-md-6 col-lg-4">
             <div className="projects__wrapper">
-              <Link href="/case-svaca">
+              <Link href="/portfolio">{/* /case-svaca */}
                 <a>
                   <div className="projects__info">
                     <h2 className="projects__project-name">Cerstva Svaca</h2>
@@ -121,7 +121,7 @@ export default () => {
 
           {((projectType === 'All types' || projectType === 'Websites') && (publishingYear === 'All years' || publishingYear === '2018')) && <div className="col-md-6 col-lg-4">
             <div className="projects__wrapper">
-              <Link href="/case-fresh-tasty">
+              <Link href="/portfolio">{/* /case-fresh-tasty */}
                 <a>
                   <div className="projects__info">
                     <h2 className="projects__project-name">Fresh &amp; Tasty</h2>
@@ -140,7 +140,7 @@ export default () => {
 
           {((projectType === 'All types' || projectType === 'Websites') && (publishingYear === 'All years' || publishingYear === '2018')) && <div className="col-md-6 col-lg-4">
             <div className="projects__wrapper">
-              <Link href="/case-whisky">
+              <Link href="/portfolio">{/* /case-whisky */}
                 <a>
                   <div className="projects__info">
                     <h2 className="projects__project-name">Česká Whisky</h2>
@@ -159,7 +159,7 @@ export default () => {
 
           {((projectType === 'All types' || projectType === 'Websites') && (publishingYear === 'All years' || publishingYear === '2017')) && <div className="col-md-6 col-lg-4">
             <div className="projects__wrapper">
-              <Link href="/case-slavnosti">
+              <Link href="/portfolio">{/* /case-slavnosti */}
                 <a>
                   <div className="projects__info">
                     <h2 className="projects__project-name">Slavnosti Růžového Vína</h2>
@@ -178,7 +178,7 @@ export default () => {
 
           {((projectType === 'All types' || projectType === 'Websites') && (publishingYear === 'All years' || publishingYear === '2018')) && <div className="col-md-6 col-lg-4">
             <div className="projects__wrapper">
-              <Link href="/case-tesla">
+              <Link href="/portfolio">{/* /case-tesla */}
                 <a>
                   <div className="projects__info">
                     <h2 className="projects__project-name">Tesla</h2>
@@ -197,7 +197,7 @@ export default () => {
 
           {((projectType === 'All types' || projectType === 'Websites') && (publishingYear === 'All years' || publishingYear === '2018')) && <div className="col-md-6 col-lg-4">
             <div className="projects__wrapper">
-              <Link href="/case-harley">
+              <Link href="/portfolio">{/* /case-harley */}
                 <a>
                   <div className="projects__info">
                     <h2 className="projects__project-name">Harley-Davidson</h2>
