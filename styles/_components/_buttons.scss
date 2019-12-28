@@ -27,6 +27,7 @@
     transition: all .25s ease-in-out;
   }
 
+  &:focus,
   &:hover {
     &::before {
       transform: translateX(0);
@@ -38,6 +39,7 @@
     background-color: var(--color-brand);
     border-color: var(--color-brand);
 
+    &:focus,
     &:hover {
       color: var(--color-white);
       border-color: var(--color-black);
@@ -53,6 +55,7 @@
     background-color: var(--color-black);
     border-color: var(--color-black);
 
+    &:focus,
     &:hover {
       color: var(--color-white);
       border-color: var(--color-brand);
@@ -87,6 +90,7 @@
       transition: all .25s ease-in-out;
     }
 
+    &:focus,
     &:hover {
       color: var(--color-brand);
       border-color: var(--color-white);
