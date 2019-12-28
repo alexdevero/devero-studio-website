@@ -86,6 +86,25 @@ export const Works = () => {
 
               <div className="col-md-6 col-lg-4">
                 <div className="projects__wrapper">
+                  <Link href="/">{/* /case-whisky */}
+                    <a>
+                      <div className="projects__info">
+                        <h2 className="projects__project-name">Česká Whisky</h2>
+
+                        <h3 className="projects__project-type">Web design & development</h3>
+                      </div>
+
+                      <img
+                        className="projects__thumbnail thumbnail"
+                        src={require('./../static/images/showcase-thumbnails/snapshot-top-ceska-whisky-desktop-v6-small.jpg')}
+                        alt="Ceska Whisky web design concept" />
+                    </a>
+                  </Link>
+                </div>
+              </div>
+
+              <div className="col-md-6 col-lg-4">
+                <div className="projects__wrapper">
                   <Link href="/">{/* /case-slavnosti */}
                     <a>
                       <div className="projects__info">
@@ -136,25 +155,6 @@ export const Works = () => {
                         className="projects__thumbnail thumbnail"
                         src={require('./../static/images/showcase-thumbnails/snapshot-top-harley-davidson-landing-page-v6-desktop-small.jpg')}
                         alt="Harley-Davidson web design concept" />
-                    </a>
-                  </Link>
-                </div>
-              </div>
-
-              <div className="col-md-6 col-lg-4">
-                <div className="projects__wrapper">
-                  <Link href="/">{/* /case-whisky */}
-                    <a>
-                      <div className="projects__info">
-                        <h2 className="projects__project-name">Česká Whisky</h2>
-
-                        <h3 className="projects__project-type">Web design & development</h3>
-                      </div>
-
-                      <img
-                        className="projects__thumbnail thumbnail"
-                        src={require('./../static/images/showcase-thumbnails/snapshot-top-ceska-whisky-desktop-v6-small.jpg')}
-                        alt="Ceska Whisky web design concept" />
                     </a>
                   </Link>
                 </div>
