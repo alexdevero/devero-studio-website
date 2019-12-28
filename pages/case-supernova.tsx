@@ -15,7 +15,7 @@ const CaseSupernova = () => {
   return (
     <div className={isQuoteModalShown ? 'page-overlay' : ''}>
       <Head>
-        <title>Supernova Studio case study | Devero Studio</title>
+        <title>Supernova Studio website case study | Devero Studio</title>
       </Head>
 
       <Header isHomepage={false} handleQuoteClick={handleQuoteClick} />
