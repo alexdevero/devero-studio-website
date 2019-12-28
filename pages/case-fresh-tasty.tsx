@@ -165,7 +165,7 @@ const CaseSvaca = () => {
           </div>
         </div>
 
-        <a className="link--black-red" href="https://www.freshandtasty.cz/" target="_blank" rel="noopener noreferrer">Visit website <span className="fas fa-external-link-alt text--smaller" /></a>
+        <a className="link--black-red" href="https://www.freshandtasty.cz/" target="_blank" rel="noopener noreferrer">Visit the website <span className="fas fa-external-link-alt text--smaller" /></a>
       </div>
 
       <Footer />
