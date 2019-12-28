@@ -88,7 +88,7 @@
   top: 0;
   left: 0;
   z-index: 2;
-  padding: 14px 14px 45px;
+  padding: 14px 14px 24px;
   width: 100%;
   color: #fff;
   background: linear-gradient(to bottom, rgba(0, 0, 0, .45) 70%, transparent);
@@ -97,17 +97,11 @@
 
 .projects__project-name,
 .projects__project-name a,
-.projects__project-type,
-.projects__project-cta {
+.projects__project-type {
+  margin-bottom: 8px;
   line-height: 1;
   color: inherit;
   user-select: none;
-}
-
-.projects__project-name,
-.projects__project-name a,
-.projects__project-type {
-  margin-bottom: 8px;
 }
 
 .projects__project-name,
@@ -119,13 +113,6 @@
 .projects__project-type {
   font-size: 14px;
   font-weight: 300;
-}
-
-.projects__project-cta {
-  font-size: 15px;
-  font-weight: 700;
-  display: block;
-  text-align: left;
 }
 
 .projects__thumbnail {
