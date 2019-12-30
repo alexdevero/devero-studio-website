@@ -124,7 +124,7 @@ const CaseSvaca = () => {
           </div>
 
           <div className="col-sm-8">
-            <p>We've built the website as from scratch with HTML, CSS and JavaScript. We didn't use any front-end or back-end framework. During the work, we followed the best practices for asset optimization to make sure website will load fast, even on low-end devices and slow internet connection. The website has been thoroughly tested on a wide range of devices, from mobile phones and tablets, to small and large desktops to ensure maximum compatibility.</p>
+            <p>We've built the website from scratch with HTML, CSS and JavaScript. We didn't use any front-end or back-end framework. During the work, we followed the best practices for asset optimization to make sure website will load fast, even on low-end devices and slow internet connection. The website has been thoroughly tested on a wide range of devices, from mobile phones and tablets, to small and large desktops to ensure maximum compatibility.</p>
           </div>
         </div>
 
