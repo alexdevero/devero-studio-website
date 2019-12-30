@@ -126,7 +126,7 @@ const CaseSvaca = () => {
           </div>
 
           <div className="col-sm-8">
-            <p>We've built the website as on the top of Next.js framework, as a React app. We followed the best practices for asset optimization to ensure website will load fast, even on slow bandwidth and devices. This was further greatly enhanced by default optimization processes provided by Next.js framework. The layout of every page has been tested and optimized to create great experience on all devices, from mobile phones and tablets, to small and large desktops. Our component-based approach allowed for the website to be continually extended and upgraded in the future.</p>
+            <p>We've built the website on top of Next.js framework, as a React app. We followed the best practices for asset optimization to ensure website will load fast, even on slow bandwidth and devices. This was further greatly enhanced by default optimization processes provided by Next.js framework. The layout of every page has been tested and optimized to create great experience on all devices, from mobile phones and tablets, to small and large desktops. Our component-based approach allowed for the website to be continually extended and upgraded in the future.</p>
           </div>
         </div>
 
