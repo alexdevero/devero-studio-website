@@ -153,7 +153,7 @@ export default () => {
 
           {((projectType === 'All types' || projectType === 'Websites') && (publishingYear === 'All years' || publishingYear === '2018')) && <div className="col-md-6 col-lg-4">
             <div className="projects__wrapper">
-              <Link href="/portfolio">{/* /case-whisky */}
+              <Link href="/case-whisky">
                 <a>
                   <div className="projects__info">
                     <h2 className="projects__project-name">Česká Whisky</h2>

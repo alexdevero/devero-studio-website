@@ -86,7 +86,7 @@ export const Works = () => {
 
               <div className="col-md-6 col-lg-4">
                 <div className="projects__wrapper">
-                  <Link href="/">{/* /case-whisky */}
+                  <Link href="/case-whisky">
                     <a>
                       <div className="projects__info">
                         <h2 className="projects__project-name">Česká Whisky</h2>
@@ -105,7 +105,7 @@ export const Works = () => {
 
               <div className="col-md-6 col-lg-4">
                 <div className="projects__wrapper">
-                  <Link href="/">{/* /case-slavnosti */}
+                  <Link href="/case-slavnosti">
                     <a>
                       <div className="projects__info">
                         <h2 className="projects__project-name">Slavnosti Růžového Vína</h2>
