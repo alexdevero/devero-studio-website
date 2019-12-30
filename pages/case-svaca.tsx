@@ -1,12 +1,25 @@
 import * as React from 'react'
 import Head from 'next/head'
 
+// Import utils
+import { initGA, logPageView } from '../utils/analytics'
+
+// Import components
 import { Footer } from '../components/footer'
 import { Header } from '../components/header'
 import { QuoteModal } from '../components/quote-modal'
 
 const CaseSvaca = () => {
   const [isQuoteModalShown, setIsQuoteModalShown] = React.useState(false)
+
+  React.useEffect(() => {
+    if (!(window as any).GA_INITIALIZED) {
+      initGA();
+      (window as any).GA_INITIALIZED = true
+    }
+
+    logPageView()
+  })
 
   const handleQuoteClick = () => {
     setIsQuoteModalShown(!isQuoteModalShown)
