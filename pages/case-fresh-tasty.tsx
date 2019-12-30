@@ -112,7 +112,7 @@ const CaseSvaca = () => {
           </div>
 
           <div className="col-sm-8">
-            <p>This project was built with HTML, CSS and JavaScript, and PHP, mainly for forms. We didn't use any front-end or back-end framework. Next.js made it also easier to create high-performance website, thanks to code splitting, advanced bundling and automatic assets optimization. The whole website was built as a system of components that could be re-used elsewhere. This made it easier to gradually extend the website to its final size.</p>
+            <p>This project was built with HTML, CSS and JavaScript, and PHP, mainly for forms. We didn't use any front-end or back-end framework. All pages were coded as static, using latest HTML5 and CSS3 specifications. For JavaScript, we used, back then, the latest ES6. The whole website was built as a system of components, each of these components being re-usable. This made it easier to gradually extend the website to its final size.</p>
 
             <p className="mt-3">We were always working on page at the time. When page was finished we went through extensive testing and reviews with Fresh & Tasty CEO. Only when any potential issues were solved the page was accepted and we started working on another page.</p>
           </div>
