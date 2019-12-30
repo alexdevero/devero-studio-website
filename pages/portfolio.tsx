@@ -3,6 +3,10 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Masonry from 'react-masonry-component'
 
+// Import utils
+import { initGA, logPageView } from '../utils/analytics'
+
+// Import components
 import { Footer } from './../components/footer'
 import { Header } from './../components/header'
 import { QuoteModal } from './../components/quote-modal'
@@ -13,6 +17,15 @@ export default () => {
   const [isDropdownTypeVisible, handleDropdownType] = React.useState(false)
   const [isDropdownYearVisible, handleDropdownYear] = React.useState(false)
   const [isQuoteModalShown, setIsQuoteModalShown] = React.useState(false)
+
+  React.useEffect(() => {
+    if (!(window as any).GA_INITIALIZED) {
+      initGA();
+      (window as any).GA_INITIALIZED = true
+    }
+
+    logPageView()
+  })
 
   const handleQuoteClick = () => {
     setIsQuoteModalShown(!isQuoteModalShown)
