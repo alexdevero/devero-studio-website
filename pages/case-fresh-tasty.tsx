@@ -56,7 +56,7 @@ const CaseSvaca = () => {
           </div>
 
           <div className="col-sm-8">
-            <p>We were hired to build a pixel-perfect and responsive website that covers the whole business. In the beginning, we received the complete design for the all pages we were tasked to code. During the work, we made some adjustments and improvements to the design to ensure the best experience. We discussed all these changes with all stakeholders before we realized them.</p>
+            <p>We were hired to build a pixel-perfect and responsive website that covers the whole business. In the beginning, we received complete design for all pages we were tasked to code. During the work, we made some adjustments and improvements to the design to ensure the best experience. We discussed all these changes with all stakeholders before we realized them.</p>
           </div>
         </div>
 
