@@ -66,6 +66,7 @@
     "imagemin-optipng": "7.1.0",
     "imagemin-svgo": "7.1.0",
     "next-optimized-images": "2.6.0",
+    "sass": "^1.26.5",
     "typescript": "3.9.2",
     "webp-loader": "0.6.0"
   }
