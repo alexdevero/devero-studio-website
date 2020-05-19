@@ -41,11 +41,11 @@
     "react-dom": "16.13.1",
     "react-ga": "2.7.0",
     "react-google-recaptcha": "2.0.1",
-    "react-hotjar": "2.0.4",
+    "react-hotjar": "2.2.0",
     "react-masonry-component": "^6.2.1",
     "react-medium-image-zoom": "3.1.2",
     "react-spring": "8.0.27",
-    "react-svg": "11.0.5",
+    "react-svg": "11.0.22",
     "react-waypoint": "9.0.2",
     "reaviz": "7.2.2",
     "xml-js": "1.6.11"
@@ -66,8 +66,8 @@
     "eslint-plugin-react": "7.20.0",
     "imagemin-mozjpeg": "8.0.0",
     "imagemin-optipng": "7.1.0",
-    "imagemin-svgo": "7.0.0",
-    "next-optimized-images": "2.5.4",
+    "imagemin-svgo": "7.1.0",
+    "next-optimized-images": "2.6.0",
     "typescript": "3.9.2",
     "webp-loader": "0.6.0"
   }
