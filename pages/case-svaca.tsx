@@ -101,7 +101,17 @@ const CaseSvaca = () => {
 
           <div className="col-sm-8">
             <ul className="list--unstyled">
-              <li>Front-end: HTML, CSS, CSS-in-JS, JavaScript, React.js, Next.js</li>
+              <li>Front-end:
+                {/* HTML, CSS, CSS-in-JS, JavaScript, React.js, Next.js */}
+                <ul>
+                  <li><span className="fab fa-html5" /></li>
+                  <li><span className="fab fa-css3-alt" /></li>
+                  <li><span className="fab fa-js" /></li>
+                  <li><span className="fab" /></li>
+                  <li><span className="fab fa-react" /></li>
+                  <li><span className="fab fa-php" /></li>
+                </ul>
+              </li>
 
               <li>Back-end: PHP, Firebase</li>
             </ul>
