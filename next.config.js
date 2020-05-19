@@ -19,12 +19,4 @@ const withOptimizedImages = require('next-optimized-images')
 //   })))
 // )
 
-const withSass = require("@zeit/next-sass")
-const withCSS = require("@zeit/next-css")
-module.exports = withOptimizedImages(
-  withCSS(
-    withSass({
-      /* config options here */
-    })
-  )
-)
+module.exports = withOptimizedImages()
