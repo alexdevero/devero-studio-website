@@ -32,7 +32,7 @@
     "axios": "0.19.2",
     "jquery": "3.5.1",
     "lottie-react-web": "2.1.4",
-    "next": "9.1.6",
+    "next": "9.4.1",
     "next-compose-plugins": "2.2.0",
     "next-seo": "1.12.0",
     "node-sass": "4.14.1",
@@ -51,6 +51,7 @@
     "xml-js": "1.6.11"
   },
   "devDependencies": {
+    "@babel/runtime-corejs2": "^7.9.6",
     "@types/next-seo": "1.10.0",
     "@types/node": "14.0.1",
     "@types/react": "16.9.35",
@@ -68,6 +69,7 @@
     "imagemin-optipng": "7.1.0",
     "imagemin-svgo": "7.1.0",
     "next-optimized-images": "2.6.0",
+    "postcss-preset-env": "^6.7.0",
     "typescript": "3.9.2",
     "webp-loader": "0.6.0"
   }
